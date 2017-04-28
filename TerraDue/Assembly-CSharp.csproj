@@ -58,8 +58,11 @@
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\Scripts\HeroScript.cs" />
+     <Compile Include="Assets\Scripts\MoveToClickPoint.cs" />
      <Compile Include="Assets\Scripts\MyLobbyManager.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonCharacter.cs" />
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />
@@ -86,11 +89,11 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="RAINMetaform">
- <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAINMetaform.dll</HintPath>
- </Reference>
  <Reference Include="RAIN">
  <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAIN.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaform">
+ <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

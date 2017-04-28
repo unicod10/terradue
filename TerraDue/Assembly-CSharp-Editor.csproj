@@ -107,17 +107,17 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="RAINMetaformEditor">
- <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
+ <Reference Include="RAIN">
+ <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
  <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
- <Reference Include="RAIN">
- <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/RAIN.dll</HintPath>
- </Reference>
  <Reference Include="RAINEditor">
  <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="RAINMetaformEditor">
+ <HintPath>/Users/unicod10/GitHubRepos/TerraDue/TerraDue/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
