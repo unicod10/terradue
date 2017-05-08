@@ -98,6 +98,7 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\HealthScript.cs" />
     <Compile Include="Assets\Scripts\MinionClass.cs" />
     <Compile Include="Assets\Scripts\MinionLeaderClass.cs" />
     <Compile Include="Assets\Scripts\MinionSpawnScrit.cs" />

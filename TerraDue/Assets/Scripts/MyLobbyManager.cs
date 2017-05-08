@@ -15,6 +15,7 @@ public class MyLobbyManager : LobbyManager {
         Transform spawnPoint;
         GameObject heroPrefab;
         GameObject player;
+        string name;
 
         // Spawn at hero's unique position
         if (spawnedHumans == spawnedAliens)
@@ -22,16 +23,19 @@ public class MyLobbyManager : LobbyManager {
             var playerIndex = ++spawnedHumans;
             spawnPoint = GameObject.Find("SpawnHuman" + playerIndex).transform;
             heroPrefab = spawnPrefabs[playerIndex - 1];
+            name = "HumanHero" + playerIndex;
         }
         else
         {
             var playerIndex = ++spawnedAliens;
             spawnPoint = GameObject.Find("SpawnAlien" + playerIndex).transform;
             heroPrefab = spawnPrefabs[playerIndex - 1 + ALIEN_PREFAB_OFFSET];
+            name = "AlienHero" + playerIndex;
         }
 
         player = Instantiate(heroPrefab, spawnPoint.position, Quaternion.identity);
 		player.GetComponent<MoveToClickPoint>().spawnPoint = spawnPoint;
+        player.name = name;
         return player;
     }
 }

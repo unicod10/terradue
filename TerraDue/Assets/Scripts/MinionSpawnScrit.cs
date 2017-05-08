@@ -38,6 +38,8 @@ public class MinionSpawnScrit : NetworkBehaviour {
                 ++nameIndex;
                 spawnMinions(turn);
                 elapsedTime = 0;
+                // TODO remove
+                GameObject.Find("HumanHero1").GetComponent<HealthScript>().TakeDamage(20);
             }
         }
     }
@@ -52,6 +54,6 @@ public class MinionSpawnScrit : NetworkBehaviour {
         alienMinion.name = "AlienMinion_" + nameIndex;
         alienMinion.transform.Rotate(new Vector3(0, 1, 0), 180);
         NetworkServer.Spawn(humanMinion);
-        NetworkServer.Spawn(alienMinion);");
+        NetworkServer.Spawn(alienMinion);
     }
 }

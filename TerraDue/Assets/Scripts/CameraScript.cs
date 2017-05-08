@@ -67,7 +67,7 @@ public class CameraScript : NetworkBehaviour
 
     private void PositionCamera()
     {
-        Camera.main.transform.position = transform.position - 4 * CAMERA_DIRECTION_VECTOR;
+        Camera.main.transform.position = transform.position - 8 * CAMERA_DIRECTION_VECTOR;
     }
 
     private void TranslateCamera(Vector3 translation)
