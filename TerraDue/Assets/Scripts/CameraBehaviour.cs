@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
-public class CameraScript : NetworkBehaviour
+public class CameraBehaviour : NetworkBehaviour
 {
 
     static private float CAMERA_ROTATION_X = 30 * Mathf.Deg2Rad;
