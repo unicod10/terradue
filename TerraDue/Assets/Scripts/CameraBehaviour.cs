@@ -34,7 +34,7 @@ public class CameraBehaviour : NetworkBehaviour
         {
             return;
         }
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown("q") && GetComponent<PlayerBehaviour>().IsAlive())
         {
             PositionCamera();
             return;

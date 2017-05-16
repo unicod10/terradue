@@ -57,7 +57,11 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             groupLeaders[5] = SpawnAlienLeader(groupId + 5, "SpawnAlien2", 3);
 
             // TODO remove
-            GameObject.Find("HumanHero1").GetComponent<HealthBehaviour>().TakeDamage(20);
+            var hero1 = GameObject.Find("HumanHero1");
+            if(hero1 != null)
+            {
+                hero1.GetComponent<PlayerBehaviour>().TakeDamage(70);
+            }
         }
 
         // Time to spawn new followers
@@ -87,11 +91,7 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             if(minion0 != null)
             {
                 minion0.transform.position = new Vector3(0, 0, 0);
-                minion0.GetComponent<HealthBehaviour>().TakeDamage(50);
-                if (minion0.GetComponent<HealthBehaviour>().getHealth() <= 0)
-                {
-                    DestroyMinion(minion0);
-                }
+                minion0.GetComponent<MinionBehaviour>().TakeDamage(50);
             }
         }
     }
@@ -145,10 +145,5 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
         behaviour.lane = lane;
         minion.name = "Minion" + (minionId++);
         NetworkServer.Spawn(minion);
-    }
-
-    private void DestroyMinion(GameObject minion)
-    {
-        NetworkServer.Destroy(minion);
     }
 }

@@ -11,22 +11,43 @@ public class MinionBehaviour : NetworkBehaviour {
     * Lane 3 is on the right for humans and on the left for aliens
     */
     public int lane;
+    [SyncVar(hook = "UpdateHealth")]
+    public float Health;
 
-    void Update ()
+    private void Start()
     {
-		if(!isServer)
+        if(!isServer)
         {
             return;
         }
-	}
-
+        Health = Constants.MINION_HEALTH;
+    }
+    
     public bool IsGroupLeader()
     {
-        return groupLeader == this;
+        return groupLeader == gameObject;
     }
 
     public bool HasLeader()
     {
         return groupLeader != null;
+    }
+
+    public void TakeDamage(float Damage)
+    {
+        if (!isServer)
+        {
+            return;
+        }
+        Health -= Damage;
+        if(Health <= 0)
+        {
+            NetworkServer.Destroy(gameObject);
+        }
+    }
+
+    private void UpdateHealth(float NewHealth)
+    {
+        transform.Find("HealthBar/Bar").transform.localScale = new Vector3(NewHealth / Constants.MINION_HEALTH, 1f, 1f);
     }
 }
