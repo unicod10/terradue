@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\MyLobbyManager.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Scripts\UIClick.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\OpenSans\License!.txt" />

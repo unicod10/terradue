@@ -10,12 +10,16 @@ public class PlayerBehaviour : NetworkBehaviour {
 
     public void Start()
     {
-        if(!isServer)
+        if(isServer)
         {
-            return;
+            Health = Constants.HERO_BASE_HEALTH;
+            DeadSince = -1;
         }
-        Health = Constants.HERO_BASE_HEALTH;
-        DeadSince = -1;
+        if (isLocalPlayer)
+        {
+            Debug.Log("OK");
+            GameObject.Find("UI").GetComponent<UIClick>().player = gameObject;
+        }
     }
 
     public void Update()
@@ -88,5 +92,11 @@ public class PlayerBehaviour : NetworkBehaviour {
         {
             GetComponent<MoveToClickPoint>().MoveToSpawnPoint();
         }
+    }
+
+    [Command]
+    public void CmdBuildTower()
+    {
+        // TODO
     }
 }

@@ -21,9 +21,9 @@ public class MoveToClickPoint : NetworkBehaviour {
 		if (Input.GetMouseButtonDown(0))
         {
 			RaycastHit hit;
-			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit)) 
             {
-				agent.destination = hit.point;
+                agent.destination = hit.point;
 			}
 		}
 	}
