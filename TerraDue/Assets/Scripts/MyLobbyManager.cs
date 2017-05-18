@@ -34,7 +34,7 @@ public class MyLobbyManager : LobbyManager {
         }
 
         player = Instantiate(heroPrefab, spawnPoint.position, Quaternion.identity);
-		player.GetComponent<MoveToClickPoint>().spawnPoint = spawnPoint;
+		player.GetComponent<MoveToPoint>().spawnPoint = spawnPoint;
         player.name = name;
         return player;
     }

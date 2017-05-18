@@ -10,15 +10,14 @@ public class PlayerBehaviour : NetworkBehaviour {
 
     public void Start()
     {
-        if(isServer)
+        if (isLocalPlayer)
+        {
+            GameObject.Find("UI").GetComponent<MouseClick>().player = gameObject;
+        }
+        if (isServer)
         {
             Health = Constants.HERO_BASE_HEALTH;
             DeadSince = -1;
-        }
-        if (isLocalPlayer)
-        {
-            Debug.Log("OK");
-            GameObject.Find("UI").GetComponent<UIClick>().player = gameObject;
         }
     }
 
@@ -82,7 +81,7 @@ public class PlayerBehaviour : NetworkBehaviour {
     [ClientRpc]
     private void RpcDie()
     {
-        GetComponent<MoveToClickPoint>().MoveToHiddenPoint();
+        GetComponent<MoveToPoint>().Hide();
     }
 
     [ClientRpc]
@@ -90,7 +89,7 @@ public class PlayerBehaviour : NetworkBehaviour {
     {
         if(isLocalPlayer)
         {
-            GetComponent<MoveToClickPoint>().MoveToSpawnPoint();
+            GetComponent<MoveToPoint>().Spawn();
         }
     }
 

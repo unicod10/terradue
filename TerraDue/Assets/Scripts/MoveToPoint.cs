@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.Networking;
 
 
-public class MoveToClickPoint : NetworkBehaviour {
+public class MoveToPoint : NetworkBehaviour {
 
 	NavMeshAgent agent;
 	public Transform spawnPoint;
@@ -12,36 +12,29 @@ public class MoveToClickPoint : NetworkBehaviour {
 		agent = GetComponent<NavMeshAgent>();
 	}
 
-	void Update()
+    public void MoveTo(Vector3 point)
     {
-        if (!isLocalPlayer || !GetComponent<PlayerBehaviour>().IsAlive())
+        if (!GetComponent<PlayerBehaviour>().IsAlive())
         {
             return;
         }
-		if (Input.GetMouseButtonDown(0))
-        {
-			RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit)) 
-            {
-                agent.destination = hit.point;
-			}
-		}
-	}
+        agent.destination = point;
+    }
 
-    public void MoveToSpawnPoint()
+    public void Spawn()
     {
         transform.position = spawnPoint.position;
         agent.enabled = true;
         agent.destination = spawnPoint.position;
     }
 
-    public void MoveToHiddenPoint()
+    public void Hide()
     {
         agent.enabled = false;
         transform.position = new Vector3(0f, -1000f, 0f);
     }
 
-    public void InhibitMovement()
+    public void StopMovement()
     {
         agent.destination = transform.position;
     }
