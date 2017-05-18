@@ -40,4 +40,9 @@ public class MoveToClickPoint : NetworkBehaviour {
         agent.enabled = false;
         transform.position = new Vector3(0f, -1000f, 0f);
     }
+
+    public void InhibitMovement()
+    {
+        agent.destination = transform.position;
+    }
 }
