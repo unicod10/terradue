@@ -196,7 +196,7 @@ RectTransform:
   m_Children:
   - {fileID: 1702228210}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -228,8 +228,8 @@ MonoBehaviour:
   - {fileID: 2119284208}
   - {fileID: 928801485}
   - {fileID: 545970336}
-  - {fileID: 1284338958}
   - {fileID: 727794178}
+  - {fileID: 1284338958}
 --- !u!1 &96939795
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353049990
 GameObject:
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 353049992}
   - component: {fileID: 353049991}
   m_Layer: 0
-  m_Name: HumanTowerCenter1
+  m_Name: TowerSlot_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +763,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357889880
 GameObject:
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 357889882}
   - component: {fileID: 357889881}
   m_Layer: 0
-  m_Name: AlienTowerRight2
+  m_Name: TowerSlot_0_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +845,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &383356608
 GameObject:
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 545970338}
   - component: {fileID: 545970337}
   m_Layer: 0
-  m_Name: HumanTowerRight2
+  m_Name: TowerSlot_2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1421,7 +1421,7 @@ GameObject:
   - component: {fileID: 630258878}
   - component: {fileID: 630258877}
   m_Layer: 0
-  m_Name: HumanTowerLeft2
+  m_Name: TowerSlot_0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1489,7 +1489,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &640781384
 GameObject:
@@ -1749,7 +1749,7 @@ GameObject:
   - component: {fileID: 727794180}
   - component: {fileID: 727794179}
   m_Layer: 0
-  m_Name: AlienTowerLeft2
+  m_Name: TowerSlot_2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,7 +1817,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &862055331
 GameObject:
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 928801487}
   - component: {fileID: 928801486}
   m_Layer: 0
-  m_Name: HumanTowerRight1
+  m_Name: TowerSlot_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2526,7 +2526,7 @@ GameObject:
   - component: {fileID: 1284338960}
   - component: {fileID: 1284338959}
   m_Layer: 0
-  m_Name: AlienTowerLeft1
+  m_Name: TowerSlot_2_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2594,7 +2594,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317105797
 GameObject:
@@ -2608,7 +2608,7 @@ GameObject:
   - component: {fileID: 1317105799}
   - component: {fileID: 1317105798}
   m_Layer: 0
-  m_Name: HumanTowerLeft1
+  m_Name: TowerSlot_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2676,7 +2676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396899007
 GameObject:
@@ -2774,7 +2774,7 @@ GameObject:
   - component: {fileID: 1436667406}
   - component: {fileID: 1436667405}
   m_Layer: 0
-  m_Name: HumanTowerCenter2
+  m_Name: TowerSlot_1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2842,7 +2842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1436952273
 GameObject:
@@ -2856,7 +2856,7 @@ GameObject:
   - component: {fileID: 1436952275}
   - component: {fileID: 1436952274}
   m_Layer: 0
-  m_Name: AlienTowerRight1
+  m_Name: TowerSlot_0_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2924,7 +2924,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1547866287
 GameObject:
@@ -3304,7 +3304,7 @@ GameObject:
   - component: {fileID: 1738115261}
   - component: {fileID: 1738115260}
   m_Layer: 0
-  m_Name: AlienTowerCenter2
+  m_Name: TowerSlot_1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3372,7 +3372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793907066
 GameObject:
@@ -3750,7 +3750,7 @@ GameObject:
   - component: {fileID: 2119284210}
   - component: {fileID: 2119284209}
   m_Layer: 0
-  m_Name: AlienTowerCenter1
+  m_Name: TowerSlot_1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3818,7 +3818,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142550205
 GameObject:

@@ -100,8 +100,6 @@
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
     <Compile Include="Assets\Scripts\MinionBehaviour.cs" />
-    <Compile Include="Assets\Scripts\MinionClass.cs" />
-    <Compile Include="Assets\Scripts\MinionLeaderClass.cs" />
     <Compile Include="Assets\Scripts\MinionSpawnBehaviour.cs" />
     <Compile Include="Assets\Scripts\MouseClick.cs" />
     <Compile Include="Assets\Scripts\MoveToPoint.cs" />
