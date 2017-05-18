@@ -11,6 +11,9 @@ sysinfo.txt
 /Assets/AssetStoreTools*
 *.apk
 *.unitypackage
+*.csproj
+TerraDue/Library/*
+TerraDue/TerraDue.sln
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
