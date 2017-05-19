@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
-public class MinionBehaviour : NetworkBehaviour {
+public class MinionBehaviour : NetworkBehaviour, ITakeDamage {
 
     public GameObject groupLeader;
     public int groupId;

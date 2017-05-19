@@ -60,7 +60,7 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             var hero1 = GameObject.Find("HumanHero1");
             if(hero1 != null)
             {
-                hero1.GetComponent<PlayerBehaviour>().TakeDamage(70);
+                hero1.GetComponent<ITakeDamage>().TakeDamage(70);
             }
         }
 
@@ -91,7 +91,7 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             if(minion0 != null)
             {
                 minion0.transform.position = new Vector3(0, 0, 0);
-                minion0.GetComponent<MinionBehaviour>().TakeDamage(50);
+                minion0.GetComponent<ITakeDamage>().TakeDamage(50);
             }
         }
     }

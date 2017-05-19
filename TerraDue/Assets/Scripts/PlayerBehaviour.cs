@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
-public class PlayerBehaviour : NetworkBehaviour {
+public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     
     [SyncVar(hook = "UpdateHealth")]
     private float Health;
