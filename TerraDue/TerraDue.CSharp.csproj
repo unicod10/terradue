@@ -97,11 +97,15 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
-    <Compile Include="Assets\Scripts\CameraScript.cs" />
-    <Compile Include="Assets\Scripts\MinionClass.cs" />
-    <Compile Include="Assets\Scripts\MinionLeaderClass.cs" />
-    <Compile Include="Assets\Scripts\MoveToClickPoint.cs" />
+    <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\ITakeDamage.cs" />
+    <Compile Include="Assets\Scripts\MinionBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MinionSpawnBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MouseClick.cs" />
+    <Compile Include="Assets\Scripts\MoveToPoint.cs" />
     <Compile Include="Assets\Scripts\MyLobbyManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCharacter.cs" />
   </ItemGroup>
   <ItemGroup>
