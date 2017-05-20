@@ -24,15 +24,12 @@ public class MoveToPoint : NetworkBehaviour {
 
     public void Hide()
     {
-        agent.enabled = false;
-        transform.position = new Vector3(0, -1000);
+        transform.position = spawnPoint;
+        agent.destination = spawnPoint;
     }
 
     public void Spawn()
     {
-        transform.position = spawnPoint;
-        agent.enabled = true;
-        agent.destination = spawnPoint;
     }
 
     public void StopMovement()

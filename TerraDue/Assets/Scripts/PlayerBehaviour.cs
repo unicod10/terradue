@@ -82,6 +82,7 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     [ClientRpc]
     private void RpcDie()
     {
+        SetHeroVisible(false);
         if (isLocalPlayer)
         {
             GetComponent<MoveToPoint>().Hide();
@@ -91,10 +92,18 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     [ClientRpc]
     private void RpcRespawn()
     {
-        if(isLocalPlayer)
+        // Show character
+        SetHeroVisible(true);
+        if (isLocalPlayer)
         {
             GetComponent<MoveToPoint>().Spawn();
         }
+    }
+    
+    private void SetHeroVisible(bool visible)
+    {
+        gameObject.GetComponent<Renderer>().enabled = visible;
+        transform.Find("HealthBar").GetComponent<Canvas>().enabled = visible;
     }
 
     [Command]
@@ -115,8 +124,12 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
 
     private IEnumerator AsyncTakeDamage(GameObject target)
     {
-        // Duration of the particle system
+        // Withdraw life after particle system
         yield return new WaitForSeconds(0.5f);
-        target.GetComponent<ITakeDamage>().TakeDamage(Constants.ABILITY_BASE_DAMAGE);
+        var iTarget = target.GetComponent<ITakeDamage>();
+        if (iTarget != null)
+        {
+           iTarget.TakeDamage(Constants.ABILITY_BASE_DAMAGE);
+        }
     }
 }
