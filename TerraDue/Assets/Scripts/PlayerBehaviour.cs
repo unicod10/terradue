@@ -126,10 +126,6 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     {
         // Withdraw life after particle system
         yield return new WaitForSeconds(0.5f);
-        var iTarget = target.GetComponent<ITakeDamage>();
-        if (iTarget != null)
-        {
-           iTarget.TakeDamage(Constants.ABILITY_BASE_DAMAGE);
-        }
+        target.GetComponent<ITakeDamage>().TakeDamage(Constants.ABILITY_BASE_DAMAGE);
     }
 }
