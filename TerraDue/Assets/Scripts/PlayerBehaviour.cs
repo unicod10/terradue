@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
-    
+
     [SyncVar(hook = "UpdateHealth")]
     private float Health;
     [SyncVar]
@@ -81,7 +82,10 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     [ClientRpc]
     private void RpcDie()
     {
-        GetComponent<MoveToPoint>().Hide();
+        if (isLocalPlayer)
+        {
+            GetComponent<MoveToPoint>().Hide();
+        }
     }
 
     [ClientRpc]
@@ -97,5 +101,22 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     public void CmdBuildTower()
     {
         // TODO
+    }
+
+    [Command]
+    public void CmdCastAbility(GameObject target, bool humanAttacking)
+    {
+        // Load the particles prefab from the network manager
+        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetAbilityPrefab(humanAttacking);
+        GameObject instance = Instantiate(prefab, target.transform);
+        NetworkServer.Spawn(instance);
+        StartCoroutine(AsyncTakeDamage(target));
+    }
+
+    private IEnumerator AsyncTakeDamage(GameObject target)
+    {
+        // Duration of the particle system
+        yield return new WaitForSeconds(0.5f);
+        target.GetComponent<ITakeDamage>().TakeDamage(Constants.ABILITY_BASE_DAMAGE);
     }
 }

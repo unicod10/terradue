@@ -230,6 +230,8 @@ MonoBehaviour:
   - {fileID: 545970336}
   - {fileID: 727794178}
   - {fileID: 1284338958}
+  humanAbilityParticles: {fileID: 1301720346388678, guid: 646862a483f611742898afa222b18c67,
+    type: 2}
 --- !u!1 &96939795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +1009,7 @@ GameObject:
   - component: {fileID: 460198998}
   - component: {fileID: 460198997}
   m_Layer: 0
-  m_Name: SpawnHuman2
+  m_Name: SpawnHuman1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1089,7 +1091,7 @@ GameObject:
   - component: {fileID: 492881191}
   - component: {fileID: 492881190}
   m_Layer: 0
-  m_Name: SpawnHuman3
+  m_Name: SpawnHuman2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2136,7 +2138,7 @@ GameObject:
   - component: {fileID: 1072661557}
   - component: {fileID: 1072661556}
   m_Layer: 0
-  m_Name: SpawnHuman1
+  m_Name: SpawnHuman0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2370,7 +2372,7 @@ GameObject:
   - component: {fileID: 1190529376}
   - component: {fileID: 1190529375}
   m_Layer: 0
-  m_Name: SpawnAlien1
+  m_Name: SpawnAlien0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3386,7 +3388,7 @@ GameObject:
   - component: {fileID: 1793907069}
   - component: {fileID: 1793907068}
   m_Layer: 0
-  m_Name: SpawnAlien2
+  m_Name: SpawnAlien1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3468,7 +3470,7 @@ GameObject:
   - component: {fileID: 1803015212}
   - component: {fileID: 1803015211}
   m_Layer: 0
-  m_Name: SpawnAlien3
+  m_Name: SpawnAlien2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

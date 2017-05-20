@@ -49,12 +49,12 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             spawnedMembers++;
 
             // Spawn the six group leaders
-            groupLeaders[0] = SpawnHumanLeader(groupId + 0, "SpawnHuman2", 1);
-            groupLeaders[1] = SpawnHumanLeader(groupId + 1, "SpawnHuman1", 2);
-            groupLeaders[2] = SpawnHumanLeader(groupId + 2, "SpawnHuman3", 3);
-            groupLeaders[3] = SpawnAlienLeader(groupId + 3, "SpawnAlien3", 1);
-            groupLeaders[4] = SpawnAlienLeader(groupId + 4, "SpawnAlien1", 2);
-            groupLeaders[5] = SpawnAlienLeader(groupId + 5, "SpawnAlien2", 3);
+            groupLeaders[0] = SpawnHumanLeader(groupId + 0, "SpawnHuman1", 1);
+            groupLeaders[1] = SpawnHumanLeader(groupId + 1, "SpawnHuman0", 2);
+            groupLeaders[2] = SpawnHumanLeader(groupId + 2, "SpawnHuman2", 3);
+            groupLeaders[3] = SpawnAlienLeader(groupId + 3, "SpawnAlien2", 1);
+            groupLeaders[4] = SpawnAlienLeader(groupId + 4, "SpawnAlien0", 2);
+            groupLeaders[5] = SpawnAlienLeader(groupId + 5, "SpawnAlien1", 3);
 
             // TODO remove
             var hero1 = GameObject.Find("HumanHero1");
@@ -71,12 +71,12 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             elapsedTime = 0;
 
             // Spawn one minion for each group
-            SpawnHumanFollower(groupLeaders[0], groupId + 0, "SpawnHuman2", 1);
-            SpawnHumanFollower(groupLeaders[1], groupId + 1, "SpawnHuman1", 2);
-            SpawnHumanFollower(groupLeaders[2], groupId + 2, "SpawnHuman3", 3);
-            SpawnAlienFollower(groupLeaders[3], groupId + 3, "SpawnAlien3", 1);
-            SpawnAlienFollower(groupLeaders[4], groupId + 4, "SpawnAlien1", 2);
-            SpawnAlienFollower(groupLeaders[5], groupId + 5, "SpawnAlien2", 3);
+            SpawnHumanFollower(groupLeaders[0], groupId + 0, "SpawnHuman1", 1);
+            SpawnHumanFollower(groupLeaders[1], groupId + 1, "SpawnHuman0", 2);
+            SpawnHumanFollower(groupLeaders[2], groupId + 2, "SpawnHuman2", 3);
+            SpawnAlienFollower(groupLeaders[3], groupId + 3, "SpawnAlien2", 1);
+            SpawnAlienFollower(groupLeaders[4], groupId + 4, "SpawnAlien0", 2);
+            SpawnAlienFollower(groupLeaders[5], groupId + 5, "SpawnAlien1", 3);
 
             // Go back to sleep
             if (spawnedMembers == minionGroupSize)

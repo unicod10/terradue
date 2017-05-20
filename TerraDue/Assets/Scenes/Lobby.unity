@@ -5154,6 +5154,8 @@ MonoBehaviour:
   - {fileID: 1429272405571120, guid: 6d0b48710dac3aa42a087225994263e1, type: 2}
   - {fileID: 1290364992584178, guid: 9ad85df079b64c14aa8598d2e9e58f55, type: 2}
   - {fileID: 1119201288720998, guid: a51ee10a40356654dbc1508f459e7b3a, type: 2}
+  - {fileID: 1301720346388678, guid: 646862a483f611742898afa222b18c67, type: 2}
+  - {fileID: 1622000673951050, guid: d797c58bf03a8d3429ef01b8dd0bb09e, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -5677,7 +5679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 127.0.0.1
 --- !u!222 &1965509828
 CanvasRenderer:
   m_ObjectHideFlags: 0

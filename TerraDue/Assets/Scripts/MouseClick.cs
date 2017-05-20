@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class MouseClick : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class MouseClick : MonoBehaviour {
     public Button castAbility;
     public GameObject player;
     public GameObject[] towerSlots;
+    public GameObject humanAbilityParticles;
 
     private enum SelectionMode
     {
@@ -57,11 +59,11 @@ public class MouseClick : MonoBehaviour {
                         case SelectionMode.Target:
                             if(player.tag == "Human" && obj.tag == "Alien")
                             {
-                                Debug.Log("Attack alien enemy");
+                                player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj, true);
                             }
                             else if(player.tag == "Alien" && obj.tag == "Human")
                             {
-                                Debug.Log("Attack human enemy");
+                                player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj, false);
                             }
                             break;
                     }

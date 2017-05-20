@@ -6,10 +6,11 @@ using UnityEngine.Networking;
 public class MoveToPoint : NetworkBehaviour {
 
 	NavMeshAgent agent;
-	public Transform spawnPoint;
+    public Vector3 spawnPoint;
 
-	void Start() {
+    void Start() {
 		agent = GetComponent<NavMeshAgent>();
+        spawnPoint = transform.position;
 	}
 
     public void MoveTo(Vector3 point)
@@ -21,17 +22,17 @@ public class MoveToPoint : NetworkBehaviour {
         agent.destination = point;
     }
 
-    public void Spawn()
-    {
-        transform.position = spawnPoint.position;
-        agent.enabled = true;
-        agent.destination = spawnPoint.position;
-    }
-
     public void Hide()
     {
         agent.enabled = false;
-        transform.position = new Vector3(0f, -1000f, 0f);
+        transform.position = new Vector3(0, -1000);
+    }
+
+    public void Spawn()
+    {
+        transform.position = spawnPoint;
+        agent.enabled = true;
+        agent.destination = spawnPoint;
     }
 
     public void StopMovement()
