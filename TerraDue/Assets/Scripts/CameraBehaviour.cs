@@ -30,6 +30,5 @@ public class CameraBehaviour : NetworkBehaviour
         // Rotate and position according to player
         Camera.main.transform.rotation = transform.rotation * Quaternion.Euler(Vector3.right * CAMERA_ROTATION_X);
         Camera.main.transform.position = transform.position - CAMERA_DISTANCE_XZ * transform.forward + new Vector3(0, CAMERA_DISTANCE_Y);
-
     }
 }

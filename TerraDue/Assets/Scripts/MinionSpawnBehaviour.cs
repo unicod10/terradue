@@ -55,13 +55,6 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
             groupLeaders[3] = SpawnAlienLeader(groupId + 3, "SpawnAlien2", 1);
             groupLeaders[4] = SpawnAlienLeader(groupId + 4, "SpawnAlien0", 2);
             groupLeaders[5] = SpawnAlienLeader(groupId + 5, "SpawnAlien1", 3);
-
-            // TODO remove
-            var hero1 = GameObject.Find("HumanHero1");
-            if(hero1 != null)
-            {
-                hero1.GetComponent<ITakeDamage>().TakeDamage(70);
-            }
         }
 
         // Time to spawn new followers
@@ -84,14 +77,6 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
                 state = WAITING;
                 spawnedMembers = 0;
                 groupId += 6;
-            }
-
-            // TODO remove
-            var minion0 = GameObject.Find("Minion0");
-            if(minion0 != null)
-            {
-                minion0.transform.position = new Vector3(0, 0, 0);
-                minion0.GetComponent<ITakeDamage>().TakeDamage(50);
             }
         }
     }

@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Networking;
 
 public class MouseClick : MonoBehaviour {
 
@@ -11,17 +10,18 @@ public class MouseClick : MonoBehaviour {
     public GameObject[] towerSlots;
     public GameObject humanAbilityParticles;
 
-    private enum SelectionMode
+    private enum State
     {
-        None, TowerSlot, MovingToSlot, Target
+        Default, BuildTowerClicked, MovingToTowerSlot, AbilityClicked, FightingTarget
     };
-    private SelectionMode selection;
+    private State state;
+    private GameObject selection;
 
     void Start()
     {
         buildTower.onClick.AddListener(BuildTowerOnClick);
         castAbility.onClick.AddListener(CastAbilityOnClick);
-        selection = SelectionMode.None;
+        state = State.Default;
     }
 
     private void Update()
@@ -29,6 +29,29 @@ public class MouseClick : MonoBehaviour {
         if(player == null)
         {
             return;
+        }
+        // Check if close enough to build
+        if (state == State.MovingToTowerSlot)
+        {
+            if (GetDistance(gameObject, selection) <= Constants.BUILD_MAXIMUM_DISTANCE)
+            {
+                state = State.Default;
+                StopMovement();
+                player.GetComponent<PlayerBehaviour>().CmdBuildTower(selection);
+            }
+        }
+        // Check if close enough to attack
+        else if (state == State.FightingTarget)
+        {
+            if (GetDistance(gameObject, selection) <= Constants.ATTACK_MAXIMUM_DISTANCE)
+            {
+                StopMovement();
+                Debug.Log("Attack enemy " + selection.name);
+            }
+            else
+            {
+                MoveTo(selection.transform.position);
+            }
         }
         if(Input.GetMouseButtonDown(0) && player.GetComponent<PlayerBehaviour>().IsAlive())
         {
@@ -39,50 +62,59 @@ public class MouseClick : MonoBehaviour {
                 if (hit.transform != null)
                 {
                     var obj = hit.transform.gameObject;
-                    switch (selection)
+                    switch (state)
                     {
-                        // Move to position
-                        case SelectionMode.None:
-                            MoveTo(hit.point);
+                        case State.Default:
+                        case State.MovingToTowerSlot:
+                        case State.FightingTarget:
+                            if (isEnemy(obj))
+                            {
+                                state = State.FightingTarget;
+                                selection = obj;
+                                Debug.Log("Attack enemy " + obj.name);
+                            }
+                            else
+                            {
+                                state = State.Default;
+                                MoveTo(hit.point);
+                            }
                             break;
-                        // Tower slot selected
-                        case SelectionMode.TowerSlot:
+                        case State.BuildTowerClicked:
                             var slot = Array.FindAll(towerSlots, s => s.name == obj.name);
                             if (slot.Length > 0)
                             {
-                                // TODO check on the server
+                                state = State.MovingToTowerSlot;
+                                selection = slot[0];
                                 MoveTo(obj.transform.position);
-                                Debug.Log("Build tower at " + slot[0].name);
+                            }
+                            else
+                            {
+                                state = State.Default;
                             }
                             break;
-                        // Cast target selected
-                        case SelectionMode.Target:
-                            if(player.tag == "Human" && obj.tag == "Alien")
+                        case State.AbilityClicked:
+                            if(isEnemy(obj))
                             {
-                                player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj, true);
+                                player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj);
                             }
-                            else if(player.tag == "Alien" && obj.tag == "Human")
-                            {
-                                player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj, false);
-                            }
+                            state = State.Default;
                             break;
                     }
                 }
-                selection = SelectionMode.None;
             }
         }
     }
 
-    void BuildTowerOnClick()
+    private void BuildTowerOnClick()
     {
         StopMovement();
-        selection = SelectionMode.TowerSlot;
+        state = State.BuildTowerClicked;
     }
 
-    void CastAbilityOnClick()
+    private void CastAbilityOnClick()
     {
         StopMovement();
-        selection = SelectionMode.Target;
+        state = State.AbilityClicked;
     }
 
     private void MoveTo(Vector3 point)
@@ -93,5 +125,20 @@ public class MouseClick : MonoBehaviour {
     private void StopMovement()
     {
         player.GetComponent<MoveToPoint>().StopMovement();
+    }
+
+    private float GetDistance(GameObject obj1, GameObject obj2)
+    {
+        return Vector3.Distance(obj1.transform.position, obj2.transform.position);
+    }
+
+    private bool isEnemy(GameObject selection)
+    {
+        return player.tag == "Human" && selection.tag == "Alien" || player.tag == "Alien" && selection.tag == "Human";
+    }
+
+    private bool IsHuman()
+    {
+        return player.tag == "Human";
     }
 }

@@ -2,7 +2,8 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
+public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
+{
 
     [SyncVar(hook = "UpdateHealth")]
     private float Health;
@@ -24,15 +25,15 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
 
     public void Update()
     {
-        if(!isServer)
+        if (!isServer)
         {
             return;
         }
         // If dead check if time to respawn
-        if(DeadSince >= 0)
+        if (DeadSince >= 0)
         {
             DeadSince += Time.deltaTime;
-            if(DeadSince >= Constants.RESPAWN_AFTER_SECS)
+            if (DeadSince >= Constants.RESPAWN_AFTER_SECS)
             {
                 Health = GetFullHealth();
                 DeadSince = -1;
@@ -43,12 +44,12 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
 
     public void TakeDamage(float Damage)
     {
-        if(!isServer)
+        if (!isServer)
         {
             return;
         }
-        Health = Mathf.Max(0, Health-Damage);
-        if(Health == 0)
+        Health = Mathf.Max(0, Health - Damage);
+        if (Health == 0)
         {
             DeadSince = 0;
             RpcDie();
@@ -73,7 +74,7 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
         transform.Find("HealthBar/Bar").transform.localScale = scale;
 
         // Update UI
-        if(isLocalPlayer)
+        if (isLocalPlayer)
         {
             GameObject.Find("UI/Panel/Health/Bar").transform.localScale = scale;
         }
@@ -99,7 +100,7 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
             GetComponent<MoveToPoint>().Spawn();
         }
     }
-    
+
     private void SetHeroVisible(bool visible)
     {
         gameObject.GetComponent<Renderer>().enabled = visible;
@@ -107,25 +108,28 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage {
     }
 
     [Command]
-    public void CmdBuildTower()
+    public void CmdBuildTower(GameObject slot)
     {
-        // TODO
+        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetTowerPrefab(tag == "Human");
+        GameObject instance = Instantiate(prefab, slot.transform);
+        NetworkServer.Spawn(instance);
     }
 
     [Command]
-    public void CmdCastAbility(GameObject target, bool humanAttacking)
+    public void CmdCastAbility(GameObject target)
     {
         // Load the particles prefab from the network manager
-        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetAbilityPrefab(humanAttacking);
+        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetAbilityPrefab(tag == "Human");
         GameObject instance = Instantiate(prefab, target.transform);
         NetworkServer.Spawn(instance);
-        StartCoroutine(AsyncTakeDamage(target));
+        StartCoroutine(AsyncTakeDamage(target, instance));
     }
 
-    private IEnumerator AsyncTakeDamage(GameObject target)
+    private IEnumerator AsyncTakeDamage(GameObject target, GameObject particles)
     {
         // Withdraw life after particle system
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
         target.GetComponent<ITakeDamage>().TakeDamage(Constants.ABILITY_BASE_DAMAGE);
+        NetworkServer.Destroy(particles);
     }
 }
