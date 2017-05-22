@@ -2,29 +2,30 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
+public class PlayerBehaviour : LifeBehaviour
 {
-
-    [SyncVar(hook = "UpdateHealth")]
-    private float Health;
     [SyncVar]
     private float DeadSince;
 
-    public void Start()
+    public PlayerBehaviour() : base(Constants.HERO_HEALTH, 0) {
+    }
+
+    protected override void Start()
     {
+        base.Start();
         if (isLocalPlayer)
         {
             GameObject.Find("UI").GetComponent<MouseClick>().player = gameObject;
         }
         if (isServer)
         {
-            Health = Constants.HERO_BASE_HEALTH;
             DeadSince = -1;
         }
     }
 
-    public void Update()
+    protected override void Update()
     {
+        base.Update();
         if (!isServer)
         {
             return;
@@ -35,48 +36,33 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
             DeadSince += Time.deltaTime;
             if (DeadSince >= Constants.RESPAWN_AFTER_SECS)
             {
-                Health = GetFullHealth();
+                Health = MaximumHealth;
                 DeadSince = -1;
                 RpcRespawn();
             }
         }
     }
 
-    public void TakeDamage(float Damage)
+    public override void TakeDamage(float Damage)
     {
+        base.TakeDamage(Damage);
         if (!isServer)
         {
             return;
         }
-        Health = Mathf.Max(0, Health - Damage);
-        if (Health == 0)
+        if (IsDead())
         {
             DeadSince = 0;
             RpcDie();
         }
     }
 
-    // Callable from client too thanks to SyncVar
-    public bool IsAlive()
+    protected override void UpdateHealth(float NewHealth)
     {
-        return DeadSince < 0;
-    }
-
-    private float GetFullHealth()
-    {
-        return Constants.HERO_BASE_HEALTH;
-    }
-
-    private void UpdateHealth(float NewHealth)
-    {
-        // Update health bar
-        var scale = new Vector3(NewHealth / GetFullHealth(), 1f, 1f);
-        transform.Find("HealthBar/Bar").transform.localScale = scale;
-
         // Update UI
         if (isLocalPlayer)
         {
-            GameObject.Find("UI/Panel/Health/Bar").transform.localScale = scale;
+            GameObject.Find("UI/Panel/Health/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
         }
     }
 
@@ -110,6 +96,7 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
     [Command]
     public void CmdBuildTower(GameObject slot)
     {
+        // Load the particles prefab from the network manager
         var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetTowerPrefab(tag == "Human");
         GameObject instance = Instantiate(prefab, slot.transform);
         NetworkServer.Spawn(instance);
@@ -118,7 +105,6 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
     [Command]
     public void CmdCastAbility(GameObject target)
     {
-        // Load the particles prefab from the network manager
         var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetAbilityPrefab(tag == "Human");
         GameObject instance = Instantiate(prefab, target.transform);
         NetworkServer.Spawn(instance);
@@ -129,7 +115,7 @@ public class PlayerBehaviour : NetworkBehaviour, ITakeDamage
     {
         // Withdraw life after particle system
         yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
-        target.GetComponent<ITakeDamage>().TakeDamage(Constants.ABILITY_BASE_DAMAGE);
+        target.GetComponent<LifeBehaviour>().TakeDamage(Constants.ABILITY_DAMAGE);
         NetworkServer.Destroy(particles);
     }
 }

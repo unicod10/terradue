@@ -3,15 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class TowerBehaviour : NetworkBehaviour {
+public class TowerBehaviour : LifeBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    public TowerBehaviour() : base(Constants.TOWER_HEALTH, 0) {
+    }
+    
+	protected override void Start () {
+        base.Start();	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	protected override void Update () {
+        base.Update();	
 	}
+    
+    public override void TakeDamage(float Damage)
+    {
+        if (!isServer)
+        {
+            return;
+        }
+        // TODO check if vulnable
+        base.TakeDamage(Damage);
+        if (IsDead())
+        {
+            // TODO free slot
+            NetworkServer.Destroy(gameObject);
+        }
+    }
 }

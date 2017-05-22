@@ -2,7 +2,6 @@
 using UnityEngine.AI;
 using UnityEngine.Networking;
 
-
 public class MoveToPoint : NetworkBehaviour {
 
 	NavMeshAgent agent;
@@ -26,6 +25,7 @@ public class MoveToPoint : NetworkBehaviour {
     {
         transform.position = spawnPoint;
         agent.destination = spawnPoint;
+        transform.forward = new Vector3(0, 0, tag == "Human" ? +1 : -1);
     }
 
     public void Spawn()
