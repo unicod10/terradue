@@ -2,13 +2,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MouseClick : MonoBehaviour {
+public class UserInteraction : MonoBehaviour {
 
     public Button buildTower;
     public Button castAbility;
     public GameObject player;
     public GameObject[] towerSlots;
-    public GameObject humanAbilityParticles;
 
     private enum State
     {

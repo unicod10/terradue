@@ -15,7 +15,7 @@ public class PlayerBehaviour : LifeBehaviour
         base.Start();
         if (isLocalPlayer)
         {
-            GameObject.Find("UI").GetComponent<MouseClick>().player = gameObject;
+            GameObject.Find("UI").GetComponent<UserInteraction>().player = gameObject;
         }
         if (isServer)
         {
