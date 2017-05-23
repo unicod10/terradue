@@ -20,7 +20,12 @@ public class BaseBehaviour : LifeBehaviour {
         {
             return;
         }
-        // TODO check if vulnable
+        var manager = GameObject.Find("ServerObject").GetComponent<TowersManager>();
+        // The are still functioning towers
+        if (!manager.IsBaseVunlnable(tag == "Human"))
+        {
+            return;
+        }
         base.TakeDamage(Damage);
         if(IsDead())
         {

@@ -96,10 +96,7 @@ public class PlayerBehaviour : LifeBehaviour
     [Command]
     public void CmdBuildTower(GameObject slot)
     {
-        // Load the particles prefab from the network manager
-        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetTowerPrefab(tag == "Human");
-        GameObject instance = Instantiate(prefab, slot.transform);
-        NetworkServer.Spawn(instance);
+        GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
     }
 
     [Command]

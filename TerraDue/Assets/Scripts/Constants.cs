@@ -5,7 +5,7 @@
     public const float TOWER_HEALTH = 250;
     public const float BASE_HEALTH = 1000;
     public const float RESPAWN_AFTER_SECS = 10;
-    public const float ABILITY_DAMAGE = 40;
+    public const float ABILITY_DAMAGE = 125;
 
     public const float BUILD_MAXIMUM_DISTANCE = 12;
     public const float ATTACK_MAXIMUM_DISTANCE = 12;

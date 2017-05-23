@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 
 public class TowerBehaviour : LifeBehaviour {
+
+    public GameObject slot;
 
     public TowerBehaviour() : base(Constants.TOWER_HEALTH, 0) {
     }
@@ -22,11 +22,16 @@ public class TowerBehaviour : LifeBehaviour {
         {
             return;
         }
-        // TODO check if vulnable
+        var manager = GameObject.Find("ServerObject").GetComponent<TowersManager>();
+        // The tower is not on front line
+        if(!manager.IsTowerVulnable(slot.name, tag == "Human"))
+        {
+            return;
+        }
         base.TakeDamage(Damage);
         if (IsDead())
         {
-            // TODO free slot
+            manager.TowerDestroyed(slot.name);
             NetworkServer.Destroy(gameObject);
         }
     }
