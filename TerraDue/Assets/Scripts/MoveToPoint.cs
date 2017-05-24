@@ -36,4 +36,9 @@ public class MoveToPoint : NetworkBehaviour {
     {
         agent.destination = transform.position;
     }
+
+    public bool IsMoving()
+    {
+        return agent.velocity.magnitude > 0;
+    }
 }
