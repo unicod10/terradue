@@ -53,6 +53,7 @@
      <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
