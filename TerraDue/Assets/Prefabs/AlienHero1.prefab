@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ca811013c3f4a1b800deea21a6afb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
+  spawnPoint: {x: 0, y: 0, z: 80}
 --- !u!114 &114985017374246818
 MonoBehaviour:
   m_ObjectHideFlags: 1

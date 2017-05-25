@@ -2358,6 +2358,8 @@ GameObject:
   - component: {fileID: 460198999}
   - component: {fileID: 460198998}
   - component: {fileID: 460198997}
+  - component: {fileID: 460199002}
+  - component: {fileID: 460199001}
   m_Layer: 0
   m_Name: SpawnHuman1
   m_TagString: Untagged
@@ -2429,6 +2431,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &460199001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460198996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1580942766566882, guid: 83f8350782639e84eb4629a4ff34cce3,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1892554210256930, guid: 560df580950f1b7429d3c897e32eca1b,
+    type: 2}
+  isAlien: 0
+--- !u!114 &460199002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460198996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &461708959
 GameObject:
   m_ObjectHideFlags: 1
@@ -2587,6 +2637,8 @@ GameObject:
   - component: {fileID: 492881192}
   - component: {fileID: 492881191}
   - component: {fileID: 492881190}
+  - component: {fileID: 492881194}
+  - component: {fileID: 492881189}
   m_Layer: 0
   m_Name: SpawnHuman2
   m_TagString: Untagged
@@ -2594,6 +2646,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &492881189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492881188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1600181198860920, guid: 2ee67f5574c2df54c8b46189fa23c931,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1244431041798108, guid: 59e4a108e9ff77040b38c946e157b3da,
+    type: 2}
+  isAlien: 0
 --- !u!23 &492881190
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2658,6 +2726,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492881194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492881188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &512128885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5035,7 +5135,6 @@ GameObject:
   m_Component:
   - component: {fileID: 906289911}
   - component: {fileID: 906289910}
-  - component: {fileID: 906289909}
   - component: {fileID: 906289912}
   m_Layer: 0
   m_Name: ServerObject
@@ -5044,25 +5143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &906289909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 906289908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minionGroupSize: 2
-  groupSpawnIntervalSecs: 300
-  groupMemberSpawnIntervalSecs: 2
-  spawnFirstGroupAfterSecs: 5
-  humanMinionPrefab: {fileID: 1290364992584178, guid: 9ad85df079b64c14aa8598d2e9e58f55,
-    type: 2}
-  alienMinionPrefab: {fileID: 1119201288720998, guid: a51ee10a40356654dbc1508f459e7b3a,
-    type: 2}
 --- !u!114 &906289910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5675,6 +5755,8 @@ GameObject:
   - component: {fileID: 1072661558}
   - component: {fileID: 1072661557}
   - component: {fileID: 1072661556}
+  - component: {fileID: 1072661560}
+  - component: {fileID: 1072661555}
   m_Layer: 0
   m_Name: SpawnHuman0
   m_TagString: Untagged
@@ -5682,6 +5764,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1072661555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072661554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1827594208904738, guid: 6a22caddeb52b7745a823a7646ffab7b,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1304273156199124, guid: c81bfcb422df1a045ac8de4eee5db667,
+    type: 2}
+  isAlien: 0
 --- !u!23 &1072661556
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5746,6 +5844,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072661560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072661554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1093000486
 GameObject:
   m_ObjectHideFlags: 0
@@ -6007,6 +6137,8 @@ GameObject:
   - component: {fileID: 1190529377}
   - component: {fileID: 1190529376}
   - component: {fileID: 1190529375}
+  - component: {fileID: 1190529379}
+  - component: {fileID: 1190529374}
   m_Layer: 0
   m_Name: SpawnAlien0
   m_TagString: Untagged
@@ -6014,6 +6146,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1190529374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190529373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1418629736056958, guid: e2984dfb7bbd4104c8521915a082a315,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1277439803033706, guid: fcd9ebd02f6c88348933572a6f72332d,
+    type: 2}
+  isAlien: 1
 --- !u!23 &1190529375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6078,6 +6226,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1190529379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190529373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1192504950
 GameObject:
   m_ObjectHideFlags: 0
@@ -8663,6 +8843,8 @@ GameObject:
   - component: {fileID: 1793907070}
   - component: {fileID: 1793907069}
   - component: {fileID: 1793907068}
+  - component: {fileID: 1793907072}
+  - component: {fileID: 1793907067}
   m_Layer: 0
   m_Name: SpawnAlien1
   m_TagString: Untagged
@@ -8670,6 +8852,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1793907067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1793907066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1500161821532248, guid: 83f094a517401f748a1cab8813f1921d,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1396331320087660, guid: 19ec42ca554e7f84d810bc4f048b84a9,
+    type: 2}
+  isAlien: 1
 --- !u!23 &1793907068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8734,6 +8932,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1793907072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1793907066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1803015209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8745,6 +8975,8 @@ GameObject:
   - component: {fileID: 1803015213}
   - component: {fileID: 1803015212}
   - component: {fileID: 1803015211}
+  - component: {fileID: 1803015215}
+  - component: {fileID: 1803015210}
   m_Layer: 0
   m_Name: SpawnAlien2
   m_TagString: Untagged
@@ -8752,6 +8984,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1803015210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803015209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionLeaderPrefab: {fileID: 1185108194745320, guid: d5fe04fb01373824683e091784412a20,
+    type: 2}
+  minionSoldierPrefab: {fileID: 1678088574618140, guid: 89bdc01911371684a96831497921b933,
+    type: 2}
+  isAlien: 1
 --- !u!23 &1803015211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8816,6 +9064,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803015215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803015209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1806673654
 GameObject:
   m_ObjectHideFlags: 0
