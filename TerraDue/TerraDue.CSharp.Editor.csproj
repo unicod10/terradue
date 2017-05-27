@@ -148,6 +148,7 @@
     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />
     <None Include="Assets\Lobby\Instruction.txt" />

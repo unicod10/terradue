@@ -9,6 +9,8 @@
     public const float RESPAWN_AFTER_SECS = 10;
     public const float ABILITY_DAMAGE = 125;
     public const float ABILITY_COOLDOWN = 5;
+    public const float JUNGLE_MOB_LIFE = 200;
+
 
     // Minion spawn control
     public const float MINION_GROUP_SIZE = 2;
@@ -22,4 +24,8 @@
     public const float ABILITY_PARTICLES_DURATION = 0.5f;
     public const float ATTACK_PARTICLES_DURATION = 0.2f;
     public const float ATTACK_EACH = 0.75f;
+
+    //Jungle mob constants
+    public const float JUNGLE_MOB_GROUP_SIZE = 4;
+
 }
