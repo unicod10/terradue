@@ -1174,6 +1174,7 @@ GameObject:
   - component: {fileID: 267556658}
   - component: {fileID: 267556657}
   - component: {fileID: 267556656}
+  - component: {fileID: 267556659}
   m_Layer: 0
   m_Name: MinionsCamp
   m_TagString: Untagged
@@ -1246,6 +1247,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267556654}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &267556659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 267556654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &279346897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1352,7 @@ GameObject:
   - component: {fileID: 289647498}
   - component: {fileID: 289647497}
   - component: {fileID: 289647496}
+  - component: {fileID: 289647499}
   m_Layer: 0
   m_Name: MinionsCamp (2)
   m_TagString: Untagged
@@ -1391,6 +1425,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289647494}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &289647499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 289647494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &326718532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1954,7 @@ GameObject:
   - component: {fileID: 361947200}
   - component: {fileID: 361947199}
   - component: {fileID: 361947198}
+  - component: {fileID: 361947201}
   m_Layer: 0
   m_Name: MinionsCamp (2)
   m_TagString: Untagged
@@ -1960,6 +2027,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361947196}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &361947201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361947196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &365467333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2343,7 @@ GameObject:
   - component: {fileID: 414035046}
   - component: {fileID: 414035045}
   - component: {fileID: 414035044}
+  - component: {fileID: 414035047}
   m_Layer: 0
   m_Name: MinionsCamp (1)
   m_TagString: Untagged
@@ -2316,6 +2416,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414035042}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &414035047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414035042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &456836433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,6 +3803,7 @@ GameObject:
   - component: {fileID: 614859554}
   - component: {fileID: 614859553}
   - component: {fileID: 614859552}
+  - component: {fileID: 614859555}
   m_Layer: 0
   m_Name: MinionsCamp
   m_TagString: Untagged
@@ -3743,6 +3876,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 614859550}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &614859555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614859550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &630258876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +4988,7 @@ GameObject:
   - component: {fileID: 736119639}
   - component: {fileID: 736119638}
   - component: {fileID: 736119637}
+  - component: {fileID: 736119640}
   m_Layer: 0
   m_Name: MinionsCamp (2)
   m_TagString: Untagged
@@ -4895,6 +5061,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 736119635}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &736119640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736119635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &847479512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5698,6 +5896,7 @@ GameObject:
   - component: {fileID: 1006514059}
   - component: {fileID: 1006514058}
   - component: {fileID: 1006514057}
+  - component: {fileID: 1006514060}
   m_Layer: 0
   m_Name: MinionsCamp (2)
   m_TagString: Untagged
@@ -5770,6 +5969,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006514055}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1006514060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1006514055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1072661554
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,6 +8667,7 @@ GameObject:
   - component: {fileID: 1717303391}
   - component: {fileID: 1717303390}
   - component: {fileID: 1717303389}
+  - component: {fileID: 1717303392}
   m_Layer: 0
   m_Name: MinionsCamp (1)
   m_TagString: Untagged
@@ -8508,6 +8740,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1717303387}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1717303392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1717303387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1738115259
 GameObject:
   m_ObjectHideFlags: 0
@@ -9319,7 +9583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1659264854415388, guid: be88acba488485f45ae84d076acea47b,
+  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
     type: 2}
 --- !u!114 &1843508771
 MonoBehaviour:
@@ -9365,6 +9629,7 @@ GameObject:
   - component: {fileID: 1850890905}
   - component: {fileID: 1850890904}
   - component: {fileID: 1850890908}
+  - component: {fileID: 1850890909}
   m_Layer: 0
   m_Name: MinionsCamp
   m_TagString: Untagged
@@ -9448,8 +9713,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1659264854415388, guid: be88acba488485f45ae84d076acea47b,
+  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
     type: 2}
+--- !u!114 &1850890909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850890903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1853268285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10014,6 +10311,7 @@ GameObject:
   - component: {fileID: 2037770140}
   - component: {fileID: 2037770139}
   - component: {fileID: 2037770138}
+  - component: {fileID: 2037770141}
   m_Layer: 0
   m_Name: MinionsCamp (1)
   m_TagString: Untagged
@@ -10086,6 +10384,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037770136}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2037770141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037770136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &2041675413
 GameObject:
   m_ObjectHideFlags: 0
