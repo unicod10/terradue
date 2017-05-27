@@ -28,4 +28,10 @@
     //Jungle mob constants
     public const float JUNGLE_MOB_GROUP_SIZE = 4;
 
+    //Arena monsters stats
+    //Prime arena
+    public const float PRIME_HEALTH = 700;
+    public const float PRIME_ATTACK = 35;
+    public const float PRIME_SPAWN_TIME_SECONDS = 30;
+
 }
