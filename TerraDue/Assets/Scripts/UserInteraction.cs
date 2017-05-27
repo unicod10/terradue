@@ -15,6 +15,7 @@ public class UserInteraction : MonoBehaviour {
     };
     private State state;
     private GameObject selection;
+    private float lastAttacked;
     private float abilityLastUsed;
     private float startedMovingSince;
     private Text statusBar;
@@ -23,6 +24,7 @@ public class UserInteraction : MonoBehaviour {
     void Start()
     {
         state = State.Default;
+        lastAttacked = Constants.ATTACK_EACH;
         abilityLastUsed = -1;
         startedMovingSince = -1;
         statusBar = GameObject.Find("UI/Panel/StatusBar").GetComponent<Text>();
@@ -33,6 +35,13 @@ public class UserInteraction : MonoBehaviour {
     {
         if (player == null)
         {
+            return;
+        }
+        if(player.GetComponent<LifeBehaviour>().IsDead())
+        {
+            player.GetComponent<MoveToPoint>().Hide();
+            state = State.Default;
+            statusBar.text = "Dead";
             return;
         }
         // Moving to position message
@@ -89,9 +98,23 @@ public class UserInteraction : MonoBehaviour {
         // Check if close enough to attack
         else if (state == State.FightingTarget)
         {
-            if (GetDistance(gameObject, selection) <= Constants.ATTACK_MAXIMUM_DISTANCE)
+            if (selection == null || selection.GetComponent<LifeBehaviour>().IsDead())
             {
-                StopMovement();
+                selection = null;
+                state = State.Default;
+                statusBar.text = DefaultStatus;
+                return;
+            }
+
+            if (GetDistance(player, selection) <= Constants.ATTACK_MAXIMUM_DISTANCE)
+            {
+                lastAttacked += Time.deltaTime;
+                if(lastAttacked >= Constants.ATTACK_EACH)
+                {
+                    StopMovement();
+                    player.GetComponent<PlayerBehaviour>().CmdAttack(selection);
+                    lastAttacked = 0;
+                }
             }
             else
             {

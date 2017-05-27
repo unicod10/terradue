@@ -7,6 +7,7 @@ public class MyLobbyManager : LobbyManager {
     private const int ALIEN_PREFAB_OFFSET = 3;
     private const int ABILITY_PREFAB_OFFSET = 18;
     private const int TOWER_PREFAB_OFFSET = 20;
+    private const int ATTACK_PREFAB_OFFSET = 22;
 
     private int spawnedHumans = 0;
     private int spawnedAliens = 0;
@@ -43,10 +44,5 @@ public class MyLobbyManager : LobbyManager {
     public GameObject GetAbilityPrefab(bool human)
     {
         return spawnPrefabs[human ? ABILITY_PREFAB_OFFSET : ABILITY_PREFAB_OFFSET + 1];
-    }
-
-    public GameObject GetTowerPrefab(bool human)
-    {
-        return spawnPrefabs[human ? TOWER_PREFAB_OFFSET : TOWER_PREFAB_OFFSET + 1];
     }
 }

@@ -8,7 +8,7 @@ public class LifeBehaviour : NetworkBehaviour {
     protected float MaximumHealth;
     protected float HealRatio;
 
-    [SyncVar(hook = "PrivateUpdateHealth")]
+    [SyncVar]
     protected float Health;
 
     protected LifeBehaviour(float MaximumHealth, float HealRatio)
@@ -23,7 +23,8 @@ public class LifeBehaviour : NetworkBehaviour {
             return;
         }
         Health = MaximumHealth;
-	}
+        RpcUpdateHealth(Health);
+    }
 	
 	protected virtual void Update ()
     {
@@ -41,6 +42,7 @@ public class LifeBehaviour : NetworkBehaviour {
             return;
         }
         Health = Mathf.Max(0, Health - Damage);
+        RpcUpdateHealth(Health);
     }
 
     public bool IsAlive()
@@ -53,8 +55,15 @@ public class LifeBehaviour : NetworkBehaviour {
         return !IsAlive();
     }
 
-    private void PrivateUpdateHealth(float NewHealth)
+    public float GetHealth()
     {
+        return Health;
+    }
+
+    [ClientRpc]
+    protected void RpcUpdateHealth(float NewHealth)
+    {
+        Health = NewHealth;
         transform.Find("HealthBar/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
         UpdateHealth(NewHealth);
     }

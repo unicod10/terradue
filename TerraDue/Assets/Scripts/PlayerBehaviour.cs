@@ -37,6 +37,7 @@ public class PlayerBehaviour : LifeBehaviour
             if (DeadSince >= Constants.RESPAWN_AFTER_SECS)
             {
                 Health = MaximumHealth;
+                RpcUpdateHealth(Health);
                 DeadSince = -1;
                 RpcRespawn();
             }
@@ -94,25 +95,20 @@ public class PlayerBehaviour : LifeBehaviour
     }
 
     [Command]
-    public void CmdBuildTower(GameObject slot)
+    public void CmdAttack(GameObject target)
     {
-        GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.HERO_ATTACK_DAMAGE);
     }
 
     [Command]
     public void CmdCastAbility(GameObject target)
     {
-        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetAbilityPrefab(tag == "Human");
-        GameObject instance = Instantiate(prefab, target.transform);
-        NetworkServer.Spawn(instance);
-        StartCoroutine(AsyncTakeDamage(target, instance));
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, Constants.ABILITY_DAMAGE);
     }
 
-    private IEnumerator AsyncTakeDamage(GameObject target, GameObject particles)
+    [Command]
+    public void CmdBuildTower(GameObject slot)
     {
-        // Withdraw life after particle system
-        yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
-        target.GetComponent<LifeBehaviour>().TakeDamage(Constants.ABILITY_DAMAGE);
-        NetworkServer.Destroy(particles);
+        GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
     }
 }

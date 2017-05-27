@@ -3,6 +3,9 @@ using UnityEngine.Networking;
 
 public class TowersManager : NetworkBehaviour {
 
+    public GameObject humanTowerPrefab;
+    public GameObject alienTowerPrefab;
+
     private const int Lanes = 3;
     private const int SlotsPerLane = 4;
     enum SlotState
@@ -91,7 +94,8 @@ public class TowersManager : NetworkBehaviour {
             return;
         }
         // Load the tower prefab and create
-        var prefab = GameObject.Find("LobbyManager").GetComponent<MyLobbyManager>().GetTowerPrefab(human);
+        GameObject prefab;
+        prefab = human ? humanTowerPrefab : alienTowerPrefab;
         GameObject instance = Instantiate(prefab, slot.transform);
         instance.GetComponent<TowerBehaviour>().slot = slot;
         // Register it here and spawn

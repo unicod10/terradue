@@ -2,6 +2,7 @@
 
     // Health and attack constants
     public const float HERO_HEALTH = 500;
+    public const float HERO_ATTACK_DAMAGE = 20;
     public const float MINION_HEALTH = 100;
     public const float TOWER_HEALTH = 250;
     public const float BASE_HEALTH = 1000;
@@ -19,4 +20,6 @@
     public const float BUILD_MAXIMUM_DISTANCE = 12;
     public const float ATTACK_MAXIMUM_DISTANCE = 12;
     public const float ABILITY_PARTICLES_DURATION = 0.5f;
+    public const float ATTACK_PARTICLES_DURATION = 0.2f;
+    public const float ATTACK_EACH = 0.75f;
 }

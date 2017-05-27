@@ -97,6 +97,7 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Scripts\AttacksManager.cs" />
     <Compile Include="Assets\Scripts\BaseBehaviour.cs" />
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
