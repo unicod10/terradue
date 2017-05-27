@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Human
   - Alien
+  - Monster
   layers:
   - Default
   - TransparentFX
