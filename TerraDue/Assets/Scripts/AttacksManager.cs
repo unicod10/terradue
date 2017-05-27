@@ -42,11 +42,11 @@ public class AttacksManager : NetworkBehaviour {
         GameObject instance;
         if (attacker.tag == "Human")
         {
-            instance = Instantiate(humanAttackPrefab, target.transform);
+            instance = Instantiate(humanAbilityPrefab, target.transform);
         }
         else
         {
-            instance = Instantiate(alienAttackPrefab, target.transform);
+            instance = Instantiate(alienAbilityPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);
         StartCoroutine(AsyncTakeDamage(attacker, target, instance, damage));
