@@ -101,6 +101,8 @@
     <Compile Include="Assets\Scripts\BaseBehaviour.cs" />
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\JungleMobBehaviour.cs" />
+    <Compile Include="Assets\Scripts\JungleMobSpawnBehaviour.cs" />
     <Compile Include="Assets\Scripts\LifeBehaviour.cs" />
     <Compile Include="Assets\Scripts\MinionBehaviour.cs" />
     <Compile Include="Assets\Scripts\MinionSpawnBehaviour.cs" />
