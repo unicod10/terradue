@@ -29,30 +29,32 @@ public class PrimeArenaMobSpawn : NetworkBehaviour {
         }
         elapsedTime += Time.deltaTime;
         
-        if ((elapsedTime>=Constants.PRIME_SPAWN_TIME_SECONDS) && (spawned == false))
+        if (elapsedTime>=Constants.PRIME_SPAWN_TIME_SECONDS)
         {
-            // Spawn the monster in prime arena
-            var monster = Instantiate(monsterPrefab, transform.position, Quaternion.identity);
-            Debug.Log("Prime monster has been spawned!");
-            NetworkServer.Spawn(monster);
-            spawned = true;
-            //Reset the counter time
-            elapsedTime = 0.0f;
-        }
-        if (spawned)
-        {
-
-            if (GameObject.FindGameObjectWithTag("PrimeMonster")!=null)
+            if (!spawned)
             {
-                Debug.Log("The monster is still alive!");
+                // Spawn the monster in prime arena
+                var monster = Instantiate(monsterPrefab, transform.position, Quaternion.identity);
+                Debug.Log("Prime monster has been spawned!");
+                NetworkServer.Spawn(monster);
+                spawned = true;
+                //Reset the counter time
+                elapsedTime = 0.0f;
             }
             else
             {
-                spawned = false;
-                elapsedTime = 0.0f;
+                if (GameObject.FindGameObjectWithTag("PrimeMonster") != null)
+                {
+                    Debug.Log("The monster is still alive!");
+                    // Check again in one second
+                    elapsedTime = Constants.PRIME_SPAWN_TIME_SECONDS - 1;
+                }
+                else
+                {
+                    spawned = false;
+                    elapsedTime = Constants.PRIME_SPAWN_TIME_SECONDS - 15;
+                }
             }
         }
-
     }
-
 }

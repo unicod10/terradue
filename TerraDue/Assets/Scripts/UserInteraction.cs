@@ -196,11 +196,13 @@ public class UserInteraction : MonoBehaviour {
 
     private bool IsEnemy(GameObject selection)
     {
-        return 
+        return
             player.tag == "Human" && selection.tag == "Alien" ||
             player.tag == "Human" && selection.tag == "Monster" ||
+            player.tag == "Human" && selection.tag == "PrimeMonster" ||
             player.tag == "Alien" && selection.tag == "Human" ||
-            player.tag == "Alien" && selection.tag == "Monster";
+            player.tag == "Alien" && selection.tag == "Monster" ||
+            player.tag == "Alien" && selection.tag == "PrimeMonster";
     }
 
     private bool IsHuman()

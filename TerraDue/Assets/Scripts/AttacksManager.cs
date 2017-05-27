@@ -22,8 +22,13 @@ public class AttacksManager : NetworkBehaviour {
         {
             instance = Instantiate(alienAttackPrefab, target.transform);
         }
+        else if(attacker.tag == "Monster")
+        {
+            instance = Instantiate(monsterAttackPrefab, target.transform);
+        }
         else
         {
+            // TODO prefab
             instance = Instantiate(monsterAttackPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);
