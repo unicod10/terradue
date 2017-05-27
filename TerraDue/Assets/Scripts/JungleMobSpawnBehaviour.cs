@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-public class JungleMobSpawnBehaviour : NetworkBehaviour {
+public class JungleMobSpawnBehaviour : NetworkBehaviour
+{
 
     public GameObject JungleMobPrefab;
-    
-
- 
-    
-    
-
     void Start()
     {
         if (!isServer)
@@ -36,4 +31,5 @@ public class JungleMobSpawnBehaviour : NetworkBehaviour {
             return;
         }
 
+    }
 }

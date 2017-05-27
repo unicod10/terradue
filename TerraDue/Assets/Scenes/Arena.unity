@@ -9232,6 +9232,8 @@ GameObject:
   - component: {fileID: 1843508769}
   - component: {fileID: 1843508768}
   - component: {fileID: 1843508767}
+  - component: {fileID: 1843508771}
+  - component: {fileID: 1843508770}
   m_Layer: 0
   m_Name: MinionsCamp
   m_TagString: Untagged
@@ -9304,6 +9306,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1843508765}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1843508770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843508765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JungleMobPrefab: {fileID: 1659264854415388, guid: be88acba488485f45ae84d076acea47b,
+    type: 2}
+--- !u!114 &1843508771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843508765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1850890903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,6 +9362,7 @@ GameObject:
   - component: {fileID: 1850890906}
   - component: {fileID: 1850890905}
   - component: {fileID: 1850890904}
+  - component: {fileID: 1850890908}
   m_Layer: 0
   m_Name: MinionsCamp
   m_TagString: Untagged
@@ -9387,6 +9435,19 @@ Transform:
   m_Father: {fileID: 1770867492}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850890908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850890903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JungleMobPrefab: {fileID: 1659264854415388, guid: be88acba488485f45ae84d076acea47b,
+    type: 2}
 --- !u!1 &1853268285
 GameObject:
   m_ObjectHideFlags: 0
