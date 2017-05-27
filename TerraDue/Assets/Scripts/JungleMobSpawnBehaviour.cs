@@ -19,8 +19,11 @@ public class JungleMobSpawnBehaviour : NetworkBehaviour
 
         var mob = Instantiate(JungleMobPrefab, transform.position, Quaternion.identity);
         NetworkServer.Spawn(mob);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(1f, 0, 1f), Quaternion.identity);
         NetworkServer.Spawn(mob);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(1f, 0, -1f), Quaternion.identity);
         NetworkServer.Spawn(mob);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(-1f, 0, -1f), Quaternion.identity);
         NetworkServer.Spawn(mob);
     }
 
