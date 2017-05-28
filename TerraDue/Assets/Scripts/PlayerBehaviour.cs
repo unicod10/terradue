@@ -16,6 +16,7 @@ public class PlayerBehaviour : LifeBehaviour
         if (isLocalPlayer)
         {
             GameObject.Find("UI").GetComponent<UserInteraction>().player = gameObject;
+            transform.Find("HealthBar").transform.position = new Vector3(1000, 1000, 1000);
         }
         if (isServer)
         {

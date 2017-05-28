@@ -64,7 +64,10 @@ public class LifeBehaviour : NetworkBehaviour {
     protected void RpcUpdateHealth(float NewHealth)
     {
         Health = NewHealth;
-        transform.Find("HealthBar/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
+        if (!isLocalPlayer)
+        {
+            transform.Find("HealthBar/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
+        }
         UpdateHealth(NewHealth);
     }
 
