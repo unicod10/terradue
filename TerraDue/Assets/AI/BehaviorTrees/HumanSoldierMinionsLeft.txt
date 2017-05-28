@@ -1,0 +1,3 @@
+<behaviortree name="HumanSoldierMinionsLeft">
+  <sequencer name="root"></sequencer>
+</behaviortree>

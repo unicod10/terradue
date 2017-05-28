@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AI\Actions\Attack.cs" />
      <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -80,10 +81,13 @@
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsLeft.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
