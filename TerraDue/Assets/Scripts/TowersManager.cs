@@ -146,15 +146,15 @@ public class TowersManager : NetworkBehaviour {
         if(human)
         {
             return
-                slots[0, 0] != SlotState.Human &&
-                slots[1, 0] != SlotState.Human &&
+                slots[0, 0] != SlotState.Human ||
+                slots[1, 0] != SlotState.Human ||
                 slots[2, 0] != SlotState.Human;
         }
         else
         {
             return
-                slots[0, 3] != SlotState.Alien &&
-                slots[1, 3] != SlotState.Alien &&
+                slots[0, 3] != SlotState.Alien ||
+                slots[1, 3] != SlotState.Alien ||
                 slots[2, 3] != SlotState.Alien;
         }
     }

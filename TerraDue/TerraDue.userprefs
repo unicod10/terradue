@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AI/Actions/Attack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TowersManager.cs">
     <Files>
-      <File FileName="Assets/AI/Actions/Attack.cs" Line="15" Column="64" />
-      <File FileName="Assets/Scripts/PlayerBehaviour.cs" Line="102" Column="6" />
-      <File FileName="Assets/Scripts/MinionBehaviour.cs" Line="29" Column="32" />
-      <File FileName="Assets/Scripts/AttacksManager.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/TowersManager.cs" Line="157" Column="50" />
+      <File FileName="Assets/AI/Actions/Attack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MinionBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AttacksManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
