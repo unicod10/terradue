@@ -7,13 +7,20 @@ using RAIN.Core;
 [RAINAction]
 public class Attack : RAINAction
 {
+	GameObject target;
+	MinionBehaviour action;
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+		target = ai.WorkingMemory.GetItem<GameObject>("aCloseTower");
+		action = ai.Body.GetComponentInChildren<MinionBehaviour>();
+
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+		
+		action.Attack(target);
         return ActionResult.SUCCESS;
     }
 

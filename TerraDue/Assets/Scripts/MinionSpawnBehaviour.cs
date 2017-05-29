@@ -15,6 +15,7 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
     private State state;
     private float elapsedTime;
     private int spawnedMembers;
+	private GameObject groupLeader;
 
     void Start ()
     {
@@ -45,6 +46,8 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
 
             // Spawn the group leader
             var minion = Instantiate(minionLeaderPrefab, transform.position, Quaternion.identity);
+			minion.GetComponent<MinionBehaviour> ().groupLeader = minion;
+			groupLeader = minion;
             if(isAlien)
             {
                 minion.transform.Rotate(new Vector3(0, 1, 0), 180);
@@ -60,6 +63,7 @@ public class MinionSpawnBehaviour : NetworkBehaviour {
 
             // Spawn the soldiers
             var minion = Instantiate(minionSoldierPrefab, transform.position, Quaternion.identity);
+			minion.GetComponent<MinionBehaviour> ().groupLeader = groupLeader;
             if (isAlien)
             {
                 minion.transform.Rotate(new Vector3(0, 1, 0), 180);
