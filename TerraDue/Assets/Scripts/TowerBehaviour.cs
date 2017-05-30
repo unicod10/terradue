@@ -16,23 +16,25 @@ public class TowerBehaviour : LifeBehaviour {
         base.Update();	
 	}
     
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         if (!isServer)
         {
-            return;
+            return 0;
         }
         var manager = GameObject.Find("ServerObject").GetComponent<TowersManager>();
         // The tower is not on front line
         if(!manager.IsTowerVulnable(slot.name, tag == "Human"))
         {
-            return;
+            return 0;
         }
         base.TakeDamage(Damage);
         if (IsDead())
         {
             manager.TowerDestroyed(slot.name);
             NetworkServer.Destroy(gameObject);
+            return Constants.TOWER_EXPERIENCE;
         }
+        return 0;
     }
 }

@@ -14,13 +14,15 @@ public class MinionBehaviour : LifeBehaviour {
         base.Start();
     }
 
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
         if (isServer && IsDead())
         {
             NetworkServer.Destroy(gameObject);
+            return Constants.MINION_EXPERIENCE;
         }
+        return 0;
     }
 
 	public void Attack(GameObject target)

@@ -15,14 +15,15 @@ public class PrimeArenaMobBehaviour : LifeBehaviour {
         base.Start();
     }
 
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
         if (isServer && IsDead())
         {
 
             NetworkServer.Destroy(gameObject);
-
+            return Constants.PRIME_ARENA_EXPERIENCE;
         }
+        return 0;
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class PlayerBehaviour : LifeBehaviour
 {
-    [SyncVar]
-    private float DeadSince;
+    private float deadSince;
+    private float experience;
 
     public PlayerBehaviour() : base(Constants.HERO_HEALTH, 0) {
     }
@@ -20,7 +21,8 @@ public class PlayerBehaviour : LifeBehaviour
         }
         if (isServer)
         {
-            DeadSince = -1;
+            deadSince = -1;
+            experience = 0;
         }
     }
 
@@ -32,31 +34,34 @@ public class PlayerBehaviour : LifeBehaviour
             return;
         }
         // If dead check if time to respawn
-        if (DeadSince >= 0)
+        if (deadSince >= 0)
         {
-            DeadSince += Time.deltaTime;
-            if (DeadSince >= Constants.RESPAWN_AFTER_SECS)
+            deadSince += Time.deltaTime;
+            if (deadSince >= Constants.RESPAWN_AFTER_SECS)
             {
                 Health = MaximumHealth;
                 RpcUpdateHealth(Health);
-                DeadSince = -1;
+                deadSince = -1;
                 RpcRespawn();
             }
         }
     }
 
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
         if (!isServer)
         {
-            return;
+            return 0;
         }
         if (IsDead())
         {
-            DeadSince = 0;
+            deadSince = 0;
             RpcDie();
+            // TODO level
+            return Constants.HERO_BASE_EXPERIENCE;
         }
+        return 0;
     }
 
     protected override void UpdateHealth(float NewHealth)
@@ -66,6 +71,12 @@ public class PlayerBehaviour : LifeBehaviour
         {
             GameObject.Find("UI/Panel/Health/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
         }
+    }
+
+    public void AddExperience(float experience)
+    {
+        this.experience += experience;
+        RpcSetExperience(this.experience);
     }
 
     [ClientRpc]
@@ -95,16 +106,42 @@ public class PlayerBehaviour : LifeBehaviour
         transform.Find("HealthBar").GetComponent<Canvas>().enabled = visible;
     }
 
+    [ClientRpc]
+    private void RpcSetExperience(float experience)
+    {
+        if (isLocalPlayer)
+        {
+            this.experience = experience;
+            GameObject.Find("UI/Panel/Level").GetComponent<Text>().text = GetLevel().ToString();
+        }
+    }
+
+    private int GetLevel()
+    {
+        int level = 0;
+        float calcExperience = experience;
+        do
+        {
+            level++;
+            float neededExperience = Constants.HERO_LEVELUP_EXPERIENCE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, level - 1);
+            calcExperience -= neededExperience;
+        }
+        while (calcExperience >= 0) ;
+        return level;
+    }
+
     [Command]
     public void CmdAttack(GameObject target)
     {
-        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.HERO_ATTACK_DAMAGE);
+        float damage = Constants.HERO_ATTACK_BASE_DAMAGE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, GetLevel() - 1);
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.HERO_ATTACK_BASE_DAMAGE);
     }
 
     [Command]
     public void CmdCastAbility(GameObject target)
     {
-        GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, Constants.ABILITY_DAMAGE);
+        float damage = Constants.HERO_ABILITY_BASE_DAMAGE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, GetLevel() - 1);
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, Constants.HERO_ABILITY_BASE_DAMAGE);
     }
 
     [Command]

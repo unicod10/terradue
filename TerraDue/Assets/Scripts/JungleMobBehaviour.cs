@@ -14,12 +14,14 @@ public class JungleMobBehaviour : LifeBehaviour {
         base.Start();
     }
 
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         base.TakeDamage(Damage);
         if (isServer && IsDead())
         {
             NetworkServer.Destroy(gameObject);
+            return Constants.JUNGLE_MOB_EXPERIENCE;
         }
+        return 0;
     }
 }

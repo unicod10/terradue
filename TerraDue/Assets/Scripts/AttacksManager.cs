@@ -32,7 +32,11 @@ public class AttacksManager : NetworkBehaviour {
             instance = Instantiate(monsterAttackPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);
-        target.GetComponent<LifeBehaviour>().TakeDamage(damage);
+        float exp = target.GetComponent<LifeBehaviour>().TakeDamage(damage);
+        if (attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
+        {
+            attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
+        }
         StartCoroutine(AsyncDestroy(instance));
     }
 
@@ -61,7 +65,11 @@ public class AttacksManager : NetworkBehaviour {
     {
         // Withdraw life after particle system
         yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
-        target.GetComponent<LifeBehaviour>().TakeDamage(Constants.ABILITY_DAMAGE);
+        float exp = target.GetComponent<LifeBehaviour>().TakeDamage(Constants.HERO_ABILITY_BASE_DAMAGE);
+        if(attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
+        {
+            attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
+        }
         NetworkServer.Destroy(particles);
     }
 }
