@@ -80,6 +80,8 @@
      <Compile Include="Assets\Scripts\TowerBehaviour.cs" />
      <Compile Include="Assets\Scripts\TowersManager.cs" />
      <Compile Include="Assets\Scripts\UserInteraction.cs" />
+     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />

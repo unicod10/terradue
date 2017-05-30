@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
+     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />

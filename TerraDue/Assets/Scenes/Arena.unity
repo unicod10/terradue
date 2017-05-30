@@ -2024,7 +2024,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356122056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -80.7, y: 0, z: 0}
+  m_LocalPosition: {x: -57.9, y: 0, z: 38.8}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3027,9 +3027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1600181198860920, guid: 2ee67f5574c2df54c8b46189fa23c931,
+  minionLeaderPrefab: {fileID: 1701355911350922, guid: 238962d9bdc364e01812f712db36694a,
     type: 2}
-  minionSoldierPrefab: {fileID: 1244431041798108, guid: 59e4a108e9ff77040b38c946e157b3da,
+  minionSoldierPrefab: {fileID: 1082254649451546, guid: ff39fc5278dff469e913a5ab4255babe,
     type: 2}
   isAlien: 0
 --- !u!23 &492881190
@@ -6362,9 +6362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1827594208904738, guid: 6a22caddeb52b7745a823a7646ffab7b,
+  minionLeaderPrefab: {fileID: 1497741661731276, guid: bcf0044d52b94403793020ca1ced7330,
     type: 2}
-  minionSoldierPrefab: {fileID: 1304273156199124, guid: c81bfcb422df1a045ac8de4eee5db667,
+  minionSoldierPrefab: {fileID: 1674893228987150, guid: 60ac1d264c794452594720cd7106ca62,
     type: 2}
   isAlien: 0
 --- !u!23 &1072661556
