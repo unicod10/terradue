@@ -54,6 +54,7 @@
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />

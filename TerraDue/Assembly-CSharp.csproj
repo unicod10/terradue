@@ -49,6 +49,7 @@
      <Compile Include="Assets\AI\Actions\AttackHero.cs" />
      <Compile Include="Assets\AI\Actions\AttackMinion.cs" />
      <Compile Include="Assets\AI\Actions\AttackTower.cs" />
+     <Compile Include="Assets\AI\Actions\Healing.cs" />
      <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -86,6 +87,7 @@
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
+     <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
