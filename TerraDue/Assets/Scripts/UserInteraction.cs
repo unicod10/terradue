@@ -214,4 +214,9 @@ public class UserInteraction : MonoBehaviour {
     {
         return !player.GetComponent<MoveToPoint>().IsMoving();
     }
+    
+    public void SetDefaultMessage()
+    {
+        statusBar.text = DefaultStatus;
+    }
 }

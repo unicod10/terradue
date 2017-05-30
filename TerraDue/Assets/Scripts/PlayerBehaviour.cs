@@ -103,6 +103,7 @@ public class PlayerBehaviour : LifeBehaviour
         if (isLocalPlayer)
         {
             GetComponent<MoveToPoint>().Spawn();
+            GameObject.Find("UI").GetComponent<UserInteraction>().SetDefaultMessage();
         }
     }
 
