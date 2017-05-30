@@ -5,7 +5,7 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class Attack : RAINAction
+public class AttackTower : RAINAction
 {
 	GameObject target;
 	MinionBehaviour action;

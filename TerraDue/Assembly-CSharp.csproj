@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AI\Actions\Attack.cs" />
+     <Compile Include="Assets\AI\Actions\AttackHero.cs" />
+     <Compile Include="Assets\AI\Actions\AttackMinion.cs" />
+     <Compile Include="Assets\AI\Actions\AttackTower.cs" />
      <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
