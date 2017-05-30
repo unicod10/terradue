@@ -14,23 +14,24 @@ public class BaseBehaviour : LifeBehaviour {
         base.Update();
 	}
 
-    public override void TakeDamage(float Damage)
+    public override float TakeDamage(float Damage)
     {
         if(!isServer)
         {
-            return;
+            return 0;
         }
         var manager = GameObject.Find("ServerObject").GetComponent<TowersManager>();
         // The are still functioning towers
-        if (!manager.IsBaseVunlnable(tag == "Human"))
+        if (!manager.IsBaseVulernable(tag == "Human"))
         {
-            return;
+            return 0;
         }
         base.TakeDamage(Damage);
         if(IsDead())
         {
             RpcEndGame();
         }
+        return 0;
     }
 
     [ClientRpc]

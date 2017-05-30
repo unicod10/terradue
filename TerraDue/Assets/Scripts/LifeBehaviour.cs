@@ -35,14 +35,15 @@ public class LifeBehaviour : NetworkBehaviour {
         // TODO heal
     }
 
-    virtual public void TakeDamage(float Damage)
+    virtual public float TakeDamage(float Damage)
     {
         if (!isServer)
         {
-            return;
+            return 0;
         }
         Health = Mathf.Max(0, Health - Damage);
         RpcUpdateHealth(Health);
+        return 0;
     }
 
     public bool IsAlive()

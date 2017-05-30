@@ -141,7 +141,7 @@ public class TowersManager : NetworkBehaviour {
         return false;
     }
 
-    public bool IsBaseVunlnable(bool human)
+    public bool IsBaseVulernable(bool human)
     {
         if(human)
         {
