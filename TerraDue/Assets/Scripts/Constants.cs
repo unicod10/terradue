@@ -6,9 +6,9 @@
     public const float ATTACK_EACH = 0.75f;
 
     // Heroes
-    public const float HERO_HEALTH = 500;
+    public const float HERO_BASE_HEALTH = 500;
     public const float HERO_LEVELUP_EXPERIENCE = 500;
-    public const float EXPERIENCE_INTEREST = 0.1f;
+    public const float BALANCING_INTEREST = 0.1f;
     public const float HERO_ATTACK_BASE_DAMAGE = 20;
     public const float HERO_ABILITY_BASE_DAMAGE = 125;
     public const float ABILITY_COOLDOWN = 5;

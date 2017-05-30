@@ -8,7 +8,7 @@ public class PlayerBehaviour : LifeBehaviour
     private float deadSince;
     private float experience;
 
-    public PlayerBehaviour() : base(Constants.HERO_HEALTH, 0) {
+    public PlayerBehaviour() : base(Constants.HERO_BASE_HEALTH, 0) {
     }
 
     protected override void Start()
@@ -40,7 +40,7 @@ public class PlayerBehaviour : LifeBehaviour
             if (deadSince >= Constants.RESPAWN_AFTER_SECS)
             {
                 Health = MaximumHealth;
-                RpcUpdateHealth(Health);
+                RpcUpdateHealth(Health, MaximumHealth);
                 deadSince = -1;
                 RpcRespawn();
             }
@@ -64,19 +64,25 @@ public class PlayerBehaviour : LifeBehaviour
         return 0;
     }
 
-    protected override void UpdateHealth(float NewHealth)
-    {
-        // Update UI
-        if (isLocalPlayer)
-        {
-            GameObject.Find("UI/Panel/Health/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
-        }
-    }
-
     public void AddExperience(float experience)
     {
         this.experience += experience;
         RpcSetExperience(this.experience);
+
+        // Increase life according to level
+        float lifeRatio = Health / MaximumHealth;
+        MaximumHealth = Constants.HERO_BASE_HEALTH * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+        Health = lifeRatio * MaximumHealth;
+        RpcUpdateHealth(Health, MaximumHealth);
+    }
+
+    protected override void UpdateHealth(float newHealth, float newMaximumHealth)
+    {
+        // Update UI
+        if (isLocalPlayer)
+        {
+            GameObject.Find("UI/Panel/Health/Bar").transform.localScale = new Vector3(newHealth / newMaximumHealth, 1f, 1f);
+        }
     }
 
     [ClientRpc]
@@ -123,7 +129,7 @@ public class PlayerBehaviour : LifeBehaviour
         do
         {
             level++;
-            float neededExperience = Constants.HERO_LEVELUP_EXPERIENCE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, level - 1);
+            float neededExperience = Constants.HERO_LEVELUP_EXPERIENCE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
             calcExperience -= neededExperience;
         }
         while (calcExperience >= 0) ;
@@ -133,15 +139,15 @@ public class PlayerBehaviour : LifeBehaviour
     [Command]
     public void CmdAttack(GameObject target)
     {
-        float damage = Constants.HERO_ATTACK_BASE_DAMAGE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, GetLevel() - 1);
-        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.HERO_ATTACK_BASE_DAMAGE);
+        var damage = Constants.HERO_ATTACK_BASE_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, damage);
     }
 
     [Command]
     public void CmdCastAbility(GameObject target)
     {
-        float damage = Constants.HERO_ABILITY_BASE_DAMAGE * Mathf.Pow(1 + Constants.EXPERIENCE_INTEREST, GetLevel() - 1);
-        GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, Constants.HERO_ABILITY_BASE_DAMAGE);
+        var damage = Constants.HERO_ABILITY_BASE_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, damage);
     }
 
     [Command]

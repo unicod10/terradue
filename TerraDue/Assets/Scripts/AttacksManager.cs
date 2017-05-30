@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -65,7 +64,7 @@ public class AttacksManager : NetworkBehaviour {
     {
         // Withdraw life after particle system
         yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
-        float exp = target.GetComponent<LifeBehaviour>().TakeDamage(Constants.HERO_ABILITY_BASE_DAMAGE);
+        float exp = target.GetComponent<LifeBehaviour>().TakeDamage(damage);
         if(attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
         {
             attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);

@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class LifeBehaviour : NetworkBehaviour {
-
+    
+    [SyncVar]
     protected float MaximumHealth;
-    protected float HealRatio;
-
     [SyncVar]
     protected float Health;
+    protected float HealRatio;
 
     protected LifeBehaviour(float MaximumHealth, float HealRatio)
     {
@@ -23,7 +23,7 @@ public class LifeBehaviour : NetworkBehaviour {
             return;
         }
         Health = MaximumHealth;
-        RpcUpdateHealth(Health);
+        RpcUpdateHealth(Health, Health);
     }
 	
 	protected virtual void Update ()
@@ -42,7 +42,7 @@ public class LifeBehaviour : NetworkBehaviour {
             return 0;
         }
         Health = Mathf.Max(0, Health - Damage);
-        RpcUpdateHealth(Health);
+        RpcUpdateHealth(Health, MaximumHealth);
         return 0;
     }
 
@@ -62,16 +62,17 @@ public class LifeBehaviour : NetworkBehaviour {
     }
 
     [ClientRpc]
-    protected void RpcUpdateHealth(float NewHealth)
+    protected void RpcUpdateHealth(float NewHealth, float newMaximumHealth)
     {
         Health = NewHealth;
+        MaximumHealth = newMaximumHealth;
         if (!isLocalPlayer)
         {
             transform.Find("HealthBar/Bar").transform.localScale = new Vector3(NewHealth / MaximumHealth, 1f, 1f);
         }
-        UpdateHealth(NewHealth);
+        UpdateHealth(NewHealth, newMaximumHealth);
     }
 
-    virtual protected void UpdateHealth(float NewHealth) {
+    virtual protected void UpdateHealth(float NewHealth, float newMaximumHealth) {
     }
 }

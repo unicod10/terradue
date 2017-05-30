@@ -1,7 +1,7 @@
 sceneSetups:
-- path: Assets/Scenes/Lobby.unity
+- path: Assets/Scenes/Arena.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/Arena.unity
+- path: Assets/Scenes/Lobby.unity
   isLoaded: 1
   isActive: 0
