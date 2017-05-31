@@ -5,7 +5,7 @@ public class TowerBehaviour : LifeBehaviour {
 
     public GameObject slot;
 
-    public TowerBehaviour() : base(Constants.TOWER_HEALTH, 0) {
+    public TowerBehaviour() : base(Constants.TOWER_HEALTH, Constants.TOWER_HEAL_RATIO) {
     }
     
 	protected override void Start () {

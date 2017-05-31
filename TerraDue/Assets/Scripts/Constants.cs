@@ -1,16 +1,18 @@
 ﻿public class Constants {
 
     // Common
-    public const float ATTACK_MAXIMUM_DISTANCE = 8;
+    public const float ATTACK_MAXIMUM_DISTANCE = 6;
     public const float ATTACK_PARTICLES_DURATION = 0.2f;
     public const float ATTACK_EACH = 0.75f;
+    public const float HEAL_AFTER = 5;
 
     // Heroes
     public const float HERO_BASE_HEALTH = 500;
-    public const float HERO_LEVELUP_EXPERIENCE = 500;
+    public const float HERO_BASE_HEAL_RATIO = 20;
+    public const float HERO_BASE_LEVELUP_EXP = 500;
+    public const float HERO_BASE_ATTACK_DAMAGE = 20;
+    public const float HERO_BASE_ABILITY_DAMAGE = 125;
     public const float BALANCING_INTEREST = 0.1f;
-    public const float HERO_ATTACK_BASE_DAMAGE = 20;
-    public const float HERO_ABILITY_BASE_DAMAGE = 125;
     public const float ABILITY_COOLDOWN = 5;
     public const float ABILITY_PARTICLES_DURATION = 0.5f;
     public const float BUILD_MAXIMUM_DISTANCE = 12;
@@ -28,11 +30,13 @@
 
     // Towers
     public const float TOWER_HEALTH = 250;
+    public const float TOWER_HEAL_RATIO = 15;
     public const float TOWER_ATTACK_DAMAGE = 10;
     public const float TOWER_EXPERIENCE = 200;
 
     // Core bases
     public const float BASE_HEALTH = 1000;
+    public const float BASE_HEAL_RATIO = 50;
 
     // Jungle mobs
     public const float JUNGLE_MOB_LIFE = 200;

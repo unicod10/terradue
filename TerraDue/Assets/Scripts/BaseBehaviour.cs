@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 
 public class BaseBehaviour : LifeBehaviour {
     
-    public BaseBehaviour() : base(Constants.BASE_HEALTH, 0) {
+    public BaseBehaviour() : base(Constants.BASE_HEALTH, Constants.BASE_HEAL_RATIO) {
     }
 
 	protected override void Start () {

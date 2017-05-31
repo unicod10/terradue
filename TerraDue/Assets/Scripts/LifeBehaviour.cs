@@ -10,6 +10,8 @@ public class LifeBehaviour : NetworkBehaviour {
     [SyncVar]
     protected float Health;
     protected float HealRatio;
+    private float NotHitSince;
+    private float HealState;
 
     protected LifeBehaviour(float MaximumHealth, float HealRatio)
     {
@@ -24,6 +26,8 @@ public class LifeBehaviour : NetworkBehaviour {
         }
         Health = MaximumHealth;
         RpcUpdateHealth(Health, Health);
+        NotHitSince = 0;
+        HealState = 0;
     }
 	
 	protected virtual void Update ()
@@ -32,7 +36,27 @@ public class LifeBehaviour : NetworkBehaviour {
         {
             return;
         }
-        // TODO heal
+        NotHitSince += Time.deltaTime;
+        // Start healing after
+        if (HealState == 0 && NotHitSince >= Constants.HEAL_AFTER)
+        {
+            HealState = 1;
+            NotHitSince = 1;
+        }
+        // Heal every second
+        else if(HealState == 1 && NotHitSince >= 1)
+        {
+            if (GetComponent<PlayerBehaviour>() != null && Health < MaximumHealth && Health > 0)
+            {
+                HealRatio = GetComponent<PlayerBehaviour>().CalcHealRatio();
+            }
+            if (Health < MaximumHealth && Health > 0)
+            {
+                Health = Mathf.Min(Health + HealRatio, MaximumHealth);
+                RpcUpdateHealth(Health, MaximumHealth);
+                NotHitSince = 0;
+            }
+        }
     }
 
     virtual public float TakeDamage(float Damage)
@@ -43,6 +67,8 @@ public class LifeBehaviour : NetworkBehaviour {
         }
         Health = Mathf.Max(0, Health - Damage);
         RpcUpdateHealth(Health, MaximumHealth);
+        NotHitSince = 0;
+        HealState = 0;
         return 0;
     }
 

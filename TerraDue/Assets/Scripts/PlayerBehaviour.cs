@@ -130,24 +130,29 @@ public class PlayerBehaviour : LifeBehaviour
         do
         {
             level++;
-            float neededExperience = Constants.HERO_LEVELUP_EXPERIENCE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
+            float neededExperience = Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
             calcExperience -= neededExperience;
         }
         while (calcExperience >= 0) ;
         return level;
     }
 
+    public float CalcHealRatio()
+    {
+        return Constants.HERO_BASE_HEAL_RATIO * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+    }
+
     [Command]
     public void CmdAttack(GameObject target)
     {
-        var damage = Constants.HERO_ATTACK_BASE_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+        var damage = Constants.HERO_BASE_ATTACK_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, damage);
     }
 
     [Command]
     public void CmdCastAbility(GameObject target)
     {
-        var damage = Constants.HERO_ABILITY_BASE_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
+        var damage = Constants.HERO_BASE_ABILITY_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, damage);
     }
 
