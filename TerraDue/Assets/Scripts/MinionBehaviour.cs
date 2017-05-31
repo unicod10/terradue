@@ -28,6 +28,5 @@ public class MinionBehaviour : LifeBehaviour {
 	public void Attack(GameObject target)
 	{
 		GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.MINION_ATTACK_DAMAGE);
-		Debug.Log ("Mionion Attack");
 	}
 }

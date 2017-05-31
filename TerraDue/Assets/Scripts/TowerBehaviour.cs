@@ -37,4 +37,9 @@ public class TowerBehaviour : LifeBehaviour {
         }
         return 0;
     }
+
+    public void Attack(GameObject target)
+    {
+        GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.TOWER_ATTACK_DAMAGE);
+    }
 }
