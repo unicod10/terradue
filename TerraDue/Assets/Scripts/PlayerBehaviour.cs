@@ -131,7 +131,7 @@ public class PlayerBehaviour : LifeBehaviour
         }
     }
 
-    private int GetLevel()
+    public int GetLevel()
     {
         int level = 0;
         float calcExperience = experience;
@@ -142,7 +142,7 @@ public class PlayerBehaviour : LifeBehaviour
             calcExperience -= neededExperience;
 			SoundManager.instance.playSoundEffect(levelUpSound);
         }
-        while (calcExperience >= 0) ;
+        while (calcExperience >= 0);
         return level;
     }
 
@@ -156,7 +156,7 @@ public class PlayerBehaviour : LifeBehaviour
     {
         var damage = Constants.HERO_BASE_ATTACK_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, damage);
-		SoundManager.instance.playSoundEffect (attackSound);
+		SoundManager.instance.playSoundEffect(attackSound);
     }
 
     [Command]
@@ -164,14 +164,13 @@ public class PlayerBehaviour : LifeBehaviour
     {
         var damage = Constants.HERO_BASE_ABILITY_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, damage);
-
-		SoundManager.instance.playSoundEffect (castAbilitySound);
+		SoundManager.instance.playSoundEffect(castAbilitySound);
     }
 
     [Command]
     public void CmdBuildTower(GameObject slot)
     {
         GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
-		SoundManager.instance.playSoundEffect (buildTowerSound);
+		SoundManager.instance.playSoundEffect(buildTowerSound);
     }
 }

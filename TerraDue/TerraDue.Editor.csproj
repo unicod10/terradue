@@ -136,6 +136,7 @@
     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />

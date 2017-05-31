@@ -48,5 +48,13 @@
     public const float PRIME_HEALTH = 700;
     public const float PRIME_ATTACK = 35;
     public const float PRIME_SPAWN_TIME_SECONDS = 30;
+    public const float PRIME_SPAWN_ON_LEVEL_DIFF_LESS = 5;
     public const float PRIME_ARENA_EXPERIENCE = 500;
+
+    // Optimus arena
+    public const float OPTIMUS_HEALTH = 900;
+    public const float OPTIMUS_ATTACK = 55;
+    public const float OPTIMUS_SPAWN_TIME_SECONDS = 300;
+    public const float OPTIMUS_SPAWN_ON_LEVEL_DIFF = 5;
+    public const float OPTIMUS_ARENA_EXPERIENCE = 800;
 }
