@@ -5,14 +5,14 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class AttackHero : RAINAction
+public class MinionAttackMinion : RAINAction
 {
 	GameObject target;
 	MinionBehaviour action;
 	public override void Start(RAIN.Core.AI ai)
 	{
 		base.Start(ai);
-		target = ai.WorkingMemory.GetItem<GameObject>("aCloseHero");
+		target = ai.WorkingMemory.GetItem<GameObject>("aCloseMinion");
 		action = ai.Body.GetComponentInChildren<MinionBehaviour>();
 
 	}

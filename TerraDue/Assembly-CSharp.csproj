@@ -46,10 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AI\Actions\AttackHero.cs" />
-     <Compile Include="Assets\AI\Actions\AttackMinion.cs" />
-     <Compile Include="Assets\AI\Actions\AttackTower.cs" />
      <Compile Include="Assets\AI\Actions\Healing.cs" />
+     <Compile Include="Assets\AI\Actions\MinionAttackHero.cs" />
+     <Compile Include="Assets\AI\Actions\MinionAttackMinion.cs" />
+     <Compile Include="Assets\AI\Actions\MinionAttackTower.cs" />
+     <Compile Include="Assets\AI\Actions\TowerAttackHero.cs" />
+     <Compile Include="Assets\AI\Actions\TowerAttackMinion.cs" />
      <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
      <Compile Include="Assets\Lobby\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyCountdownPanel.cs" />
@@ -92,6 +94,7 @@
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
+     <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsLeft.txt" />
  <Reference Include="UnityEngine.Analytics">

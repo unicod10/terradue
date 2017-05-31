@@ -5,24 +5,24 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class AttackTower : RAINAction
+public class MinionAttackHero : RAINAction
 {
 	GameObject target;
 	MinionBehaviour action;
-    public override void Start(RAIN.Core.AI ai)
-    {
-        base.Start(ai);
-		target = ai.WorkingMemory.GetItem<GameObject>("aCloseTower");
+	public override void Start(RAIN.Core.AI ai)
+	{
+		base.Start(ai);
+		target = ai.WorkingMemory.GetItem<GameObject>("aCloseHero");
 		action = ai.Body.GetComponentInChildren<MinionBehaviour>();
 
-    }
+	}
 
-    public override ActionResult Execute(RAIN.Core.AI ai)
-    {
-		
+	public override ActionResult Execute(RAIN.Core.AI ai)
+	{
+
 		action.Attack(target);
-        return ActionResult.SUCCESS;
-    }
+		return ActionResult.SUCCESS;
+	}
 
     public override void Stop(RAIN.Core.AI ai)
     {
