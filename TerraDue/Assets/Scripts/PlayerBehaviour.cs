@@ -7,7 +7,12 @@ public class PlayerBehaviour : LifeBehaviour
 {
     private float deadSince;
     private float experience;
-
+	public AudioClip attackSound;
+	public AudioClip castAbilitySound;
+	public AudioClip levelUpSound;
+	public AudioClip spawnSound;
+	public AudioClip damageSound;
+	public AudioClip buildTowerSound;
     public PlayerBehaviour() : base(Constants.HERO_BASE_HEALTH, 0) {
     }
 
@@ -18,6 +23,7 @@ public class PlayerBehaviour : LifeBehaviour
         {
             GameObject.Find("UI").GetComponent<UserInteraction>().player = gameObject;
             transform.Find("HealthBar").transform.position = new Vector3(1000, 1000, 1000);
+			SoundManager.instance.playSoundEffect (spawnSound);
         }
         if (isServer)
         {
@@ -61,6 +67,7 @@ public class PlayerBehaviour : LifeBehaviour
             // TODO level
             return Constants.HERO_BASE_EXPERIENCE;
         }
+		SoundManager.instance.playSoundEffect (damageSound);
         return 0;
     }
 
@@ -104,6 +111,7 @@ public class PlayerBehaviour : LifeBehaviour
         {
             GetComponent<MoveToPoint>().Spawn();
             GameObject.Find("UI").GetComponent<UserInteraction>().SetDefaultMessage();
+			SoundManager.instance.playSoundEffect (spawnSound);
         }
     }
 
@@ -132,6 +140,7 @@ public class PlayerBehaviour : LifeBehaviour
             level++;
             float neededExperience = Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
             calcExperience -= neededExperience;
+			SoundManager.instance.playSoundEffect(levelUpSound);
         }
         while (calcExperience >= 0) ;
         return level;
@@ -147,6 +156,7 @@ public class PlayerBehaviour : LifeBehaviour
     {
         var damage = Constants.HERO_BASE_ATTACK_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, damage);
+		SoundManager.instance.playSoundEffect (attackSound);
     }
 
     [Command]
@@ -154,11 +164,14 @@ public class PlayerBehaviour : LifeBehaviour
     {
         var damage = Constants.HERO_BASE_ABILITY_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, damage);
+
+		SoundManager.instance.playSoundEffect (castAbilitySound);
     }
 
     [Command]
     public void CmdBuildTower(GameObject slot)
     {
         GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
+		SoundManager.instance.playSoundEffect (buildTowerSound);
     }
 }

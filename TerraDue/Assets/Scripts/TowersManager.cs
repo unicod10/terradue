@@ -5,7 +5,7 @@ public class TowersManager : NetworkBehaviour {
 
     public GameObject humanTowerPrefab;
     public GameObject alienTowerPrefab;
-
+	public AudioClip destroySound;
     private const int Lanes = 3;
     private const int SlotsPerLane = 4;
     enum SlotState
@@ -105,6 +105,7 @@ public class TowersManager : NetworkBehaviour {
 
     public void TowerDestroyed(string slotName)
     {
+		SoundManager.instance.playSoundEffect (destroySound);
         slots[GetLane(slotName), GetSlot(slotName)] = SlotState.Empty;
     }
 

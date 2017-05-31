@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 63715ea7a6e454e4c827483c971d3d52
-timeCreated: 1495441345
+timeCreated: 1496233399
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - humanTowerPrefab: {instanceID: 0}
+  - alienTowerPrefab: {instanceID: 0}
+  - destroySound: {fileID: 8300000, guid: 6fc36bb83ce53f2449f431aef7475add, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
