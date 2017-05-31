@@ -381,12 +381,12 @@ MonoBehaviour:
       reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
       reference="1"><_mountPoint sceneobject="9ae74b6b-ea73-43cc-bdfb-3c44ab8a4afe"
       component="0"></_mountPoint><_setName>HumanMidWP</_setName><_setType>Route</_setType><_networkColor>0,1,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
-      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.02593994,1.25,-19.62254</_position><_range>0.5</_range></element0><element1
-      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.03400421,1.25,-11.62708</_position><_range>0.5</_range></element1><element2
-      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0777812,3.118273E-18,-3.056847</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07505298,0.025,0.2469883</_position><_range>0.5</_range></element3><element4
-      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.03452808,0.025,8.075234</_position><_range>0.5</_range></element4><element5
-      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07293481,0.025,17.18614</_position><_range>0.5</_range></element5><element6
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.02593992,0.025,-19.62254</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.03400419,0.025,-11.62708</_position><_range>0.5</_range></element1><element2
+      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07778144,3.118273E-18,-3.056848</_position><_range>0.5</_range></element2><element3
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07505298,0.025,0.2469882</_position><_range>0.5</_range></element3><element4
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.03452808,0.025,8.075233</_position><_range>0.5</_range></element4><element5
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0729348,0.025,17.18614</_position><_range>0.5</_range></element5><element6
       reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07500809,0.025,23.6978</_position><_range>0.5</_range></element6></_waypoints><_connections></_connections></_waypointSet></component>
     _serializedMetaDocument: <meta></meta>
     _serializedObjects: []
@@ -5578,6 +5578,7 @@ MonoBehaviour:
     type: 2}
   alienTowerPrefab: {fileID: 1628457280066420, guid: 93d3acb33a9a2fc4ca78afb541587440,
     type: 2}
+  destroySound: {fileID: 0}
 --- !u!1 &918914737
 GameObject:
   m_ObjectHideFlags: 0

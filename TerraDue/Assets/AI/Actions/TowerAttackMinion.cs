@@ -20,7 +20,7 @@ public class TowerAttackMinion : RAINAction
 	public override ActionResult Execute(RAIN.Core.AI ai)
 	{
 
-		//action.Attack(target);
+		action.Attack(target);
 		Debug.Log("TOWER ATTACK MINION!!!!");
 		return ActionResult.SUCCESS;
 	}

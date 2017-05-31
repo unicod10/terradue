@@ -76,9 +76,11 @@
      <Compile Include="Assets\Scripts\MinionSpawnBehaviour.cs" />
      <Compile Include="Assets\Scripts\MoveToPoint.cs" />
      <Compile Include="Assets\Scripts\MyLobbyManager.cs" />
+     <Compile Include="Assets\Scripts\OptimusArenaSpawn.cs" />
      <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\PrimeArenaMobBehaviour.cs" />
      <Compile Include="Assets\Scripts\PrimeArenaMobSpawn.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonCharacter.cs" />
      <Compile Include="Assets\Scripts\TowerBehaviour.cs" />
      <Compile Include="Assets\Scripts\TowersManager.cs" />
