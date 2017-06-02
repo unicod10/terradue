@@ -7,12 +7,14 @@ public class PlayerBehaviour : LifeBehaviour
 {
     private float deadSince;
     private float experience;
+    private int level;
 	public AudioClip attackSound;
 	public AudioClip castAbilitySound;
 	public AudioClip levelUpSound;
 	public AudioClip spawnSound;
 	public AudioClip damageSound;
 	public AudioClip buildTowerSound;
+
     public PlayerBehaviour() : base(Constants.HERO_BASE_HEALTH, 0) {
     }
 
@@ -23,12 +25,14 @@ public class PlayerBehaviour : LifeBehaviour
         {
             GameObject.Find("UI").GetComponent<UserInteraction>().player = gameObject;
             transform.Find("HealthBar").transform.position = new Vector3(1000, 1000, 1000);
-			SoundManager.instance.playSoundEffect (spawnSound);
+            GameObject.Find("UI/Panel/Experience/Bar").transform.localScale = new Vector3(0, 1, 1);
+            SoundManager.instance.playSoundEffect (spawnSound);
         }
         if (isServer)
         {
             deadSince = -1;
             experience = 0;
+            level = 1;
         }
     }
 
@@ -49,6 +53,7 @@ public class PlayerBehaviour : LifeBehaviour
                 RpcUpdateHealth(Health, MaximumHealth);
                 deadSince = -1;
                 RpcRespawn();
+                SoundManager.instance.playSoundEffect(spawnSound);
             }
         }
     }
@@ -64,8 +69,7 @@ public class PlayerBehaviour : LifeBehaviour
         {
             deadSince = 0;
             RpcDie();
-            // TODO level
-            return Constants.HERO_BASE_EXPERIENCE;
+            return Constants.HERO_BASE_EXPERIENCE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         }
 		SoundManager.instance.playSoundEffect (damageSound);
         return 0;
@@ -111,7 +115,6 @@ public class PlayerBehaviour : LifeBehaviour
         {
             GetComponent<MoveToPoint>().Spawn();
             GameObject.Find("UI").GetComponent<UserInteraction>().SetDefaultMessage();
-			SoundManager.instance.playSoundEffect (spawnSound);
         }
     }
 
@@ -127,23 +130,53 @@ public class PlayerBehaviour : LifeBehaviour
         if (isLocalPlayer)
         {
             this.experience = experience;
-            GameObject.Find("UI/Panel/Level").GetComponent<Text>().text = GetLevel().ToString();
+            int level = GetLevel();
+            GameObject.Find("UI/Panel/Level").GetComponent<Text>().text = level.ToString();
+            float ratio = GetUnusedExperience() / GetNeededExperience(level);
+            GameObject.Find("UI/Panel/Experience/Bar").transform.localScale = new Vector3(ratio, 1, 1);
         }
     }
 
     public int GetLevel()
     {
-        int level = 0;
+        int oldLevel = level;
+        this.level = 0;
         float calcExperience = experience;
         do
         {
-            level++;
-            float neededExperience = Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
+            this.level++; 
+            float neededExperience = Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, this.level - 1);
             calcExperience -= neededExperience;
-			SoundManager.instance.playSoundEffect(levelUpSound);
         }
         while (calcExperience >= 0);
-        return level;
+
+        if(this.level > oldLevel)
+        {
+            SoundManager.instance.playSoundEffect(levelUpSound);
+        }
+        return this.level;
+    }
+
+    public float GetUnusedExperience()
+    {
+        float calcExperience = experience;
+        int level = 1;
+        do
+        {
+            float neededExperience = Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, level - 1);
+            if(calcExperience - neededExperience < 0)
+            {
+                return calcExperience;
+            }
+            calcExperience -= neededExperience;
+            level++;
+        }
+        while (true);
+    }
+
+    public float GetNeededExperience(int currentLevel)
+    {
+        return Constants.HERO_BASE_LEVELUP_EXP * Mathf.Pow(1 + Constants.BALANCING_INTEREST, currentLevel - 1);
     }
 
     public float CalcHealRatio()
