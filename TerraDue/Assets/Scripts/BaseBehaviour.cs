@@ -21,7 +21,7 @@ public class BaseBehaviour : LifeBehaviour {
             return 0;
         }
         var manager = GameObject.Find("ServerObject").GetComponent<TowersManager>();
-        // The are still functioning towers
+        // The are functioning towers on all lanes
         if (!manager.IsBaseVulernable(tag == "Human"))
         {
             return 0;
@@ -29,14 +29,9 @@ public class BaseBehaviour : LifeBehaviour {
         base.TakeDamage(Damage);
         if(IsDead())
         {
-            RpcEndGame();
+            Debug.Log(tag != "Human" ? "Humans" : "Aliens" + " win");
+            NetworkLobbyManager.singleton.ServerChangeScene("Lobby");
         }
         return 0;
-    }
-
-    [ClientRpc]
-    private void RpcEndGame()
-    {
-        Debug.Log("End game");
     }
 }
