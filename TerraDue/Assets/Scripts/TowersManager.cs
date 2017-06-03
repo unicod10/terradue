@@ -86,12 +86,12 @@ public class TowersManager : NetworkBehaviour {
         return false;
     }
 
-    public void BuildTower(GameObject slot, bool human)
+    public bool BuildTower(GameObject slot, bool human)
     {
         // The tower wouldn't be linked
         if(!CanBuild(slot.name, human))
         {
-            return;
+            return false;
         }
         // Load the tower prefab and create
         GameObject prefab;
@@ -101,11 +101,11 @@ public class TowersManager : NetworkBehaviour {
         // Register it here and spawn
         slots[GetLane(slot.name), GetSlot(slot.name)] = human ? SlotState.Human : SlotState.Alien;
         NetworkServer.Spawn(instance);
+        return true;
     }
 
     public void TowerDestroyed(string slotName)
     {
-		SoundManager.instance.playSoundEffect (destroySound);
         slots[GetLane(slotName), GetSlot(slotName)] = SlotState.Empty;
     }
 

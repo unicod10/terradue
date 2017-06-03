@@ -23,10 +23,11 @@ public class PlayerBehaviour : LifeBehaviour
         base.Start();
         if (isLocalPlayer)
         {
-            GameObject.Find("UI").GetComponent<UserInteraction>().player = gameObject;
+            var ui = GameObject.Find("UI");
+            ui.GetComponent<UserInteraction>().player = gameObject;
+            ui.transform.Find("Panel/Experience/Bar").transform.localScale = new Vector3(0, 1, 1);
+            ui.GetComponent<SoundManager>().PlaySpawn();
             transform.Find("HealthBar").transform.position = new Vector3(1000, 1000, 1000);
-            GameObject.Find("UI/Panel/Experience/Bar").transform.localScale = new Vector3(0, 1, 1);
-            SoundManager.instance.playSoundEffect (spawnSound);
         }
         if (isServer)
         {
@@ -53,7 +54,6 @@ public class PlayerBehaviour : LifeBehaviour
                 RpcUpdateHealth(Health, MaximumHealth);
                 deadSince = -1;
                 RpcRespawn();
-                SoundManager.instance.playSoundEffect(spawnSound);
             }
         }
     }
@@ -65,13 +65,13 @@ public class PlayerBehaviour : LifeBehaviour
         {
             return 0;
         }
+        RpcPlayTakeDamage();
         if (IsDead())
         {
             deadSince = 0;
             RpcDie();
             return Constants.HERO_BASE_EXPERIENCE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         }
-		SoundManager.instance.playSoundEffect (damageSound);
         return 0;
     }
 
@@ -114,7 +114,9 @@ public class PlayerBehaviour : LifeBehaviour
         if (isLocalPlayer)
         {
             GetComponent<MoveToPoint>().Spawn();
-            GameObject.Find("UI").GetComponent<UserInteraction>().SetDefaultMessage();
+            var ui = GameObject.Find("UI");
+            ui.GetComponent<UserInteraction>().SetDefaultMessage();
+            ui.GetComponent<SoundManager>().PlaySpawn();
         }
     }
 
@@ -152,7 +154,7 @@ public class PlayerBehaviour : LifeBehaviour
 
         if(this.level > oldLevel)
         {
-            SoundManager.instance.playSoundEffect(levelUpSound);
+            GameObject.Find("UI").GetComponent<SoundManager>().PlayLevelUp();
         }
         return this.level;
     }
@@ -184,12 +186,38 @@ public class PlayerBehaviour : LifeBehaviour
         return Constants.HERO_BASE_HEAL_RATIO * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
     }
 
+    [ClientRpc]
+    public void RpcPlayTakeDamage()
+    {
+        if(isLocalPlayer)
+        {
+            GameObject.Find("UI").GetComponent<SoundManager>().PlayTakeDamage();
+        }
+    }
+
+    [ClientRpc]
+    public void RpcPlayEnemyDeath()
+    {
+        if (isLocalPlayer)
+        {
+            GameObject.Find("UI").GetComponent<SoundManager>().PlayEnemyDeath();
+        }
+    }
+
+    [ClientRpc]
+    public void RpcPlayBuildTower()
+    {
+        if (isLocalPlayer)
+        {
+            GameObject.Find("UI").GetComponent<SoundManager>().PlayBuildTower();
+        }
+    }
+
     [Command]
     public void CmdAttack(GameObject target)
     {
         var damage = Constants.HERO_BASE_ATTACK_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, damage);
-		SoundManager.instance.playSoundEffect(attackSound);
     }
 
     [Command]
@@ -197,13 +225,14 @@ public class PlayerBehaviour : LifeBehaviour
     {
         var damage = Constants.HERO_BASE_ABILITY_DAMAGE * Mathf.Pow(1 + Constants.BALANCING_INTEREST, GetLevel() - 1);
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().CastAbility(gameObject, target, damage);
-		SoundManager.instance.playSoundEffect(castAbilitySound);
     }
 
     [Command]
     public void CmdBuildTower(GameObject slot)
     {
-        GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human");
-		SoundManager.instance.playSoundEffect(buildTowerSound);
+        if (GameObject.Find("ServerObject").GetComponent<TowersManager>().BuildTower(slot, tag == "Human"))
+        {
+            RpcPlayBuildTower();
+        }
     }
 }

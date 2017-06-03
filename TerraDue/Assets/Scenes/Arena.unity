@@ -120,6 +120,8 @@ GameObject:
   - component: {fileID: 22476335}
   - component: {fileID: 22476334}
   - component: {fileID: 22476338}
+  - component: {fileID: 22476340}
+  - component: {fileID: 22476339}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -214,8 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7886f443566bb342acaf0e3dc3e13bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildTower: {fileID: 0}
-  castAbility: {fileID: 0}
+  humanMaterial: {fileID: 2100000, guid: 923c6053c9b88534ab780af74a461830, type: 2}
+  alienMaterial: {fileID: 2100000, guid: 439c7bf8f172dbb4fa3c8c29a6c945ee, type: 2}
   player: {fileID: 0}
   towerSlots:
   - {fileID: 1317105797}
@@ -230,6 +232,105 @@ MonoBehaviour:
   - {fileID: 545970336}
   - {fileID: 727794178}
   - {fileID: 1284338958}
+--- !u!82 &22476339
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22476333}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &22476340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22476333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e92de2948776a418b693d357f48cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  humanAttack: {fileID: 8300000, guid: 719da7562f0739b4e91cc256b3812e3d, type: 3}
+  alienAttack: {fileID: 8300000, guid: 0deae70f61ea88244a9d245664c993b8, type: 3}
+  takeDamage: {fileID: 8300000, guid: 43f5ac4326af1734ab07a7b31c792356, type: 3}
+  levelUp: {fileID: 8300000, guid: 6876e1084c83ed348ab57500b69cd005, type: 3}
+  spawn: {fileID: 8300000, guid: 220f60012cc613b4bb4d0270256d8e7f, type: 3}
+  castAbility: {fileID: 8300000, guid: 217976fdc1877da4f896dc532805b849, type: 3}
+  buildTower: {fileID: 8300000, guid: 98a6a236672e16e44927b3fac278971c, type: 3}
+  enemyDeath: {fileID: 8300000, guid: b189cfee673b1b74a99389a5208bad6e, type: 3}
 --- !u!1 &24968375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,8 +7202,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e92de2948776a418b693d357f48cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effects: {fileID: 1237508146}
-  music: {fileID: 0}
+  humanAttack: {fileID: 0}
+  alienAttack: {fileID: 0}
+  takeDamage: {fileID: 0}
+  levelUp: {fileID: 0}
+  spawn: {fileID: 0}
+  castAbility: {fileID: 0}
+  buildTower: {fileID: 0}
+  enemyDeath: {fileID: 0}
 --- !u!82 &1237508146
 AudioSource:
   m_ObjectHideFlags: 0

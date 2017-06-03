@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class UserInteraction : MonoBehaviour {
 
-    public Button buildTower;
-    public Button castAbility;
+    public Material humanMaterial;
+    public Material alienMaterial;
     public GameObject player;
     public GameObject[] towerSlots;
 
@@ -112,6 +112,14 @@ public class UserInteraction : MonoBehaviour {
                 if(lastAttacked >= Constants.ATTACK_EACH)
                 {
                     StopMovement();
+                    if(player.tag == "Human")
+                    {
+                        GetComponent<SoundManager>().PlayHumanAttack();
+                    }
+                    else
+                    {
+                        GetComponent<SoundManager>().PlayAlienAttack();
+                    }
                     player.GetComponent<PlayerBehaviour>().CmdAttack(selection);
                     lastAttacked = 0;
                 }
@@ -140,6 +148,8 @@ public class UserInteraction : MonoBehaviour {
                                 state = State.FightingTarget;
                                 selection = obj;
                                 statusBar.text = "Attacking enemy";
+                                //var color = player.tag == "Human" ? humanMaterial.color : alienMaterial.color;
+                                //selection.GetComponent<Renderer>().material.SetColor("_EmissionColor", color);
                             }
                             else
                             {
@@ -167,6 +177,7 @@ public class UserInteraction : MonoBehaviour {
                         case State.AbilityPressed:
                             if(IsEnemy(obj))
                             {
+                                GetComponent<SoundManager>().PlayCastAbility();
                                 player.GetComponent<PlayerBehaviour>().CmdCastAbility(obj);
                                 abilityLastUsed = 0;
                             }

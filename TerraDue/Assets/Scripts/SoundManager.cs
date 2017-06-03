@@ -1,29 +1,58 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
 
-	public static SoundManager instance = null; 
+    public AudioClip humanAttack;
+    public AudioClip alienAttack;
+    public AudioClip takeDamage;
+    public AudioClip levelUp;
+    public AudioClip spawn;
+    public AudioClip castAbility;
+    public AudioClip buildTower;
+    public AudioClip enemyDeath;
 
-	public AudioSource effects;
-	public AudioSource music;
+	public void PlayHumanAttack()
+    {
+        Play(humanAttack);
+    }
 
-	void Awake ()
-	{
-		if (instance == null)
-			instance = this;
-		else if (instance != this)
-			Destroy (gameObject);
-		DontDestroyOnLoad (gameObject);
-	}
+    public void PlayAlienAttack()
+    {
+        Play(alienAttack);
+    }
 
-	public void playSoundEffect(AudioClip clip) {
-		effects.PlayOneShot (clip, 1f);
-	}
+    public void PlayTakeDamage()
+    {
+        Play(takeDamage);
+    }
 
-	public void setBackgroundMusic(AudioClip clip) {
-		music.clip = clip;
-		music.Play ();
-	}
+    public void PlayLevelUp()
+    {
+        Play(levelUp);
+    }
+
+    public void PlaySpawn()
+    {
+        Play(spawn);
+    }
+
+    public void PlayCastAbility()
+    {
+        Play(castAbility);
+    }
+
+    public void PlayBuildTower()
+    {
+        Play(buildTower);
+    }
+
+    public void PlayEnemyDeath()
+    {
+        Play(enemyDeath);
+    }
+
+    private void Play(AudioClip clip)
+    {
+        GetComponent<AudioSource>().PlayOneShot(clip);
+    }
 }

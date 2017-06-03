@@ -35,6 +35,7 @@ public class AttacksManager : NetworkBehaviour {
         if (attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
         {
             attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
+            attacker.GetComponent<PlayerBehaviour>().RpcPlayEnemyDeath();
         }
         StartCoroutine(AsyncDestroy(instance));
     }
@@ -68,6 +69,7 @@ public class AttacksManager : NetworkBehaviour {
         if(attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
         {
             attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
+            attacker.GetComponent<PlayerBehaviour>().RpcPlayEnemyDeath();
         }
         NetworkServer.Destroy(particles);
     }
