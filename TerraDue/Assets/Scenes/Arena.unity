@@ -2872,6 +2872,14 @@ MonoBehaviour:
     _sceneObject: {fileID: 34762774}
     _sceneComponents:
     - {fileID: 34762775}
+  - _guid: ba394191-8395-4545-aa21-e8ca6f0bb50c
+    _sceneObject: {fileID: 640781384}
+    _sceneComponents:
+    - {fileID: 640781388}
+  - _guid: 5e0dca36-c7bd-4221-8e2b-706090f7ddf9
+    _sceneObject: {fileID: 1654154032}
+    _sceneComponents:
+    - {fileID: 1654154036}
 --- !u!4 &461708961
 Transform:
   m_ObjectHideFlags: 1
@@ -4275,6 +4283,7 @@ GameObject:
   - component: {fileID: 640781385}
   - component: {fileID: 640781390}
   - component: {fileID: 640781389}
+  - component: {fileID: 640781391}
   m_Layer: 0
   m_Name: AlienCoreBase
   m_TagString: Alien
@@ -4391,6 +4400,34 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &640781391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640781384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Entities.EntityRig" reference="0"
+      includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_entity
+      reference="1"><_entityName></_entityName><_isActive>True</_isActive><_form sceneobject="ba394191-8395-4545-aa21-e8ca6f0bb50c"></_form><_aspects><element0
+      type="RAIN.Entities.Aspects.VisualAspect" reference="2"><_showVisual>True</_showVisual><_aspectName>AlienTowerAspect</_aspectName><_isActive>True</_isActive><_aspectColor>0.6,0,0.6,1</_aspectColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_visualSize>0.1</_visualSize><_mountPoint
+      sceneobject="ba394191-8395-4545-aa21-e8ca6f0bb50c" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset></element0></_aspects></_entity></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &651208668
 GameObject:
   m_ObjectHideFlags: 0
@@ -8929,6 +8966,7 @@ GameObject:
   - component: {fileID: 1654154033}
   - component: {fileID: 1654154038}
   - component: {fileID: 1654154037}
+  - component: {fileID: 1654154039}
   m_Layer: 0
   m_Name: HumanCoreBase
   m_TagString: Human
@@ -9045,6 +9083,34 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &1654154039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654154032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 220721487, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Entities.EntityRig" reference="0"
+      includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_entity
+      reference="1"><_entityName></_entityName><_isActive>True</_isActive><_form sceneobject="5e0dca36-c7bd-4221-8e2b-706090f7ddf9"></_form><_aspects><element0
+      type="RAIN.Entities.Aspects.VisualAspect" reference="2"><_showVisual>True</_showVisual><_aspectName>HumanTowerAspect</_aspectName><_isActive>True</_isActive><_aspectColor>0.6,0,0,1</_aspectColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_visualSize>0.1</_visualSize><_mountPoint
+      sceneobject="5e0dca36-c7bd-4221-8e2b-706090f7ddf9" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset></element0></_aspects></_entity></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &1694395734
 GameObject:
   m_ObjectHideFlags: 0
