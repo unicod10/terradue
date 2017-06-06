@@ -19,6 +19,10 @@ public class MoveToPoint : NetworkBehaviour {
             return;
         }
         agent.destination = point;
+        if(GetComponent<IAnimations>() != null)
+        {
+            GetComponent<IAnimations>().PlayMoving();
+        }
     }
 
     public void Hide()
@@ -35,6 +39,7 @@ public class MoveToPoint : NetworkBehaviour {
     public void StopMovement()
     {
         agent.destination = transform.position;
+        GetComponent<IAnimations>().PlayIdle();
     }
 
     public bool IsMoving()

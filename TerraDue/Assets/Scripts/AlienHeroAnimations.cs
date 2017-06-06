@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Networking;
 
-public class HumanHeroAnimation : NetworkBehaviour, IAnimations {
-    
+public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
+
     public void PlayIdle()
     {
-        if(isLocalPlayer)
+        if (isLocalPlayer)
         {
             CmdPlayIdle();
         }
@@ -20,7 +22,7 @@ public class HumanHeroAnimation : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayIdle()
     {
-        GetComponent<Animator>().Play("assault_combat_idle");
+        // TODO
     }
 
     public void PlayMoving()
@@ -40,7 +42,7 @@ public class HumanHeroAnimation : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayMoving()
     {
-        GetComponent<Animator>().Play("assault_combat_run");
+        // TODO
     }
 
     public void PlayAttacking()
@@ -60,6 +62,6 @@ public class HumanHeroAnimation : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayAttacking()
     {
-        GetComponent<Animator>().Play("assault_combat_shoot");
+        // TODO
     }
 }

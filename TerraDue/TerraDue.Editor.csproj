@@ -145,6 +145,7 @@
     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
+    <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />
     <None Include="Assets\Lobby\Instruction.txt" />

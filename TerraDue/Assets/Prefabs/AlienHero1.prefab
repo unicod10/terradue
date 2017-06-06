@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 114888575405787370}
   - component: {fileID: 114575255230098510}
   - component: {fileID: 114699001411681272}
+  - component: {fileID: 114134107994406524}
   m_Layer: 0
   m_Name: AlienHero1
   m_TagString: Alien
@@ -157,6 +158,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1958074209985336}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114134107994406524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958074209985336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ca504402b61449bf44f7bfd3addb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114189150368293996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,6 +314,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe4e6115ac31fe4c84cfbe5dd310d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 0}
+  castAbilitySound: {fileID: 0}
+  levelUpSound: {fileID: 0}
+  spawnSound: {fileID: 0}
+  damageSound: {fileID: 0}
+  buildTowerSound: {fileID: 0}
 --- !u!114 &114811557742726476
 MonoBehaviour:
   m_ObjectHideFlags: 1

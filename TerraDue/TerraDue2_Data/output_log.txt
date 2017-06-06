@@ -19,7 +19,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.067 seconds
+- Completed reload, in  0.032 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -27,26 +27,44 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.741843 ms
+UnloadTime: 1.349183 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1d8c -> priority: 1 
-  Thread -> id: 242c -> priority: 1 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+  Thread -> id: aa0 -> priority: 1 
+  Thread -> id: 1e54 -> priority: 1 
+Attempt to send to not connected connection {1}
  
-(Filename:  Line: 462)
+(Filename:  Line: 359)
+
+Failed to send internal buffer channel:0 bytesToSend:12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Send Error: WrongConnection channel:0 bytesToSend:12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.862015 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1416.
+Total: 1.684692 ms (FindLiveObjects: 0.085472 ms CreateObjectMapping: 0.060978 ms MarkObjects: 1.524974 ms  DeleteObjects: 0.012501 ms)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.722708 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 462)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.341377 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2226.
+Total: 35.936283 ms (FindLiveObjects: 0.157931 ms CreateObjectMapping: 0.075266 ms MarkObjects: 35.676807 ms  DeleteObjects: 0.025258 ms)
+
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Mono.Security.dll (this message is harmless)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3663.
-Total: 39.303619 ms (FindLiveObjects: 0.322752 ms CreateObjectMapping: 0.217634 ms MarkObjects: 38.708378 ms  DeleteObjects: 0.053579 ms)
-
-Prime monster has been spawned!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -54,15 +72,11 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:67 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -70,7 +84,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -78,7 +100,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -86,7 +116,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -94,7 +132,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -102,7 +148,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:101 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -110,7 +164,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -118,7 +180,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -126,15 +196,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -142,7 +204,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -150,15 +220,11 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -166,15 +232,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -182,7 +240,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -190,19 +256,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -210,15 +272,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Could not find target object with netId:66 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -226,7 +280,19 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -234,19 +300,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -254,11 +316,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -266,7 +324,19 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:99 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -274,7 +344,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:100 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -282,11 +360,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -294,7 +368,19 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -302,19 +388,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:107 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -322,11 +404,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -334,31 +412,19 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -366,19 +432,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -386,11 +448,7 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -398,31 +456,19 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -430,23 +476,15 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Could not find target object with netId:105 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -454,736 +492,379 @@ TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:106 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:56 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:55 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:63934}
-ServerDisconnected due to error: Timeout
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK HERO!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK HERO!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK HERO!!!!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Could not find target object with netId:136 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for HumanAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
+SpawnObject for AlienAttackParticles(Clone) (UnityEngine.GameObject), NetworkServer is not active. Cannot spawn objects without an active server.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-The monster is still alive!
+TOWER ATTACK MINION!!!!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

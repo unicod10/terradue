@@ -20,6 +20,7 @@ public class UserInteraction : MonoBehaviour {
     private float startedMovingSince;
     private Text statusBar;
     const string DefaultStatus = "Click an enemy or a position, or press (b) or (1)";
+    private Vector3 lastMoveTo;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class UserInteraction : MonoBehaviour {
         startedMovingSince = -1;
         statusBar = GameObject.Find("UI/Panel/StatusBar").GetComponent<Text>();
         statusBar.text = DefaultStatus;
+        lastMoveTo = new Vector3(1000, 1000, 1000);
     }
 
     private void Update()
@@ -47,10 +49,11 @@ public class UserInteraction : MonoBehaviour {
         // Moving to position message
         if(startedMovingSince >= 0)
         {
-            if (startedMovingSince > 0.1 && DestinationReached())
+            if (startedMovingSince > 0.1 && DestinationReached() && state != State.FightingTarget)
             {
                 statusBar.text = DefaultStatus;
                 startedMovingSince = -1;
+                player.transform.GetComponent<IAnimations>().PlayIdle();
             }
             else
             {
@@ -103,6 +106,7 @@ public class UserInteraction : MonoBehaviour {
                 selection = null;
                 state = State.Default;
                 statusBar.text = DefaultStatus;
+                lastMoveTo = new Vector3(1000, 1000, 1000);
                 return;
             }
 
@@ -112,6 +116,7 @@ public class UserInteraction : MonoBehaviour {
                 if(lastAttacked >= Constants.ATTACK_EACH)
                 {
                     StopMovement();
+                    player.transform.GetComponent<IAnimations>().PlayAttacking();
                     if(player.tag == "Human")
                     {
                         GetComponent<SoundManager>().PlayHumanAttack();
@@ -146,10 +151,9 @@ public class UserInteraction : MonoBehaviour {
                             if (IsEnemy(obj))
                             {
                                 state = State.FightingTarget;
+                                MoveTo(obj.transform.position);
                                 selection = obj;
                                 statusBar.text = "Attacking enemy";
-                                //var color = player.tag == "Human" ? humanMaterial.color : alienMaterial.color;
-                                //selection.GetComponent<Renderer>().material.SetColor("_EmissionColor", color);
                             }
                             else
                             {
@@ -192,7 +196,12 @@ public class UserInteraction : MonoBehaviour {
 
     private void MoveTo(Vector3 point)
     {
+        if(lastMoveTo == point)
+        {
+            return;
+        }
         player.GetComponent<MoveToPoint>().MoveTo(point);
+        lastMoveTo = point;
     }
 
     private void StopMovement()
