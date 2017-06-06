@@ -69,6 +69,8 @@
      <Compile Include="Assets\Scripts\BaseBehaviour.cs" />
      <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
      <Compile Include="Assets\Scripts\Constants.cs" />
+     <Compile Include="Assets\Scripts\HumanHeroAnimation.cs" />
+     <Compile Include="Assets\Scripts\IAnimations.cs" />
      <Compile Include="Assets\Scripts\JungleMobBehaviour.cs" />
      <Compile Include="Assets\Scripts\JungleMobSpawnBehaviour.cs" />
      <Compile Include="Assets\Scripts\LifeBehaviour.cs" />
@@ -95,6 +97,7 @@
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
+     <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />

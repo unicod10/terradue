@@ -58,6 +58,7 @@
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
+     <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
