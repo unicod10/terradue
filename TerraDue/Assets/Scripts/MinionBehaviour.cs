@@ -12,6 +12,17 @@ public class MinionBehaviour : LifeBehaviour {
     protected override void Start()
     {
         base.Start();
+        // TODO remove tag
+        if(isServer && tag == "Human")
+        {
+            GetComponent<RAIN.Entities.EntityRig>().enabled = true;
+            GetComponent<RAIN.Core.AIRig>().enabled = true;
+        }
+        else if(isClient && tag == "Human")
+        {
+            GetComponent<RAIN.Entities.EntityRig>().enabled = false;
+            GetComponent<RAIN.Core.AIRig>().enabled = false;
+        }
     }
 
     public override float TakeDamage(float Damage)

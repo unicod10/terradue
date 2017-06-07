@@ -9,8 +9,18 @@ public class TowerBehaviour : LifeBehaviour {
     }
     
 	protected override void Start () {
-        base.Start();	
-	}
+        base.Start();
+        if (isServer)
+        {
+            GetComponent<RAIN.Entities.EntityRig>().enabled = true;
+            GetComponent<RAIN.Core.AIRig>().enabled = true;
+        }
+        else if (isClient)
+        {
+            GetComponent<RAIN.Entities.EntityRig>().enabled = false;
+            GetComponent<RAIN.Core.AIRig>().enabled = false;
+        }
+    }
 	
 	protected override void Update () {
         base.Update();	
