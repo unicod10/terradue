@@ -16,6 +16,11 @@ public class AttacksManager : NetworkBehaviour {
         if (attacker.tag == "Human")
         {
             instance = Instantiate(humanAttackPrefab, target.transform);
+            if (target.GetComponent<PlayerBehaviour>() != null)
+            {
+                instance.transform.position = instance.transform.position + new Vector3(0, 1.5f);
+                instance.transform.position = instance.transform.position - attacker.transform.forward.normalized;
+            }
         }
         else if(attacker.tag == "Alien")
         {

@@ -2470,7 +2470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1000.00006, y: -343}
+  m_AnchoredPosition: {x: -1000, y: -343}
   m_SizeDelta: {x: 176, y: 52}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &941577452
@@ -2938,7 +2938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1000.00006, y: -161}
+  m_AnchoredPosition: {x: -1000, y: -161}
   m_SizeDelta: {x: 176, y: 52}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1033939013
@@ -5168,7 +5168,7 @@ MonoBehaviour:
   - {fileID: 1622000673951050, guid: d797c58bf03a8d3429ef01b8dd0bb09e, type: 2}
   - {fileID: 1137425003929304, guid: 494e84ec10f891b4cb89109898fe371a, type: 2}
   - {fileID: 1628457280066420, guid: 93d3acb33a9a2fc4ca78afb541587440, type: 2}
-  - {fileID: 1933223281555618, guid: e3a617264000f0042a6bf7d7a2ad123c, type: 2}
+  - {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 2}
   - {fileID: 1944100775801338, guid: 3e959c88635c24b4592f3c232adeaa33, type: 2}
   - {fileID: 1740811149702678, guid: 42c0f0000ef1a1649a4898441b46ec7b, type: 2}
   - {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002, type: 2}
@@ -5234,7 +5234,7 @@ MonoBehaviour:
   m_MinPlayers: 1
   m_LobbyPlayerPrefab: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
     type: 2}
-  m_GamePlayerPrefab: {fileID: 1527032850131962, guid: b746a2ac59a22bd4386557b421a145b0,
+  m_GamePlayerPrefab: {fileID: 1060963849415996, guid: 62e539026ef0479489d5ceec7764aaa4,
     type: 2}
   m_LobbyScene: Lobby
   m_PlayScene: Arena

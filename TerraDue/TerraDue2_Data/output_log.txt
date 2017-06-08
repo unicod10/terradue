@@ -11,6 +11,8 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
@@ -19,7 +21,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.237 seconds
+- Completed reload, in  0.040 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -27,10 +29,10 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.573451 ms
+UnloadTime: 1.441288 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: d8 -> priority: 1 
-  Thread -> id: 3aa4 -> priority: 1 
+  Thread -> id: 4154 -> priority: 1 
+  Thread -> id: 2604 -> priority: 1 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
@@ -40,9 +42,45 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 462)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.753580 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2354.
-Total: 37.141060 ms (FindLiveObjects: 0.170178 ms CreateObjectMapping: 0.075776 ms MarkObjects: 36.870609 ms  DeleteObjects: 0.023472 ms)
-
+UnloadTime: 1.758938 ms
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Mono.Security.dll (this message is harmless)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3954.
+Total: 38.716297 ms (FindLiveObjects: 0.292901 ms CreateObjectMapping: 0.342908 ms MarkObjects: 38.050381 ms  DeleteObjects: 0.029086 ms)
+
+Prime monster has been spawned!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

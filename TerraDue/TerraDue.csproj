@@ -102,6 +102,8 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\Prefabs\HumanAttack\Script\DestroyEffect.cs" />
+    <Compile Include="Assets\Prefabs\HumanAttack\Script\csLightControl.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\Scripts\AlienHeroAnimations.cs" />
     <Compile Include="Assets\Scripts\AttacksManager.cs" />

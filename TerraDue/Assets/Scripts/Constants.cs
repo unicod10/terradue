@@ -2,7 +2,7 @@
 
     // Common
     public const float ATTACK_MAXIMUM_DISTANCE = 6;
-    public const float ATTACK_PARTICLES_DURATION = 0.2f;
+    public const float ATTACK_PARTICLES_DURATION = 0.65f;
     public const float ATTACK_EACH = 0.75f;
     public const float HEAL_AFTER = 5;
 
