@@ -112,8 +112,9 @@ public class UserInteraction : MonoBehaviour {
 
             if (GetDistance(player, selection) <= Constants.ATTACK_MAXIMUM_DISTANCE)
             {
+                player.transform.LookAt(selection.transform.position);
                 lastAttacked += Time.deltaTime;
-                if(lastAttacked >= Constants.ATTACK_EACH)
+                if (lastAttacked >= Constants.ATTACK_EACH)
                 {
                     StopMovement();
                     player.transform.GetComponent<IAnimations>().PlayAttacking();

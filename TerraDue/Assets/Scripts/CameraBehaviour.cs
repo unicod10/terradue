@@ -4,9 +4,9 @@ using UnityEngine.Networking;
 public class CameraBehaviour : NetworkBehaviour
 {
 
-    static private float CAMERA_ROTATION_X = 30;
-    static private int CAMERA_DISTANCE_XZ = 8;
-    static private int CAMERA_DISTANCE_Y = 6;
+    static private float CAMERA_ROTATION_X = 20;
+    static private float CAMERA_DISTANCE_XZ = 4;
+    static private float CAMERA_DISTANCE_Y = 3.4f;
 
     private void Start()
     {
