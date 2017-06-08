@@ -5,8 +5,8 @@ public class CameraBehaviour : NetworkBehaviour
 {
 
     static private float CAMERA_ROTATION_X = 20;
-    static private float CAMERA_DISTANCE_XZ = 4;
-    static private float CAMERA_DISTANCE_Y = 3.4f;
+    static private float CAMERA_DISTANCE_XZ = 5.0f;
+    static private float CAMERA_DISTANCE_Y = 4.0f;
 
     private void Start()
     {

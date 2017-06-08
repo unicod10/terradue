@@ -122,7 +122,10 @@ public class PlayerBehaviour : LifeBehaviour
 
     private void SetHeroVisible(bool visible)
     {
-        GetComponentInChildren<Renderer>().enabled = visible;
+        foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
+        {
+            renderer.enabled = visible;
+        }
         transform.Find("HealthBar").GetComponent<Canvas>().enabled = visible;
     }
 

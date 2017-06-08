@@ -5,11 +5,22 @@ using UnityEngine.Networking;
 
 public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
 
+    private bool alreadyAttacking;
+
+    public void Start()
+    {
+        if(isLocalPlayer)
+        {
+            alreadyAttacking = false;
+        }
+    }
+
     public void PlayIdle()
     {
         if (isLocalPlayer)
         {
             CmdPlayIdle();
+            alreadyAttacking = false;
         }
     }
 
@@ -22,7 +33,7 @@ public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayIdle()
     {
-        // TODO
+        GetComponent<Animation>().Play("Idle");
     }
 
     public void PlayMoving()
@@ -30,6 +41,7 @@ public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
         if (isLocalPlayer)
         {
             CmdPlayMoving();
+            alreadyAttacking = false;
         }
     }
 
@@ -42,7 +54,7 @@ public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayMoving()
     {
-        // TODO
+        GetComponent<Animation>().Play("Moving");
     }
 
     public void PlayAttacking()
@@ -50,6 +62,7 @@ public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
         if (isLocalPlayer)
         {
             CmdPlayAttacking();
+            alreadyAttacking = true;
         }
     }
 
@@ -62,6 +75,6 @@ public class AlienHeroAnimations : NetworkBehaviour, IAnimations {
     [ClientRpc]
     private void RpcPlayAttacking()
     {
-        // TODO
+        GetComponent<Animation>().Play("Attacking");
     }
 }
