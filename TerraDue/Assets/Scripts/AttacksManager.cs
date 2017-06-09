@@ -19,7 +19,6 @@ public class AttacksManager : NetworkBehaviour {
             if (target.GetComponent<PlayerBehaviour>() != null)
             {
                 instance.transform.position = instance.transform.position + new Vector3(0, 1.5f);
-                instance.transform.position = instance.transform.position - attacker.transform.forward.normalized;
             }
         }
         else if(attacker.tag == "Alien")
@@ -42,10 +41,10 @@ public class AttacksManager : NetworkBehaviour {
             attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
             attacker.GetComponent<PlayerBehaviour>().RpcPlayEnemyDeath();
         }
-        StartCoroutine(AsyncDestroy(instance));
+        StartCoroutine(AsyncDestroyAttack(instance));
     }
 
-    private IEnumerator AsyncDestroy(GameObject particles)
+    private IEnumerator AsyncDestroyAttack(GameObject particles)
     {
         yield return new WaitForSeconds(Constants.ATTACK_PARTICLES_DURATION);
         NetworkServer.Destroy(particles);
@@ -63,19 +62,18 @@ public class AttacksManager : NetworkBehaviour {
             instance = Instantiate(alienAbilityPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);
-        StartCoroutine(AsyncTakeDamage(attacker, target, instance, damage));
-    }
-
-    private IEnumerator AsyncTakeDamage(GameObject attacker, GameObject target, GameObject particles, float damage)
-    {
-        // Withdraw life after particle system
-        yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
         float exp = target.GetComponent<LifeBehaviour>().TakeDamage(damage);
         if(attacker.GetComponent<PlayerBehaviour>() != null && exp > 0)
         {
             attacker.GetComponent<PlayerBehaviour>().AddExperience(exp);
             attacker.GetComponent<PlayerBehaviour>().RpcPlayEnemyDeath();
         }
+        StartCoroutine(AsyncDestroyAbility(instance));
+    }
+
+    private IEnumerator AsyncDestroyAbility(GameObject particles)
+    {
+        yield return new WaitForSeconds(Constants.ABILITY_PARTICLES_DURATION);
         NetworkServer.Destroy(particles);
     }
 }

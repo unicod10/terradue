@@ -5152,15 +5152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219d183043f907c479365c209e17a6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  humanAttackPrefab: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 2}
-  alienAttackPrefab: {fileID: 1944100775801338, guid: 3e959c88635c24b4592f3c232adeaa33,
-    type: 2}
+  humanAttackPrefab: {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
+  alienAttackPrefab: {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
   monsterAttackPrefab: {fileID: 1740811149702678, guid: 42c0f0000ef1a1649a4898441b46ec7b,
     type: 2}
-  humanAbilityPrefab: {fileID: 1301720346388678, guid: 646862a483f611742898afa222b18c67,
-    type: 2}
-  alienAbilityPrefab: {fileID: 1622000673951050, guid: d797c58bf03a8d3429ef01b8dd0bb09e,
-    type: 2}
+  humanAbilityPrefab: {fileID: 100012, guid: 1f1aa87040db08846a4332981b0a6fa7, type: 2}
+  alienAbilityPrefab: {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
 --- !u!114 &906289910
 MonoBehaviour:
   m_ObjectHideFlags: 0

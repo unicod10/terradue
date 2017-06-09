@@ -42,8 +42,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400004}
-  - component: {fileID: 11400002}
-  - component: {fileID: 114385808568427308}
+  - component: {fileID: 114664023736417070}
   m_Layer: 0
   m_Name: HumanAttackParticles
   m_TagString: Untagged
@@ -62,7 +61,7 @@ GameObject:
   - component: {fileID: 19800002}
   - component: {fileID: 19900002}
   m_Layer: 0
-  m_Name: Exposion-[Explosion5]
+  m_Name: Exposion-[Explosion4]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.61975574, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0491529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -132,7 +131,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.9191176, g: 0.5514706, b: 0, a: 1}
+  m_Color: {r: 0.9191176, g: 0.39934075, b: 0, a: 1}
   m_Intensity: 2
   m_Range: 8
   m_SpotAngle: 30
@@ -173,17 +172,6 @@ MonoBehaviour:
   _lihgt: {fileID: 10800000}
   Delay: 0.5
   Down: 3
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b9b11ad00a01e44aa1c4d1ab3954eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3513,7 +3501,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 3
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -6483,7 +6471,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 095a9a9bdbe55fe48924c6da7076dc7f, type: 2}
+  - {fileID: 2100000, guid: 10c03057446632e47841790eaaf2e302, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6531,7 +6519,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100004}
   m_IsPrefabParent: 1
---- !u!114 &114385808568427308
+--- !u!114 &114664023736417070
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -6545,21 +6533,21 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 189
-    i1: 90
-    i2: 122
-    i3: 227
-    i4: 232
-    i5: 189
-    i6: 76
-    i7: 132
-    i8: 153
-    i9: 246
-    i10: 158
-    i11: 142
-    i12: 69
-    i13: 19
-    i14: 128
-    i15: 33
+    i0: 110
+    i1: 140
+    i2: 124
+    i3: 66
+    i4: 94
+    i5: 91
+    i6: 195
+    i7: 116
+    i8: 218
+    i9: 249
+    i10: 90
+    i11: 119
+    i12: 71
+    i13: 103
+    i14: 177
+    i15: 227
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0

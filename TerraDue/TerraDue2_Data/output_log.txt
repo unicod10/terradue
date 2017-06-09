@@ -21,7 +21,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.040 seconds
+- Completed reload, in  0.049 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -29,10 +29,10 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.441288 ms
+UnloadTime: 1.545896 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4154 -> priority: 1 
-  Thread -> id: 2604 -> priority: 1 
+  Thread -> id: 4a34 -> priority: 1 
+  Thread -> id: a38 -> priority: 1 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
@@ -42,45 +42,25 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 462)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.758938 ms
+UnloadTime: 1.850534 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2406.
+Total: 33.459381 ms (FindLiveObjects: 0.166606 ms CreateObjectMapping: 0.100780 ms MarkObjects: 33.164948 ms  DeleteObjects: 0.025769 ms)
+
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Mono.Security.dll (this message is harmless)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3954.
-Total: 38.716297 ms (FindLiveObjects: 0.292901 ms CreateObjectMapping: 0.342908 ms MarkObjects: 38.050381 ms  DeleteObjects: 0.029086 ms)
-
-Prime monster has been spawned!
+Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Boo.Lang.dll (this message is harmless)
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+ClientDisconnected due to error: Timeout
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+UnloadTime: 1.569369 ms
 
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-TOWER ATTACK MINION!!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1594.
+Total: 2.294988 ms (FindLiveObjects: 0.116088 ms CreateObjectMapping: 0.083430 ms MarkObjects: 1.993157 ms  DeleteObjects: 0.101545 ms)
 

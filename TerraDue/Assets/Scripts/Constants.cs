@@ -14,7 +14,7 @@
     public const float HERO_BASE_ABILITY_DAMAGE = 125;
     public const float BALANCING_INTEREST = 0.1f;
     public const float ABILITY_COOLDOWN = 5;
-    public const float ABILITY_PARTICLES_DURATION = 0.5f;
+    public const float ABILITY_PARTICLES_DURATION = 3;
     public const float BUILD_MAXIMUM_DISTANCE = 12;
     public const float RESPAWN_AFTER_SECS = 10;
     public const float HERO_BASE_EXPERIENCE = 500;

@@ -135,6 +135,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Editor\EffectControllerInspector.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Editor\EffectToolBar.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Editor\RenderEffectInspector.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Editor\ShaderCustomEditor\ShaderMaterialsEditor.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Editor\XUIUtils.cs" />
     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
   </ItemGroup>
@@ -152,6 +157,13 @@
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />
     <None Include="Assets\Lobby\Instruction.txt" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\effect_distortion_mask.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\READ ME.txt" />
+    <None Include="Assets\Prefabs\AlienAttack\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
   </ItemGroup>

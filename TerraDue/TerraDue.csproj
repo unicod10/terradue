@@ -102,6 +102,12 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\CameraTarget.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\EffectController.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\EffectDemo.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\RenderEffect.cs" />
+    <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\TransformExtension.cs" />
     <Compile Include="Assets\Prefabs\HumanAttack\Script\DestroyEffect.cs" />
     <Compile Include="Assets\Prefabs\HumanAttack\Script\csLightControl.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
@@ -143,6 +149,13 @@
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />
     <None Include="Assets\Lobby\Instruction.txt" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Shader\effect_distortion_mask.shader" />
+    <None Include="Assets\Prefabs\AlienAbility\READ ME.txt" />
+    <None Include="Assets\Prefabs\AlienAttack\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
   </ItemGroup>
