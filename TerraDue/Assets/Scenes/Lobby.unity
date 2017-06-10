@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
+  m_AmbientSkyColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5165,7 +5165,7 @@ MonoBehaviour:
   - {fileID: 1500161821532248, guid: 83f094a517401f748a1cab8813f1921d, type: 2}
   - {fileID: 1396331320087660, guid: 19ec42ca554e7f84d810bc4f048b84a9, type: 2}
   - {fileID: 100012, guid: 1f1aa87040db08846a4332981b0a6fa7, type: 2}
-  - {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
+  - {fileID: 136674, guid: 8d3a7fbc62f810c43b8c42fdb2978ef4, type: 2}
   - {fileID: 1000012174300454, guid: 8a4fca54c9faa3449bcff12193992420, type: 2}
   - {fileID: 195702, guid: eeade5eac92f39e439a9bf65b8f4007c, type: 2}
   - {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}

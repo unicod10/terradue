@@ -16,23 +16,13 @@ public class AttacksManager : NetworkBehaviour {
         if (attacker.tag == "Human")
         {
             instance = Instantiate(humanAttackPrefab, target.transform);
-            // Fix animation position
-            if (target.GetComponent<PlayerBehaviour>() != null)
-            {
-                instance.transform.position = instance.transform.position + new Vector3(0, 1.2f);
-            }
         }
         else if(attacker.tag == "Alien")
         {
             instance = Instantiate(alienAttackPrefab, target.transform);
         }
-        else if(attacker.tag == "Monster")
-        {
-            instance = Instantiate(monsterAttackPrefab, target.transform);
-        }
         else
         {
-            // TODO prefab
             instance = Instantiate(monsterAttackPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);

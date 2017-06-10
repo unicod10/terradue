@@ -138,6 +138,8 @@ public class UserInteraction : MonoBehaviour {
         if(Input.GetMouseButtonDown(0) && player.GetComponent<PlayerBehaviour>().IsAlive())
         {
             // Find the clicked object
+            // Let the ray pass through the player
+            player.GetComponent<Collider>().enabled = false;
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
             {
@@ -193,6 +195,7 @@ public class UserInteraction : MonoBehaviour {
                 }
             }
         }
+        player.GetComponent<Collider>().enabled = true;
     }
 
     private void MoveTo(Vector3 point)
