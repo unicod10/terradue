@@ -96,7 +96,7 @@ public class TowersManager : NetworkBehaviour {
         // Load the tower prefab and create
         GameObject prefab;
         prefab = human ? humanTowerPrefab : alienTowerPrefab;
-        GameObject instance = Instantiate(prefab, slot.transform);
+        GameObject instance = Instantiate(prefab, slot.transform.position, prefab.transform.rotation);
         instance.GetComponent<TowerBehaviour>().slot = slot;
         // Register it here and spawn
         slots[GetLane(slot.name), GetSlot(slot.name)] = human ? SlotState.Human : SlotState.Alien;

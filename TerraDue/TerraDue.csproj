@@ -110,6 +110,7 @@
     <Compile Include="Assets\Prefabs\AlienAbility\Plugins\Effect\Script\TransformExtension.cs" />
     <Compile Include="Assets\Prefabs\HumanAttack\Script\DestroyEffect.cs" />
     <Compile Include="Assets\Prefabs\HumanAttack\Script\csLightControl.cs" />
+    <Compile Include="Assets\Prefabs\HumanTower\Scripts\CameraMouseDrag.cs" />
     <Compile Include="Assets\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\Scripts\AlienHeroAnimations.cs" />
     <Compile Include="Assets\Scripts\AttacksManager.cs" />

@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -5166,8 +5166,8 @@ MonoBehaviour:
   - {fileID: 1396331320087660, guid: 19ec42ca554e7f84d810bc4f048b84a9, type: 2}
   - {fileID: 100012, guid: 1f1aa87040db08846a4332981b0a6fa7, type: 2}
   - {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
-  - {fileID: 1137425003929304, guid: 494e84ec10f891b4cb89109898fe371a, type: 2}
-  - {fileID: 1628457280066420, guid: 93d3acb33a9a2fc4ca78afb541587440, type: 2}
+  - {fileID: 1000012174300454, guid: 8a4fca54c9faa3449bcff12193992420, type: 2}
+  - {fileID: 195702, guid: eeade5eac92f39e439a9bf65b8f4007c, type: 2}
   - {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
   - {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
   - {fileID: 1740811149702678, guid: 42c0f0000ef1a1649a4898441b46ec7b, type: 2}
