@@ -333,7 +333,7 @@ MonoBehaviour:
       reference="1"><_isActive>True</_isActive><_body object="0"></_body><_workingMemory
       type="RAIN.Memory.BasicMemory" reference="2"><_memoryItems></_memoryItems></_workingMemory><_mind
       type="RAIN.Minds.BasicMind" reference="3"><_behaviorTree object="7"></_behaviorTree><_behaviorTreeBindings></_behaviorTreeBindings></_mind><_motor
-      type="RAIN.Motion.BasicMotor" reference="4"><_speed>3</_speed><_rotationSpeed>360</_rotationSpeed><_closeEnoughDistance>0.1</_closeEnoughDistance><_closeEnoughAngle>0.1</_closeEnoughAngle><_faceBeforeMoveAngle>360</_faceBeforeMoveAngle><_maxHeightOffset>1</_maxHeightOffset><_allow3DMovement>False</_allow3DMovement><_allow3DRotation>False</_allow3DRotation><_allowOffGraphMovement>True</_allowOffGraphMovement><_useRootMotion>False</_useRootMotion><_overrideRootRotation>True</_overrideRootRotation><_mecanimParameters></_mecanimParameters></_motor><_animator
+      type="RAIN.Motion.BasicMotor" reference="4"><_speed>3</_speed><_rotationSpeed>360</_rotationSpeed><_closeEnoughDistance>0.3</_closeEnoughDistance><_closeEnoughAngle>0.3</_closeEnoughAngle><_faceBeforeMoveAngle>360</_faceBeforeMoveAngle><_maxHeightOffset>1</_maxHeightOffset><_allow3DMovement>False</_allow3DMovement><_allow3DRotation>False</_allow3DRotation><_allowOffGraphMovement>True</_allowOffGraphMovement><_useRootMotion>False</_useRootMotion><_overrideRootRotation>True</_overrideRootRotation><_mecanimParameters></_mecanimParameters></_motor><_animator
       type="RAIN.Animation.BasicAnimator" reference="5"><_showVisual>True</_showVisual><_leftEye
       reference="6"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_leftEye><_rightEye
       reference="7"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_rightEye><_head
@@ -354,7 +354,7 @@ MonoBehaviour:
       type="RAIN.Perception.Sensors.VisualSensor" reference="17"><_showVisual>True</_showVisual><_sensorName>CloseMinionSensor</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0.5529412,0.009411765,1</_sensorColor><_mountPoint
       object="6"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>3</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element5></_sensors></_senses><_customElements></_customElements></_ai></component>
     _serializedMetaDocument: <meta><element0><key>/component/_ai+_selected</key><value
-      type="System.Int32">0</value></element0></meta>
+      type="System.Int32">2</value></element0></meta>
     _serializedObjects:
     - {fileID: 1892554210256930}
     - {fileID: 4370986901838798}

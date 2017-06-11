@@ -46,6 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Editor\EffectControllerInspector.cs" />
+     <Compile Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Editor\EffectToolBar.cs" />
+     <Compile Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Editor\RenderEffectInspector.cs" />
+     <Compile Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Editor\ShaderCustomEditor\ShaderMaterialsEditor.cs" />
+     <Compile Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Editor\XUIUtils.cs" />
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
      <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_CS.cs" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
@@ -55,14 +60,24 @@
      <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
+     <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\effect_distortion_mask.shader" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Prefabs\AlienAttack\MagicEffectsPackFree\ReadMe.txt" />
+     <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
+     <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />
+     <None Include="Assets\Prefabs\PrimeArenaMonster\Sheder\StandardDoubleSided.shader" />
      <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
+     <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
+     <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsLeft.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>/Users/unicod10/Documents/GitHub/terradue/TerraDue/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
