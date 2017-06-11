@@ -12,6 +12,10 @@ public class JungleMobBehaviour : LifeBehaviour {
     protected override void Start()
     {
         base.Start();
+        if(isServer)
+        {
+            GetComponent<IAnimations>().PlayIdle();
+        }
     }
 
     public override float TakeDamage(float Damage)

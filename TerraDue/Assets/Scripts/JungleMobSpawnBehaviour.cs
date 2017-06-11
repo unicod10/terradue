@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Networking;
 public class JungleMobSpawnBehaviour : NetworkBehaviour
 {
-
     public GameObject JungleMobPrefab;
     void Start()
     {
@@ -13,17 +12,15 @@ public class JungleMobSpawnBehaviour : NetworkBehaviour
             return;
         }
 
-
-
         //We spawn a group of 4 mob one time per all match
 
-        var mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(2.5f,0f,0f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
+        var mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(3f, 0.2f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(-2.5f, 0, 0f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(-3f, 0.2f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, -2.5f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0.2f, -3f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, 2.5f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0.2f, 3f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
     }
 
@@ -33,6 +30,5 @@ public class JungleMobSpawnBehaviour : NetworkBehaviour
         {
             return;
         }
-
     }
 }
