@@ -1271,7 +1271,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 81ab10bbf5a38dd4a902aebbae196f27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &279346897
 GameObject:
@@ -1463,7 +1463,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 5caff44f4fa9a5642879a667540d263b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &326718532
 GameObject:
@@ -2112,7 +2112,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 5caff44f4fa9a5642879a667540d263b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &398781258
 GameObject:
@@ -2414,7 +2414,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &456836433
 GameObject:
@@ -3772,7 +3772,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3854,7 +3854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &630258876
 GameObject:
@@ -4812,7 +4812,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 5caff44f4fa9a5642879a667540d263b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4894,7 +4894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &847479512
 GameObject:
@@ -5089,8 +5089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   humanAttackPrefab: {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
   alienAttackPrefab: {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
-  monsterAttackPrefab: {fileID: 1740811149702678, guid: 42c0f0000ef1a1649a4898441b46ec7b,
-    type: 2}
+  monsterAttackPrefab: {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
+  primeAttackPrefab: {fileID: 100672, guid: 7dc0b63f67faaf9479803bcfdff7f71e, type: 2}
   humanAbilityPrefab: {fileID: 100012, guid: 1f1aa87040db08846a4332981b0a6fa7, type: 2}
   alienAbilityPrefab: {fileID: 136674, guid: 8d3a7fbc62f810c43b8c42fdb2978ef4, type: 2}
 --- !u!114 &906289910
@@ -5581,7 +5581,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5644,7 +5644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!114 &1003362790
 MonoBehaviour:
@@ -5724,7 +5724,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 5caff44f4fa9a5642879a667540d263b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5806,7 +5806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &1072661554
 GameObject:
@@ -6518,8 +6518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6660056a0007bc49a58a1ddef765546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 1983472430533450, guid: a05b9bb9d6f7fb94e9d2277c61bfeff6,
-    type: 2}
+  monsterPrefab: {fileID: 153050, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 2}
 --- !u!1 &1199029408
 GameObject:
   m_ObjectHideFlags: 0
@@ -8942,7 +8941,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9024,7 +9023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &1727364779
 GameObject:
@@ -9837,7 +9836,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9887,7 +9886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!114 &1843508771
 MonoBehaviour:
@@ -9954,7 +9953,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10017,7 +10016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!114 &1850890909
 MonoBehaviour:
@@ -10643,7 +10642,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c76dc222b6b6d4b22b8d57b895be1b2c, type: 2}
+  - {fileID: 2100000, guid: 1c4c9a25c6f39604c8c3c3b7387b3c6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10725,7 +10724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3b0b3ca968e03458e51d6c84375b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JungleMobPrefab: {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002,
+  JungleMobPrefab: {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200,
     type: 2}
 --- !u!1 &2041675413
 GameObject:

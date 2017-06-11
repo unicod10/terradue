@@ -7,6 +7,7 @@ public class AttacksManager : NetworkBehaviour {
     public GameObject humanAttackPrefab;
     public GameObject alienAttackPrefab;
     public GameObject monsterAttackPrefab;
+    public GameObject primeAttackPrefab;
     public GameObject humanAbilityPrefab;
     public GameObject alienAbilityPrefab;
 
@@ -21,9 +22,13 @@ public class AttacksManager : NetworkBehaviour {
         {
             instance = Instantiate(alienAttackPrefab, target.transform);
         }
-        else
+        else if(attacker.tag == "Monster")
         {
             instance = Instantiate(monsterAttackPrefab, target.transform);
+        }
+        else
+        {
+            instance = Instantiate(primeAttackPrefab, target.transform);
         }
         NetworkServer.Spawn(instance);
         float exp = target.GetComponent<LifeBehaviour>().TakeDamage(damage);

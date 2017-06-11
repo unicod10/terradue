@@ -6,13 +6,16 @@ using UnityEngine.Networking;
 
 public class PrimeArenaMobBehaviour : LifeBehaviour {
     
-    public PrimeArenaMobBehaviour() : base(Constants.PRIME_HEALTH, 0) {
-        
+    public PrimeArenaMobBehaviour() : base(Constants.PRIME_HEALTH, Constants.PRIME_HEAL_RATIO) {
     }
 
     protected override void Start()
     {
         base.Start();
+        if(isServer)
+        {
+            GetComponent<IAnimations>().PlayIdle();
+        }
     }
 
     public override float TakeDamage(float Damage)

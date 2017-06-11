@@ -34,7 +34,7 @@ public class PrimeArenaMobSpawn : NetworkBehaviour {
             if (!spawned)
             {
                 // Spawn the monster in prime arena
-                var monster = Instantiate(monsterPrefab, transform.position, Quaternion.identity);
+                var monster = Instantiate(monsterPrefab, transform.position, Quaternion.AngleAxis(90, new Vector3(0, 1)));
                 Debug.Log("Prime monster has been spawned!");
                 NetworkServer.Spawn(monster);
                 spawned = true;

@@ -5041,7 +5041,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -960.0001, y: 105}
+  m_AnchoredPosition: {x: -960.0002, y: 105}
   m_SizeDelta: {x: 1920, y: 105}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1770348098
@@ -5170,9 +5170,10 @@ MonoBehaviour:
   - {fileID: 195702, guid: eeade5eac92f39e439a9bf65b8f4007c, type: 2}
   - {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
   - {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
-  - {fileID: 1740811149702678, guid: 42c0f0000ef1a1649a4898441b46ec7b, type: 2}
-  - {fileID: 1494478052618100, guid: aeb8a41608db01540ba6cd6731c11002, type: 2}
-  - {fileID: 1983472430533450, guid: a05b9bb9d6f7fb94e9d2277c61bfeff6, type: 2}
+  - {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
+  - {fileID: 1850714472563518, guid: b8952723e9e827347987c2052edae200, type: 2}
+  - {fileID: 153050, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 2}
+  - {fileID: 100672, guid: 7dc0b63f67faaf9479803bcfdff7f71e, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:

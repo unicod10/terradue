@@ -17,13 +17,13 @@ public class JungleMobSpawnBehaviour : NetworkBehaviour
 
         //We spawn a group of 4 mob one time per all match
 
-        var mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(2.5f,0f,0f), Quaternion.identity);
+        var mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(2.5f,0f,0f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(-2.5f, 0, 0f), Quaternion.identity);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(-2.5f, 0, 0f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, -2.5f), Quaternion.identity);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, -2.5f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
-        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, 2.5f), Quaternion.identity);
+        mob = Instantiate(JungleMobPrefab, transform.position + new Vector3(0f, 0, 2.5f), Quaternion.AngleAxis(90, new Vector3(0, 1)));
         NetworkServer.Spawn(mob);
     }
 

@@ -46,6 +46,7 @@
     
     // Prime arena
     public const float PRIME_HEALTH = 700;
+    public const float PRIME_HEAL_RATIO = 25;
     public const float PRIME_ATTACK = 35;
     public const float PRIME_SPAWN_TIME_SECONDS = 30;
     public const float PRIME_SPAWN_ON_LEVEL_DIFF_LESS = 5;

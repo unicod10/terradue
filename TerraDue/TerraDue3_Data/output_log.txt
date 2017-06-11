@@ -1,16 +1,18 @@
-Initialize engine version: 5.6.0f3 (497a0f351392)
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GT 740 (ID=0xfc8)
     Vendor:   NVIDIA
-    VRAM:     2017 MB
-    Driver:   21.21.13.7653
+    VRAM:     2018 MB
+    Driver:   22.21.13.8205
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
@@ -19,7 +21,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.066 seconds
+- Completed reload, in  0.037 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -27,20 +29,10 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.554574 ms
+UnloadTime: 2.466449 ms
 Setting up 2 worker threads for Enlighten.
   Thread -> id: 2590 -> priority: 1 
-  Thread -> id: 15b8 -> priority: 1 
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 462)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.701535 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1284.
-Total: 1.452007 ms (FindLiveObjects: 0.079348 ms CreateObjectMapping: 0.055620 ms MarkObjects: 1.305811 ms  DeleteObjects: 0.010715 ms)
-
+  Thread -> id: 168 -> priority: 1 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
@@ -49,10 +41,11 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
  
 (Filename:  Line: 462)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.351074 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.834975 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2056.
-Total: 49.332283 ms (FindLiveObjects: 0.183956 ms CreateObjectMapping: 0.201051 ms MarkObjects: 48.916912 ms  DeleteObjects: 0.029596 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2683.
+Total: 35.677917 ms (FindLiveObjects: 0.179619 ms CreateObjectMapping: 0.134714 ms MarkObjects: 35.338070 ms  DeleteObjects: 0.024748 ms)
 
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue3_Data\Managed\Boo.Lang.dll (this message is harmless)
