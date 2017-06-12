@@ -21,7 +21,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_D
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.033 seconds
+- Completed reload, in  0.032 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -29,10 +29,10 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.619125 ms
+UnloadTime: 1.481604 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: dd8 -> priority: 1 
-  Thread -> id: 2a48 -> priority: 1 
+  Thread -> id: 3cc -> priority: 1 
+  Thread -> id: 2a5c -> priority: 1 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
@@ -42,10 +42,24 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 462)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.813033 ms
+UnloadTime: 1.754860 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2809.
-Total: 32.827225 ms (FindLiveObjects: 0.197734 ms CreateObjectMapping: 0.124253 ms MarkObjects: 32.478447 ms  DeleteObjects: 0.026024 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3987.
+Total: 42.004135 ms (FindLiveObjects: 0.258713 ms CreateObjectMapping: 0.176047 ms MarkObjects: 41.536716 ms  DeleteObjects: 0.031892 ms)
 
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\Mono.Security.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue_Data\Managed\Boo.Lang.dll (this message is harmless)
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+reactor filed to acomplish request with code {1234}, bytesReceived {0}
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+ClientDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnloadTime: 12.507016 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 3101.
+Total: 4.529519 ms (FindLiveObjects: 0.209470 ms CreateObjectMapping: 0.247486 ms MarkObjects: 3.666377 ms  DeleteObjects: 0.405674 ms)
+
