@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 114919780170071642}
   - component: {fileID: 114967544015708044}
   - component: {fileID: 114113396408400270}
+  - component: {fileID: 208243760295427142}
   m_Layer: 0
   m_Name: HumanTower
   m_TagString: Human
@@ -784,6 +785,21 @@ MonoBehaviour:
     - {fileID: 1000012174300454}
     - {fileID: 4000010737274380}
     _serializedCustomData: []
+--- !u!208 &208243760295427142
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012174300454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!222 &222118092483308722
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 114070697237443820}
   - component: {fileID: 114931458859448810}
   - component: {fileID: 114450240823892198}
+  - component: {fileID: 208047391468365740}
   m_Layer: 0
   m_Name: AlienTower
   m_TagString: Alien
@@ -504,6 +505,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!208 &208047391468365740
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195702}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!222 &222372690816262422
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -15,9 +15,9 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
-    BehaviorTreeID: 246
-    LastUpdate: 636323401026266350
-    LastModified: 636323401030000000
+    BehaviorTreeID: 191
+    LastUpdate: 636328635093128640
+    LastModified: 636328635100000000
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -34,20 +34,20 @@ MonoBehaviour:
   - AssetPath: Assets/AI/BehaviorTrees/HumanLeadMinionsLeft.txt
     BehaviorTreeName: HumanLeadMinionsLeft
     BehaviorTreeID: 1
-    LastUpdate: 636320168060107650
-    LastModified: 636320168070000000
+    LastUpdate: 636328633762927720
+    LastModified: 636328633770000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanLeadMinionsMid.txt
     BehaviorTreeName: HumanLeadMinionsMid
     BehaviorTreeID: 39
-    LastUpdate: 636320168491025560
-    LastModified: 636320168500000000
+    LastUpdate: 636328634289168890
+    LastModified: 636328634290000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanLeadMinionsRight.txt
     BehaviorTreeName: HumanLeadMinionsRight
     BehaviorTreeID: 77
-    LastUpdate: 636320168803782910
-    LastModified: 636320168810000000
+    LastUpdate: 636328634580949600
+    LastModified: 636328634590000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanMinions.txt
     BehaviorTreeName: HumanMinions
@@ -58,20 +58,20 @@ MonoBehaviour:
   - AssetPath: Assets/AI/BehaviorTrees/HumanSoldierMinionsLeft.txt
     BehaviorTreeName: HumanSoldierMinionsLeft
     BehaviorTreeID: 115
-    LastUpdate: 636320169572157220
-    LastModified: 636320169580000000
+    LastUpdate: 636328634772898570
+    LastModified: 636328634780000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanSoldierMinionsMid.txt
     BehaviorTreeName: HumanSoldierMinionsMid
     BehaviorTreeID: 153
-    LastUpdate: 636320169876327120
-    LastModified: 636320169880000000
+    LastUpdate: 636328634931995990
+    LastModified: 636328634940000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanSoldierMionionsRight.txt
     BehaviorTreeName: HumanSoldierMionionsRight
     BehaviorTreeID: 191
-    LastUpdate: 636320170180335740
-    LastModified: 636320170190000000
+    LastUpdate: 636328635093128640
+    LastModified: 636328635100000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/HumanTower.txt
     BehaviorTreeName: HumanTower
@@ -131,7 +131,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 1
       _parent: 0
-      _lastUpdate: 636320168060107650
+      _lastUpdate: 636328633762927720
       _children: 02000000
       _variables: 
       _focused: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
       _lastUpdate: 0
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: EnemyDetected
@@ -1049,7 +1049,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -1059,7 +1059,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 18
       _parent: 17
-      _lastUpdate: 0
+      _lastUpdate: 636328632687424480
       _children: 
       _variables: 
       _focused: 0
@@ -1421,7 +1421,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -1431,7 +1431,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 26
       _parent: 25
-      _lastUpdate: 0
+      _lastUpdate: 636328633713915880
       _children: 
       _variables: 
       _focused: 0
@@ -1793,7 +1793,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -1803,7 +1803,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 34
       _parent: 33
-      _lastUpdate: 0
+      _lastUpdate: 636328633762927720
       _children: 
       _variables: 
       _focused: 0
@@ -1946,7 +1946,7 @@ MonoBehaviour:
       _lastUpdate: 636320168060107650
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -2023,7 +2023,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 39
       _parent: 0
-      _lastUpdate: 636320168491025560
+      _lastUpdate: 636328634289168890
       _children: 28000000
       _variables: 
       _focused: 0
@@ -2941,7 +2941,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -2951,7 +2951,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 56
       _parent: 55
-      _lastUpdate: 0
+      _lastUpdate: 636328634193931570
       _children: 
       _variables: 
       _focused: 0
@@ -3313,7 +3313,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -3323,7 +3323,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 64
       _parent: 63
-      _lastUpdate: 0
+      _lastUpdate: 636328634233959560
       _children: 
       _variables: 
       _focused: 0
@@ -3685,7 +3685,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -3695,10 +3695,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 72
       _parent: 71
-      _lastUpdate: 0
+      _lastUpdate: 636328634289168890
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
@@ -3838,7 +3838,7 @@ MonoBehaviour:
       _lastUpdate: 636320168491025560
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -3915,7 +3915,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 77
       _parent: 0
-      _lastUpdate: 636320168803782910
+      _lastUpdate: 636328634580949600
       _children: 4e000000
       _variables: 
       _focused: 0
@@ -4833,7 +4833,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -4843,7 +4843,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 94
       _parent: 93
-      _lastUpdate: 0
+      _lastUpdate: 636328634482501460
       _children: 
       _variables: 
       _focused: 0
@@ -5205,7 +5205,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -5215,7 +5215,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 102
       _parent: 101
-      _lastUpdate: 0
+      _lastUpdate: 636328634523265290
       _children: 
       _variables: 
       _focused: 0
@@ -5577,7 +5577,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 10
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -5587,10 +5587,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 110
       _parent: 109
-      _lastUpdate: 0
+      _lastUpdate: 636328634580949600
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
@@ -5730,7 +5730,7 @@ MonoBehaviour:
       _lastUpdate: 636320168803782910
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -5807,7 +5807,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 115
       _parent: 0
-      _lastUpdate: 636320169572157220
+      _lastUpdate: 636328634772898570
       _children: 74000000
       _variables: 
       _focused: 0
@@ -6725,7 +6725,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -6735,7 +6735,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 132
       _parent: 131
-      _lastUpdate: 0
+      _lastUpdate: 636328634695861200
       _children: 
       _variables: 
       _focused: 0
@@ -7097,7 +7097,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -7107,7 +7107,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 140
       _parent: 139
-      _lastUpdate: 0
+      _lastUpdate: 636328634725792230
       _children: 
       _variables: 
       _focused: 0
@@ -7469,7 +7469,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -7479,10 +7479,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 148
       _parent: 147
-      _lastUpdate: 0
+      _lastUpdate: 636328634772898570
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
@@ -7622,7 +7622,7 @@ MonoBehaviour:
       _lastUpdate: 636320169572157220
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -7699,7 +7699,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 153
       _parent: 0
-      _lastUpdate: 636320169876327120
+      _lastUpdate: 636328634931995990
       _children: 9a000000
       _variables: 
       _focused: 0
@@ -8617,7 +8617,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -8627,7 +8627,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 170
       _parent: 169
-      _lastUpdate: 0
+      _lastUpdate: 636328634872862390
       _children: 
       _variables: 
       _focused: 0
@@ -8989,7 +8989,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -8999,7 +8999,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 178
       _parent: 177
-      _lastUpdate: 0
+      _lastUpdate: 636328634899031890
       _children: 
       _variables: 
       _focused: 0
@@ -9361,7 +9361,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -9371,10 +9371,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 186
       _parent: 185
-      _lastUpdate: 0
+      _lastUpdate: 636328634931995990
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
@@ -9514,7 +9514,7 @@ MonoBehaviour:
       _lastUpdate: 636320169876327120
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -9591,7 +9591,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 191
       _parent: 0
-      _lastUpdate: 636320170180335740
+      _lastUpdate: 636328635093128640
       _children: c0000000
       _variables: 
       _focused: 0
@@ -10509,7 +10509,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -10519,7 +10519,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 208
       _parent: 207
-      _lastUpdate: 0
+      _lastUpdate: 636328635035293060
       _children: 
       _variables: 
       _focused: 0
@@ -10662,7 +10662,7 @@ MonoBehaviour:
       _lastUpdate: 636320170050441460
       _children: 
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: timer
@@ -10881,7 +10881,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -10891,7 +10891,7 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 216
       _parent: 215
-      _lastUpdate: 0
+      _lastUpdate: 636328635062929140
       _children: 
       _variables: 
       _focused: 0
@@ -11253,7 +11253,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: closeenoughdistance
-        _currentValue: 
+        _currentValue: 4
         _recordChange: 1
         _changed: 0
       - _field: closeenoughangle
@@ -11263,10 +11263,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 224
       _parent: 223
-      _lastUpdate: 0
+      _lastUpdate: 636328635093128640
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
