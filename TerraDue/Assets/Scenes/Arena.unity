@@ -2692,9 +2692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1580942766566882, guid: 83f8350782639e84eb4629a4ff34cce3,
+  minionLeaderPrefab: {fileID: 1227316068458160, guid: 8e67f0c6d58ab4e6f86f5858aace4cf0,
     type: 2}
-  minionSoldierPrefab: {fileID: 1892554210256930, guid: 560df580950f1b7429d3c897e32eca1b,
+  minionSoldierPrefab: {fileID: 1735796002459362, guid: d08f968acc08346bda45a4146c9a711b,
     type: 2}
   isAlien: 0
 --- !u!114 &460199002
@@ -2919,9 +2919,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1701355911350922, guid: 238962d9bdc364e01812f712db36694a,
+  minionLeaderPrefab: {fileID: 1594991833110664, guid: 10ee1c346ad5446e2a7a00f2bd75d167,
     type: 2}
-  minionSoldierPrefab: {fileID: 1082254649451546, guid: ff39fc5278dff469e913a5ab4255babe,
+  minionSoldierPrefab: {fileID: 1402880596669332, guid: 4906eb640cc6d45fa9733251c1960f5f,
     type: 2}
   isAlien: 0
 --- !u!23 &492881190
@@ -5843,9 +5843,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1497741661731276, guid: bcf0044d52b94403793020ca1ced7330,
+  minionLeaderPrefab: {fileID: 1852865355697194, guid: dad6d5b697f2345bc8823ebade41be3f,
     type: 2}
-  minionSoldierPrefab: {fileID: 1674893228987150, guid: 60ac1d264c794452594720cd7106ca62,
+  minionSoldierPrefab: {fileID: 1701432832459492, guid: 8a518b20ec4b347398bd78e48d48f96a,
     type: 2}
   isAlien: 0
 --- !u!23 &1072661556
@@ -6293,9 +6293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1418629736056958, guid: e2984dfb7bbd4104c8521915a082a315,
+  minionLeaderPrefab: {fileID: 1513610614927276, guid: 76515ed8abf3047d7bce2d9b94bdf112,
     type: 2}
-  minionSoldierPrefab: {fileID: 1277439803033706, guid: fcd9ebd02f6c88348933572a6f72332d,
+  minionSoldierPrefab: {fileID: 1143170141882580, guid: d64b1e295aa6c43029eb40304ea80698,
     type: 2}
   isAlien: 1
 --- !u!23 &1190529375
@@ -9465,9 +9465,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1500161821532248, guid: 83f094a517401f748a1cab8813f1921d,
+  minionLeaderPrefab: {fileID: 1939204337758696, guid: c42f0c5d0ff2c4cb6a2b700d28d29358,
     type: 2}
-  minionSoldierPrefab: {fileID: 1396331320087660, guid: 19ec42ca554e7f84d810bc4f048b84a9,
+  minionSoldierPrefab: {fileID: 1868138733746514, guid: 6dd6a9c07c66e4880b0fe93fad3154c1,
     type: 2}
   isAlien: 1
 --- !u!23 &1793907068
@@ -9597,9 +9597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f66929f3be914388f4f77767d3b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionLeaderPrefab: {fileID: 1185108194745320, guid: d5fe04fb01373824683e091784412a20,
+  minionLeaderPrefab: {fileID: 1401066878857242, guid: 159abb4d385b5478e83fb12a58c8c502,
     type: 2}
-  minionSoldierPrefab: {fileID: 1678088574618140, guid: 89bdc01911371684a96831497921b933,
+  minionSoldierPrefab: {fileID: 1449984377321352, guid: 52bf20e8b7571474793b00b0e719ce1e,
     type: 2}
   isAlien: 1
 --- !u!23 &1803015211

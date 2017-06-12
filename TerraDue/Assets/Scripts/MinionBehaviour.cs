@@ -23,6 +23,10 @@ public class MinionBehaviour : LifeBehaviour {
             GetComponent<RAIN.Entities.EntityRig>().enabled = false;
             GetComponent<RAIN.Core.AIRig>().enabled = false;
         }
+		if (isServer)
+		{
+			GetComponent<IAnimations> ().PlayIdle ();
+		}
     }
 
     public override float TakeDamage(float Damage)

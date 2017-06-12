@@ -75,11 +75,13 @@
      <Compile Include="Assets\Prefabs\HumanTower\Scripts\CameraMouseDrag.cs" />
      <Compile Include="Assets\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\Scripts\AlienHeroAnimations.cs" />
+     <Compile Include="Assets\Scripts\AlienMinionAnimations.cs" />
      <Compile Include="Assets\Scripts\AttacksManager.cs" />
      <Compile Include="Assets\Scripts\BaseBehaviour.cs" />
      <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
      <Compile Include="Assets\Scripts\Constants.cs" />
      <Compile Include="Assets\Scripts\HumanHeroAnimations.cs" />
+     <Compile Include="Assets\Scripts\HumanMinionAnimations.cs" />
      <Compile Include="Assets\Scripts\IAnimations.cs" />
      <Compile Include="Assets\Scripts\JungleMobAnimations.cs" />
      <Compile Include="Assets\Scripts\JungleMobBehaviour.cs" />
