@@ -1,16 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AlienMinionAnimations.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AI/Actions/JungleMinionAttackAlienHero.cs">
     <Files>
-      <File FileName="Assets/Scripts/HumanMinionAnimations.cs" Line="1" Column="1" />
-      <File FileName="Assets/AI/Actions/TowerAttackHero.cs" Line="1" Column="1" />
-      <File FileName="Assets/AI/Actions/MinionAttackMinion.cs" Line="1" Column="1" />
-      <File FileName="Assets/AI/Actions/MinionAttackHero.cs" Line="1" Column="1" />
-      <File FileName="Assets/AI/Actions/TowerAttackMinion.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/JungleMobAnimations.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AlienMinionAnimations.cs" Line="50" Column="1" />
-      <File FileName="Assets/Scripts/JungleMobBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MinionBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/AI/Actions/MinionAttackHero.cs" Line="25" Column="3" />
+      <File FileName="Assets/AI/Actions/JungleMinionAttackHumanHero.cs" Line="15" Column="56" />
+      <File FileName="Assets/AI/Actions/JungleMinionAttackAlienHero.cs" Line="15" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
