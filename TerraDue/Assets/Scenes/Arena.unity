@@ -1825,7 +1825,6 @@ GameObject:
   - component: {fileID: 353049992}
   - component: {fileID: 353049991}
   - component: {fileID: 353049995}
-  - component: {fileID: 353049996}
   m_Layer: 0
   m_Name: TowerSlot_1_0
   m_TagString: TowerSlot
@@ -1892,7 +1891,7 @@ Transform:
   m_GameObject: {fileID: 353049990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.5, z: -62}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 4
@@ -1929,21 +1928,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &353049996
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 353049990}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &355263092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,7 +2001,6 @@ GameObject:
   - component: {fileID: 357889882}
   - component: {fileID: 357889881}
   - component: {fileID: 357889885}
-  - component: {fileID: 357889886}
   m_Layer: 0
   m_Name: TowerSlot_0_2
   m_TagString: TowerSlot
@@ -2084,7 +2067,7 @@ Transform:
   m_GameObject: {fileID: 357889880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -62, y: -0.5, z: 36}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 2
@@ -2121,21 +2104,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &357889886
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 357889880}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &361947196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,7 +3284,6 @@ GameObject:
   - component: {fileID: 545970338}
   - component: {fileID: 545970337}
   - component: {fileID: 545970341}
-  - component: {fileID: 545970342}
   m_Layer: 0
   m_Name: TowerSlot_2_1
   m_TagString: TowerSlot
@@ -3383,7 +3350,7 @@ Transform:
   m_GameObject: {fileID: 545970336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 62, y: -0.5, z: -36}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 9
@@ -3420,21 +3387,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &545970342
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 545970336}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &555013703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,7 +3894,6 @@ GameObject:
   - component: {fileID: 630258878}
   - component: {fileID: 630258877}
   - component: {fileID: 630258881}
-  - component: {fileID: 630258882}
   m_Layer: 0
   m_Name: TowerSlot_0_1
   m_TagString: TowerSlot
@@ -4009,7 +3960,7 @@ Transform:
   m_GameObject: {fileID: 630258876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -62, y: -0.5, z: -36}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 1
@@ -4046,21 +3997,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &630258882
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 630258876}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &640781384 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1753679261851890, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6,
@@ -4722,7 +4658,6 @@ GameObject:
   - component: {fileID: 727794180}
   - component: {fileID: 727794179}
   - component: {fileID: 727794183}
-  - component: {fileID: 727794184}
   m_Layer: 0
   m_Name: TowerSlot_2_2
   m_TagString: TowerSlot
@@ -4789,7 +4724,7 @@ Transform:
   m_GameObject: {fileID: 727794178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 62, y: -0.5, z: 36}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 10
@@ -4826,21 +4761,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &727794184
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727794178}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &736119635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,7 +5019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219d183043f907c479365c209e17a6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  humanAttackPrefab: {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
+  humanAttackPrefab: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 2}
   alienAttackPrefab: {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
   monsterAttackPrefab: {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
   primeAttackPrefab: {fileID: 100672, guid: 7dc0b63f67faaf9479803bcfdff7f71e, type: 2}
@@ -5275,7 +5195,6 @@ GameObject:
   - component: {fileID: 928801487}
   - component: {fileID: 928801486}
   - component: {fileID: 928801490}
-  - component: {fileID: 928801491}
   m_Layer: 0
   m_Name: TowerSlot_2_0
   m_TagString: TowerSlot
@@ -5342,7 +5261,7 @@ Transform:
   m_GameObject: {fileID: 928801485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32, y: -0.5, z: -66}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 8
@@ -5379,21 +5298,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &928801491
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 928801485}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &934370802
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,7 +6940,6 @@ GameObject:
   - component: {fileID: 1284338960}
   - component: {fileID: 1284338959}
   - component: {fileID: 1284338963}
-  - component: {fileID: 1284338964}
   m_Layer: 0
   m_Name: TowerSlot_2_3
   m_TagString: TowerSlot
@@ -7103,7 +7006,7 @@ Transform:
   m_GameObject: {fileID: 1284338958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32, y: -0.5, z: 66}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 11
@@ -7140,21 +7043,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &1284338964
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284338958}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1001 &1299113127
 Prefab:
   m_ObjectHideFlags: 0
@@ -7293,7 +7181,6 @@ GameObject:
   - component: {fileID: 1317105799}
   - component: {fileID: 1317105798}
   - component: {fileID: 1317105802}
-  - component: {fileID: 1317105803}
   m_Layer: 0
   m_Name: TowerSlot_0_0
   m_TagString: TowerSlot
@@ -7360,7 +7247,7 @@ Transform:
   m_GameObject: {fileID: 1317105797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32, y: -0.5, z: -66}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 0
@@ -7397,21 +7284,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &1317105803
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1317105797}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &1317399810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,7 +7716,6 @@ GameObject:
   - component: {fileID: 1436667406}
   - component: {fileID: 1436667405}
   - component: {fileID: 1436667409}
-  - component: {fileID: 1436667410}
   m_Layer: 0
   m_Name: TowerSlot_1_1
   m_TagString: TowerSlot
@@ -7911,7 +7782,7 @@ Transform:
   m_GameObject: {fileID: 1436667404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: -22}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 5
@@ -7948,21 +7819,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &1436667410
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1436667404}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &1436952273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7975,7 +7831,6 @@ GameObject:
   - component: {fileID: 1436952275}
   - component: {fileID: 1436952274}
   - component: {fileID: 1436952278}
-  - component: {fileID: 1436952279}
   m_Layer: 0
   m_Name: TowerSlot_0_3
   m_TagString: TowerSlot
@@ -8042,7 +7897,7 @@ Transform:
   m_GameObject: {fileID: 1436952273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32, y: -0.5, z: 66}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 3
@@ -8079,21 +7934,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &1436952279
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1436952273}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &1438935058
 GameObject:
   m_ObjectHideFlags: 0
@@ -9322,7 +9162,6 @@ GameObject:
   - component: {fileID: 1738115261}
   - component: {fileID: 1738115260}
   - component: {fileID: 1738115264}
-  - component: {fileID: 1738115265}
   m_Layer: 0
   m_Name: TowerSlot_1_2
   m_TagString: TowerSlot
@@ -9389,7 +9228,7 @@ Transform:
   m_GameObject: {fileID: 1738115259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 22}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 6
@@ -9426,21 +9265,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &1738115265
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1738115259}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &1743833209
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,7 +10919,6 @@ GameObject:
   - component: {fileID: 2119284210}
   - component: {fileID: 2119284209}
   - component: {fileID: 2119284213}
-  - component: {fileID: 2119284214}
   m_Layer: 0
   m_Name: TowerSlot_1_3
   m_TagString: TowerSlot
@@ -11162,7 +10985,7 @@ Transform:
   m_GameObject: {fileID: 2119284208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 62}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1807366307}
   m_RootOrder: 7
@@ -11199,21 +11022,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!208 &2119284214
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2119284208}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &2142550205
 GameObject:
   m_ObjectHideFlags: 0

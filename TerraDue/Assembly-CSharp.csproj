@@ -102,9 +102,12 @@
      <Compile Include="Assets\Scripts\TowersManager.cs" />
      <Compile Include="Assets\Scripts\UserInteraction.cs" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
+     <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
      <None Include="Assets\Lobby\Documentation.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsLeft.txt" />
+     <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsLeft.txt" />
      <None Include="Assets\Lobby\Instruction.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
@@ -113,7 +116,9 @@
      <None Include="Assets\Prefabs\AlienAttack\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
+     <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsRight.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />
      <None Include="Assets\Prefabs\PrimeArenaMonster\Sheder\StandardDoubleSided.shader" />
      <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
@@ -121,6 +126,7 @@
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
+     <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsRight.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsLeft.txt" />
  <Reference Include="UnityEngine.Analytics">
