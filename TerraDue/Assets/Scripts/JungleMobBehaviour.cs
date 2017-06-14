@@ -2,21 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using RAIN.Core;
 
 public class JungleMobBehaviour : LifeBehaviour {
     
     public GameObject jungle;
     public Vector3 positionOffset;
+	private GameObject dummyPosition;
 
     public JungleMobBehaviour() : base(Constants.JUNGLE_MOB_LIFE, 0) {
     }
 
-    protected override void Start()
+	protected override void Start()
     {
         base.Start();
         if(isServer)
         {
             GetComponent<IAnimations>().PlayIdle();
+			//Setto la posizione a lui assegnata nella memoria dell'AI
+			dummyPosition = new GameObject("DummyObj");
+			dummyPosition.transform.position += jungle.transform.position + positionOffset;
+			GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem<GameObject>("myBush",dummyPosition);
         }
     }
 

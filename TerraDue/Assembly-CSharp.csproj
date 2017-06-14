@@ -129,6 +129,7 @@
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
      <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsRight.txt" />
+     <None Include="Assets\AI\BehaviorTrees\JungleMob.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleBlendEffect.shader" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsLeft.txt" />
  <Reference Include="UnityEngine.Analytics">
