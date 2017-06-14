@@ -5019,7 +5019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219d183043f907c479365c209e17a6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  humanAttackPrefab: {fileID: 100004, guid: bd5a7ae3e8bd4c8499f69e8e45138021, type: 2}
+  humanAttackPrefab: {fileID: 100004, guid: 6e8c7c425e5bc374daf95a774767b1e3, type: 2}
   alienAttackPrefab: {fileID: 100006, guid: 906ef3748a66347cfb2d72de10092732, type: 2}
   monsterAttackPrefab: {fileID: 123640, guid: 9242b15a276bc5a4babd09239e5fa709, type: 2}
   primeAttackPrefab: {fileID: 100672, guid: 7dc0b63f67faaf9479803bcfdff7f71e, type: 2}

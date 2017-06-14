@@ -35,7 +35,7 @@ public class PrimeArenaMobSpawn : NetworkBehaviour {
             {
                 // Spawn the monster in prime arena
                 var monster = Instantiate(monsterPrefab, transform.position, Quaternion.AngleAxis(90, new Vector3(0, 1)));
-                Debug.Log("Prime monster has been spawned!");
+                monster.GetComponent<PrimeArenaMobBehaviour>().arena = gameObject;
                 NetworkServer.Spawn(monster);
                 spawned = true;
                 //Reset the counter time
@@ -45,7 +45,6 @@ public class PrimeArenaMobSpawn : NetworkBehaviour {
             {
                 if (GameObject.FindGameObjectWithTag("PrimeMonster") != null)
                 {
-                    Debug.Log("The monster is still alive!");
                     // Check again in one second
                     elapsedTime = Constants.PRIME_SPAWN_TIME_SECONDS - 1;
                 }

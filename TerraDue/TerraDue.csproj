@@ -85,6 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AI\Actions\Healing.cs" />
+    <Compile Include="Assets\AI\Actions\JungleMinionAttackAlienHero.cs" />
+    <Compile Include="Assets\AI\Actions\JungleMinionAttackHumanHero.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackHero.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackMinion.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackTower.cs" />
@@ -141,6 +143,12 @@
     <Compile Include="Assets\Scripts\UserInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsLeft.txt" />
+    <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsMid.txt" />
+    <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsRight.txt" />
+    <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsLeft.txt" />
+    <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsMid.txt" />
+    <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsRight.txt" />
     <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsMid.txt" />
