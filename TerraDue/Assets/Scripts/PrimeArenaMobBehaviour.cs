@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using RAIN.Core;
 using UnityEngine.Networking;
 
 public class PrimeArenaMobBehaviour : LifeBehaviour {
@@ -17,6 +17,8 @@ public class PrimeArenaMobBehaviour : LifeBehaviour {
         if(isServer)
         {
             GetComponent<IAnimations>().PlayIdle();
+			//Setto la posizione a lui assegnata nella memoria dell'AI
+			GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem<GameObject>("myBush",arena);
         }
     }
 

@@ -16,8 +16,8 @@ MonoBehaviour:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
     BehaviorTreeID: 101
-    LastUpdate: 636330544730885160
-    LastModified: 636330544740000000
+    LastUpdate: 636330637232931220
+    LastModified: 636330637240000000
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -118,8 +118,8 @@ MonoBehaviour:
   - AssetPath: Assets/AI/BehaviorTrees/JungleMob.txt
     BehaviorTreeName: JungleMob
     BehaviorTreeID: 101
-    LastUpdate: 636330544730885160
-    LastModified: 636330544740000000
+    LastUpdate: 636330637232931220
+    LastModified: 636330637240000000
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/TestPatrol.txt
     BehaviorTreeName: TestPatrol
@@ -5161,7 +5161,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 101
       _parent: 0
-      _lastUpdate: 636330544730885160
+      _lastUpdate: 636330637232931220
       _children: 64000000
       _variables: 
       _focused: 0
@@ -5861,10 +5861,10 @@ MonoBehaviour:
       _type: 15
       _stateIndex: 116
       _parent: 115
-      _lastUpdate: 636330544600384450
+      _lastUpdate: 636330637232931220
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: CloseEnough
@@ -5908,7 +5908,7 @@ MonoBehaviour:
       _lastUpdate: 636330501746380290
       _children: 76000000
       _variables: 
-      _focused: 1
+      _focused: 0
     - _fields:
       - _field: name
         _currentValue: Attack
