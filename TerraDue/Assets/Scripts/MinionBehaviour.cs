@@ -12,20 +12,19 @@ public class MinionBehaviour : LifeBehaviour {
     protected override void Start()
     {
         base.Start();
-        // TODO remove tag
-        if(isServer && tag == "Human")
+        if(isServer)
         {
             GetComponent<RAIN.Entities.EntityRig>().enabled = true;
             GetComponent<RAIN.Core.AIRig>().enabled = true;
         }
-        else if(isClient && tag == "Human")
+        else if(isClient)
         {
             GetComponent<RAIN.Entities.EntityRig>().enabled = false;
             GetComponent<RAIN.Core.AIRig>().enabled = false;
         }
 		if (isServer)
 		{
-			GetComponent<IAnimations> ().PlayIdle ();
+			GetComponent<IAnimations> ().PlayIdle();
 		}
     }
 

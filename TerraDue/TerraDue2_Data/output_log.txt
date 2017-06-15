@@ -21,7 +21,7 @@ Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAIN.dll into Unity Child Domain
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll (this message is harmless)
 Loading C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\RAINMetaform.dll into Unity Child Domain
-- Completed reload, in  0.073 seconds
+- Completed reload, in  0.040 seconds
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -29,10 +29,10 @@ desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\System.Xml.dll (this message is harmless)
-UnloadTime: 1.480584 ms
+UnloadTime: 1.944192 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 25fc -> priority: 1 
-  Thread -> id: 1c04 -> priority: 1 
+  Thread -> id: 2e8 -> priority: 1 
+  Thread -> id: 1628 -> priority: 1 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 462)
@@ -42,10 +42,198 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 462)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.191662 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2809.
-Total: 37.627960 ms (FindLiveObjects: 0.190335 ms CreateObjectMapping: 0.123743 ms MarkObjects: 37.284290 ms  DeleteObjects: 0.029086 ms)
-
+UnloadTime: 1.888061 ms
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Mono.Security.dll (this message is harmless)
 Platform assembly: C:\Users\Jacopo\Documents\GitHub\terradue\TerraDue\TerraDue2_Data\Managed\Boo.Lang.dll (this message is harmless)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 11632.
+Total: 57.316952 ms (FindLiveObjects: 0.781249 ms CreateObjectMapping: 0.315867 ms MarkObjects: 56.161659 ms  DeleteObjects: 0.057152 ms)
+
+Could not find target object with netId:39 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:102 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:101 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:67 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:104 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:99 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:103 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:100 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:66 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:108 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:107 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:109 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:110 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:106 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK MINION!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:105 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:313 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:240 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TOWER ATTACK HERO!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Could not find target object with netId:69 for RPC call ClientRpc:InvokeRpcRpcUpdateHealth
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

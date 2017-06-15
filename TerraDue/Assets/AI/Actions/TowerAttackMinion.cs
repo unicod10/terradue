@@ -21,7 +21,6 @@ public class TowerAttackMinion : RAINAction
 	{
 
 		action.Attack(target);
-		Debug.Log("TOWER ATTACK MINION!!!!");
 		return ActionResult.SUCCESS;
 	}
 

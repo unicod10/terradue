@@ -21,7 +21,6 @@ public class TowerAttackHero : RAINAction
 	{
 
 		action.Attack(target);
-		Debug.Log("TOWER ATTACK HERO!!!!");
 		return ActionResult.SUCCESS;
 	}
 
