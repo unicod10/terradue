@@ -48,5 +48,6 @@ public class PrimeArenaMobBehaviour : LifeBehaviour {
     public void Attack(GameObject target)
     {
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.PRIME_ATTACK);
+		GetComponent<IAnimations> ().PlayAttacking ();
     }
 }

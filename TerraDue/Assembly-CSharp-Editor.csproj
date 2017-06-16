@@ -68,6 +68,7 @@
      <None Include="Assets\Prefabs\AlienAttack\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\AI\BehaviorTrees\PrimeMob.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsLeft.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsRight.txt" />
