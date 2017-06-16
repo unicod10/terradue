@@ -53,5 +53,6 @@ public class JungleMobBehaviour : LifeBehaviour {
     public void Attack(GameObject target)
     {
         GameObject.Find("ServerObject").GetComponent<AttacksManager>().Attack(gameObject, target, Constants.JUNGLE_MOB_ATTACK_DAMAGE);
+		//GetComponent<IAnimations> ().PlayAttacking ();
     }
 }

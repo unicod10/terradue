@@ -19,7 +19,7 @@ public class JungleMinionAttackHumanHero : RAINAction
 
 	public override ActionResult Execute(RAIN.Core.AI ai)
 	{
-		//action.Attack(target);
+		action.Attack(target);
 		return ActionResult.SUCCESS;
 	}
 
