@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  m_AmbientSkyColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -32,13 +32,13 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5440756, g: 0.5212564, b: 0.5337825, a: 1}
+  m_IndirectSpecularColor: {r: 0.54409945, g: 0.52129275, b: 0.5338115, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5084,7 +5084,6 @@ MonoBehaviour:
   humanTowerPrefab: {fileID: 1000012174300454, guid: 8a4fca54c9faa3449bcff12193992420,
     type: 2}
   alienTowerPrefab: {fileID: 195702, guid: eeade5eac92f39e439a9bf65b8f4007c, type: 2}
-  destroySound: {fileID: 0}
 --- !u!1 &918914737
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,7 +6775,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4060895315211686, guid: 609fc875afdf147dc87e9ef1f81cf216, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4060895315211686, guid: 609fc875afdf147dc87e9ef1f81cf216, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6884,7 +6883,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4060895315211686, guid: 609fc875afdf147dc87e9ef1f81cf216, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224597242796414832, guid: 609fc875afdf147dc87e9ef1f81cf216,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 609fc875afdf147dc87e9ef1f81cf216, type: 2}
@@ -7056,7 +7060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4101491377617118, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4101491377617118, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7164,7 +7168,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4101491377617118, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224902558690425402, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c79402ac8e2ac4c4f9faaf8154b0fbc6, type: 2}
@@ -10354,7 +10363,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10

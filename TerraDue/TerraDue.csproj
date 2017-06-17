@@ -84,12 +84,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AI\Actions\AlienMinionRunAnimation.cs" />
     <Compile Include="Assets\AI\Actions\Healing.cs" />
+    <Compile Include="Assets\AI\Actions\HumanMinionsRunAnimation.cs" />
     <Compile Include="Assets\AI\Actions\JungleMinionAttackAlienHero.cs" />
     <Compile Include="Assets\AI\Actions\JungleMinionAttackHumanHero.cs" />
+    <Compile Include="Assets\AI\Actions\JungleMinionsIdleAnimation.cs" />
+    <Compile Include="Assets\AI\Actions\JungleMinionsRunAnimation.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackHero.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackMinion.cs" />
     <Compile Include="Assets\AI\Actions\MinionAttackTower.cs" />
+    <Compile Include="Assets\AI\Actions\PrimeAttackAlienHero.cs" />
+    <Compile Include="Assets\AI\Actions\PrimeAttackHumanHero.cs" />
+    <Compile Include="Assets\AI\Actions\PrimeIdleAnimation.cs" />
+    <Compile Include="Assets\AI\Actions\PrimeRunAnimation.cs" />
     <Compile Include="Assets\AI\Actions\TowerAttackHero.cs" />
     <Compile Include="Assets\AI\Actions\TowerAttackMinion.cs" />
     <Compile Include="Assets\Lobby\Scripts\DraggablePanel.cs" />
@@ -159,6 +167,7 @@
     <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
     <None Include="Assets\AI\BehaviorTrees\HumanTower.txt" />
     <None Include="Assets\AI\BehaviorTrees\JungleMob.txt" />
+    <None Include="Assets\AI\BehaviorTrees\PrimeMob.txt" />
     <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
     <None Include="Assets\Fonts\OpenSans\License!.txt" />
     <None Include="Assets\Lobby\Documentation.txt" />
