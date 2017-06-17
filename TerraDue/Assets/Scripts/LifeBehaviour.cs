@@ -2,9 +2,11 @@
 using UnityEngine.Networking;
 
 public class LifeBehaviour : NetworkBehaviour {
-    
-    protected float MaximumHealth;
+
+    [SyncVar]
     protected float Health;
+    [SyncVar]
+    protected float MaximumHealth;
     protected float HealRatio;
     private float NotHitSince;
     private float HealState;
