@@ -21,6 +21,28 @@ public class CameraBehaviour : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
+            if(!GetComponent<MoveToPoint>().IsMoving())
+            {
+                if (Input.GetKeyDown("e"))
+                {
+                    transform.rotation *= Quaternion.AngleAxis(+90, new Vector3(0, 1));
+                }
+                if (Input.GetKeyDown("q"))
+                {
+                    transform.rotation *= Quaternion.AngleAxis(-90, new Vector3(0, 1));
+                }
+                if (Input.GetKeyDown("w"))
+                {
+                    transform.rotation *= Quaternion.AngleAxis(180, new Vector3(0, 1));
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown("space"))
+                {
+                    GetComponent<MoveToPoint>().StopMovement();
+                }
+            }
             PositionCamera();
         }
     }
