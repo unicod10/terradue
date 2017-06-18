@@ -97,6 +97,12 @@ public class UserInteraction : MonoBehaviour {
                 player.GetComponent<PlayerBehaviour>().CmdBuildTower(selection);
                 statusBar.text = DefaultStatus;
             }
+            else if(Input.GetKeyDown("space"))
+            {
+                state = State.Default;
+                statusBar.text = DefaultStatus;
+                lastMoveTo = new Vector3(1000, 1000, 1000);
+            }
         }
         // Check if close enough to attack
         else if (state == State.FightingTarget)
@@ -129,6 +135,12 @@ public class UserInteraction : MonoBehaviour {
                     player.GetComponent<PlayerBehaviour>().CmdAttack(selection);
                     lastAttacked = 0;
                 }
+            }
+            else if (Input.GetKeyDown("space"))
+            {
+                state = State.Default;
+                statusBar.text = DefaultStatus;
+                lastMoveTo = new Vector3(1000, 1000, 1000);
             }
             else
             {
