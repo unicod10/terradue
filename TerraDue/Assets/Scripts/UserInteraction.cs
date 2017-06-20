@@ -44,7 +44,12 @@ public class UserInteraction : MonoBehaviour {
             player.GetComponent<MoveToPoint>().Hide();
             state = State.Default;
             statusBar.text = "Dead";
+            Cursor.visible = false;
             return;
+        }
+        else
+        {
+            Cursor.visible = true;
         }
         // Moving to position message
         if(startedMovingSince >= 0)

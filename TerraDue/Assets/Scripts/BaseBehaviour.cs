@@ -30,7 +30,7 @@ public class BaseBehaviour : LifeBehaviour {
         if(IsDead())
         {
             Debug.Log(tag != "Human" ? "Humans" : "Aliens" + " win");
-            NetworkLobbyManager.singleton.ServerChangeScene("Lobby");
+            Application.Quit();
         }
         return 0;
     }
