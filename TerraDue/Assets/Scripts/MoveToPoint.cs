@@ -34,6 +34,7 @@ public class MoveToPoint : NetworkBehaviour {
 
     public void Spawn()
     {
+        Hide();
     }
 
     public void StopMovement()
