@@ -95,18 +95,12 @@ public class UserInteraction : MonoBehaviour {
         // Check if close enough to build
         if (state == State.MovingToTowerSlot)
         {
-            if (GetDistance(gameObject, selection) <= Constants.BUILD_MAXIMUM_DISTANCE)
+            if (GetDistance(player, selection) <= Constants.BUILD_MAXIMUM_DISTANCE)
             {
                 state = State.Default;
                 StopMovement();
                 player.GetComponent<PlayerBehaviour>().CmdBuildTower(selection);
                 statusBar.text = DefaultStatus;
-            }
-            else if(Input.GetKeyDown("space"))
-            {
-                state = State.Default;
-                statusBar.text = DefaultStatus;
-                lastMoveTo = new Vector3(1000, 1000, 1000);
             }
         }
         // Check if close enough to attack
@@ -141,12 +135,6 @@ public class UserInteraction : MonoBehaviour {
                     lastAttacked = 0;
                 }
             }
-            else if (Input.GetKeyDown("space"))
-            {
-                state = State.Default;
-                statusBar.text = DefaultStatus;
-                lastMoveTo = new Vector3(1000, 1000, 1000);
-            }
             else
             {
                 MoveTo(selection.transform.position);
@@ -171,7 +159,10 @@ public class UserInteraction : MonoBehaviour {
                             if (IsEnemy(obj))
                             {
                                 state = State.FightingTarget;
-                                MoveTo(obj.transform.position);
+                                if (GetDistance(player, obj) > Constants.ATTACK_MAXIMUM_DISTANCE)
+                                {
+                                    MoveTo(obj.transform.position);
+                                }
                                 selection = obj;
                                 statusBar.text = "Attacking enemy";
                             }
@@ -189,7 +180,10 @@ public class UserInteraction : MonoBehaviour {
                             {
                                 state = State.MovingToTowerSlot;
                                 selection = slot[0];
-                                MoveTo(obj.transform.position);
+                                if (GetDistance(player, obj) > Constants.BUILD_MAXIMUM_DISTANCE)
+                                {
+                                    MoveTo(obj.transform.position);
+                                }
                                 statusBar.text = "Building tower";
                             }
                             else

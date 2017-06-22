@@ -103,6 +103,7 @@ public class PlayerBehaviour : LifeBehaviour
         if (isLocalPlayer)
         {
             GetComponent<MoveToPoint>().Hide();
+            GetComponent<CameraBehaviour>().PositionCamera();
         }
     }
 
