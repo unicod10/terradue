@@ -15,18 +15,18 @@
     public const float BALANCING_INTEREST = 0.15f;
     public const float ABILITY_COOLDOWN = 5;
     public const float ABILITY_PARTICLES_DURATION = 3;
-    public const float BUILD_MAXIMUM_DISTANCE = 12;
+    public const float BUILD_MAXIMUM_DISTANCE = 4;
     public const float RESPAWN_AFTER_SECS = 10;
-    public const float HERO_BASE_EXPERIENCE = 400;
+    public const float HERO_BASE_EXPERIENCE = 425;
 
     // Minions
     public const float MINION_HEALTH = 150;
     public const float MINION_ATTACK_DAMAGE = 15;
-    public const float MINION_GROUP_SIZE = 3;
-    public const float MINION_NEXT_GROUP_AFTER = 120;
+    public const float MINION_GROUP_SIZE = 4;
+    public const float MINION_NEXT_GROUP_AFTER = 80;
     public const float MINION_NEXT_MEMBER_AFTER = 2;
-    public const float MINION_SPAWN_FIRST_AFTER = 5;
-    public const float MINION_EXPERIENCE = 50;
+    public const float MINION_SPAWN_FIRST_AFTER = 2;
+    public const float MINION_EXPERIENCE = 60;
 
     // Towers
     public const float TOWER_HEALTH = 400;
@@ -35,14 +35,14 @@
     public const float TOWER_EXPERIENCE = 200;
 
     // Core bases
-    public const float BASE_HEALTH = 1000;
-    public const float BASE_HEAL_RATIO = 50;
+    public const float BASE_HEALTH = 1200;
+    public const float BASE_HEAL_RATIO = 60;
 
     // Jungle mobs
     public const float JUNGLE_MOB_LIFE = 200;
     public const float JUNGLE_MOB_ATTACK_DAMAGE = 20;
     public const float JUNGLE_MOB_GROUP_SIZE = 4;
-    public const float JUNGLE_MOB_EXPERIENCE = 200;
+    public const float JUNGLE_MOB_EXPERIENCE = 250;
     
     // Prime arena
     public const float PRIME_HEALTH = 600;
@@ -50,7 +50,7 @@
     public const float PRIME_ATTACK = 50;
     public const float PRIME_SPAWN_TIME_SECONDS = 30;
     public const float PRIME_SPAWN_ON_LEVEL_DIFF_LESS = 5;
-    public const float PRIME_ARENA_EXPERIENCE = 500;
+    public const float PRIME_ARENA_EXPERIENCE = 600;
 
     // Optimus arena
     public const float OPTIMUS_HEALTH = 900;

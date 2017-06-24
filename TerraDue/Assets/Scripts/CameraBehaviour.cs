@@ -50,7 +50,6 @@ public class CameraBehaviour : NetworkBehaviour
             float delta = -Mathf.Sign(scroll) * WHEEL_FACTOR * Time.deltaTime;
             float oldDist = cameraDistance;
             cameraDistance = Mathf.Clamp(oldDist + delta, 5, 25);
-            Debug.Log(cameraDistance);
             var trx = CalcTrxDelta(cameraDistance - oldDist);
             TranslateCamera(Camera.main.transform.position, trx);
         }

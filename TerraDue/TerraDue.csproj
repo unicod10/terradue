@@ -149,6 +149,10 @@
     <Compile Include="Assets\Scripts\TowerBehaviour.cs" />
     <Compile Include="Assets\Scripts\TowersManager.cs" />
     <Compile Include="Assets\Scripts\UserInteraction.cs" />
+    <Compile Include="Assets\Shaders\Fog of War\Beacon.cs" />
+    <Compile Include="Assets\Shaders\Fog of War\DynamicBeacon.cs" />
+    <Compile Include="Assets\Shaders\Fog of War\FogOfWar.cs" />
+    <Compile Include="Assets\Shaders\Fog of War\StaticBeacon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AI\BehaviorTrees\AlienLeadMinionsLeft.txt" />
@@ -181,6 +185,8 @@
     <None Include="Assets\Prefabs\PrimeArenaMonster\Sheder\StandardDoubleSided.shader" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+    <None Include="Assets\Read Me.txt" />
+    <None Include="Assets\Shaders\Fog of War\CloudShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

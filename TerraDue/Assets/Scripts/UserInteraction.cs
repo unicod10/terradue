@@ -19,8 +19,10 @@ public class UserInteraction : MonoBehaviour {
     private float abilityLastUsed;
     private float startedMovingSince;
     private Text statusBar;
-    const string DefaultStatus = "Click an enemy or a position, or press (b) or (1)";
+    const string DefaultStatus = "Idle";
     private Vector3 lastMoveTo;
+    private Text timer;
+    private float elapsedTime;
 
     void Start()
     {
@@ -31,6 +33,12 @@ public class UserInteraction : MonoBehaviour {
         statusBar = GameObject.Find("UI/Panel/StatusBar").GetComponent<Text>();
         statusBar.text = DefaultStatus;
         lastMoveTo = new Vector3(1000, 1000, 1000);
+        timer = GameObject.Find("UI/Timer/Text").GetComponent<Text>();
+        elapsedTime = 0;
+        var button = GameObject.Find("UI/Buttons/Cast").GetComponent<Button>();
+        button.onClick.AddListener(delegate () { StopMovement(); CastClicked();  });
+        button = GameObject.Find("UI/Buttons/Build").GetComponent<Button>();
+        button.onClick.AddListener(delegate () { StopMovement(); BuildClicked(); });
     }
 
     private void Update()
@@ -39,11 +47,18 @@ public class UserInteraction : MonoBehaviour {
         {
             return;
         }
+        // Update UI timer
+        elapsedTime += Time.deltaTime;
+        var minutes = Mathf.FloorToInt(elapsedTime / 60);
+        var seconds = Mathf.FloorToInt(elapsedTime - 60 * minutes).ToString();
+        var timerText = minutes + ":" + (seconds.Length == 1 ? "0" : "") + seconds;
+        timer.text = timerText;
+        // Dead
         if(player.GetComponent<LifeBehaviour>().IsDead())
         {
             player.GetComponent<MoveToPoint>().Hide();
             state = State.Default;
-            statusBar.text = "Dead";
+            statusBar.text = "Dead. Respawning in " + Constants.RESPAWN_AFTER_SECS + "s";
             Cursor.visible = false;
             return;
         }
@@ -76,21 +91,11 @@ public class UserInteraction : MonoBehaviour {
         }
         if(Input.GetKeyDown("1"))
         {
-            if (abilityLastUsed < 0)
-            {
-                state = State.AbilityPressed;
-                statusBar.text = "Click on an enemy target";
-            }
-            else
-            {
-                int remaining = (int)Mathf.Max(1, Mathf.Round(Constants.ABILITY_COOLDOWN - abilityLastUsed));
-                statusBar.text = "Ability is cooling down.. " + remaining + "s left";
-            }
+            CastClicked();
         }
         else if(Input.GetKeyDown("b"))
         {
-            state = State.BuildTowerPressed;
-            statusBar.text = "Click on a free, linked slot";
+            BuildClicked();
         }
         // Check if close enough to build
         if (state == State.MovingToTowerSlot)
@@ -207,6 +212,26 @@ public class UserInteraction : MonoBehaviour {
             }
         }
         player.GetComponent<Collider>().enabled = true;
+    }
+
+    private void CastClicked()
+    {
+        if (abilityLastUsed < 0)
+        {
+            state = State.AbilityPressed;
+            statusBar.text = "Click on an enemy target";
+        }
+        else
+        {
+            int remaining = (int)Mathf.Max(1, Mathf.Round(Constants.ABILITY_COOLDOWN - abilityLastUsed));
+            statusBar.text = "Ability is cooling down.. " + remaining + "s left";
+        }
+    }
+
+    private void BuildClicked()
+    {
+        state = State.BuildTowerPressed;
+        statusBar.text = "Click on a free, linked slot";
     }
 
     private void MoveTo(Vector3 point)
