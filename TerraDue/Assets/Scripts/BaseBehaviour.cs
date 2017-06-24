@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 
 public class BaseBehaviour : LifeBehaviour {
@@ -29,9 +30,14 @@ public class BaseBehaviour : LifeBehaviour {
         base.TakeDamage(Damage);
         if(IsDead())
         {
-            Debug.Log(tag != "Human" ? "Humans" : "Aliens" + " win");
-            Application.Quit();
+            RpcEndGame(tag != "Human" ? "Humans" : "Aliens");
         }
         return 0;
+    }
+
+    [ClientRpc]
+    public void RpcEndGame(string winner)
+    {
+        GameObject.Find("UI").GetComponent<UserInteraction>().ShowEndDialog(winner);
     }
 }

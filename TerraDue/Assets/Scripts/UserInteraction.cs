@@ -8,6 +8,7 @@ public class UserInteraction : MonoBehaviour {
     public Material alienMaterial;
     public GameObject player;
     public GameObject[] towerSlots;
+    public GameObject endDialog;
 
     private enum State
     {
@@ -39,6 +40,9 @@ public class UserInteraction : MonoBehaviour {
         button.onClick.AddListener(delegate () { StopMovement(); CastClicked();  });
         button = GameObject.Find("UI/Buttons/Build").GetComponent<Button>();
         button.onClick.AddListener(delegate () { StopMovement(); BuildClicked(); });
+        button = GameObject.Find("UI/Dialog/Confirm").GetComponent<Button>();
+        button.onClick.AddListener(delegate () { Application.Quit(); });
+        endDialog.SetActive(false);
     }
 
     private void Update()
@@ -278,5 +282,11 @@ public class UserInteraction : MonoBehaviour {
     public void SetDefaultMessage()
     {
         statusBar.text = DefaultStatus;
+    }
+
+    public void ShowEndDialog(string winner)
+    {
+        endDialog.SetActive(true);
+        endDialog.transform.Find("Winner").GetComponent<Text>().text = winner + " win";
     }
 }
