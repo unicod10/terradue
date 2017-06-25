@@ -111,6 +111,10 @@
      <Compile Include="Assets\Scripts\TowerBehaviour.cs" />
      <Compile Include="Assets\Scripts\TowersManager.cs" />
      <Compile Include="Assets\Scripts\UserInteraction.cs" />
+     <Compile Include="Assets\Shaders\Fog of War\Beacon.cs" />
+     <Compile Include="Assets\Shaders\Fog of War\DynamicBeacon.cs" />
+     <Compile Include="Assets\Shaders\Fog of War\FogOfWar.cs" />
+     <Compile Include="Assets\Shaders\Fog of War\StaticBeacon.cs" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsMid.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanSoldierMionionsRight.txt" />
@@ -135,7 +139,9 @@
      <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
+     <None Include="Assets\Read Me.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
+     <None Include="Assets\Shaders\Fog of War\CloudShader.shader" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
      <None Include="Assets\AI\BehaviorTrees\AlienSoldierMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\JungleMob.txt" />

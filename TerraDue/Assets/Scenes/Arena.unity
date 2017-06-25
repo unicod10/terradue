@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5446177, g: 0.50620943, b: 0.5118195, a: 1}
+  m_IndirectSpecularColor: {r: 0.5445939, g: 0.5061717, b: 0.5117889, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -490,12 +490,13 @@ MonoBehaviour:
       reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0259399,0.0025,-19.62254</_position><_range>0.5</_range></element0><element1
       reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.8787699,0.0025,-15.5437</_position><_range>0.5</_range></element1><element2
       reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.05513668,0.0025,-10.91156</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.6544154,3.118273E-18,-5.542161</_position><_range>0.5</_range></element3><element4
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.6432112,0,-5.542161</_position><_range>0.5</_range></element3><element4
       reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.1608682,0.0025,-2.662736</_position><_range>0.5</_range></element4><element5
       reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07505298,0.0025,0.2469882</_position><_range>0.5</_range></element5><element6
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.03452808,0.0025,8.075233</_position><_range>0.5</_range></element6><element7
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0729348,0.0025,17.18614</_position><_range>0.5</_range></element7><element8
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07500362,0.0025,23.6978</_position><_range>0.5</_range></element8></_waypoints><_connections></_connections></_waypointSet></component>
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.6762601,0.002499999,5.499592</_position><_range>0.5</_range></element6><element7
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.1214006,0.002499999,11.18424</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.7184058,0.002499999,15.49979</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07500362,0.0025,23.6978</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
     _serializedMetaDocument: <meta></meta>
     _serializedObjects: []
     _serializedCustomData: []
@@ -1821,72 +1822,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &342980017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 342980018}
-  - component: {fileID: 342980019}
-  m_Layer: 0
-  m_Name: HumanRightWP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &342980018
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342980017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
-  m_Father: {fileID: 1727364780}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &342980019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342980017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dataSerializer:
-    _preferredSerialization: 2
-    _serializedData: 
-    _serializedMetaData: <meta></meta>
-    _serializedGameObjects: []
-    _serializedCustomData: []
-  _serializer:
-    _preferredSerialization: 1
-    _includeCustomData: 0
-    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
-      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
-      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
-      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>1,0.06206897,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
-      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
-      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
-      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
-      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
-      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
-      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.83081,-2.585851E-17,12.87331</_position><_range>0.5</_range></element7><element8
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.609729,-2.579418E-17,20.03294</_position><_range>0.5</_range></element8><element9
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
-    _serializedMetaDocument: <meta></meta>
-    _serializedObjects: []
-    _serializedCustomData: []
 --- !u!1 &353049990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +2845,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &469172690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 469172691}
+  - component: {fileID: 469172692}
+  m_Layer: 0
+  m_Name: AlienMidWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &469172691
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469172690}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 714967710}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469172692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469172690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="9ae74b6b-ea73-43cc-bdfb-3c44ab8a4afe"
+      component="0"></_mountPoint><_setName>HumanMidWP</_setName><_setType>Route</_setType><_networkColor>0,0.9172413,1,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0259399,0.0025,-19.62254</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.8787699,0.0025,-15.5437</_position><_range>0.5</_range></element1><element2
+      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.05513668,0.0025,-10.91156</_position><_range>0.5</_range></element2><element3
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.6432112,0,-5.542161</_position><_range>0.5</_range></element3><element4
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.1608682,0.0025,-2.662736</_position><_range>0.5</_range></element4><element5
+      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07505298,0.0025,0.2469882</_position><_range>0.5</_range></element5><element6
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.6762601,0.002499999,5.499592</_position><_range>0.5</_range></element6><element7
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.1214006,0.002499999,11.18424</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.7184058,0.002499999,15.49979</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07500362,0.0025,23.6978</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &485632975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,7 +3764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.2, y: 13.8}
+  m_AnchoredPosition: {x: 44.199997, y: 13.799999}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571172004
@@ -4868,6 +4869,37 @@ Transform:
   m_Father: {fileID: 1770867492}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 35, z: 0}
+--- !u!1 &714967709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 714967710}
+  m_Layer: 0
+  m_Name: AlienWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &714967710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714967709}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1578260555}
+  - {fileID: 469172691}
+  - {fileID: 1002189701}
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &727794178
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,7 +5278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.2, y: -25.599998}
+  m_AnchoredPosition: {x: -2.1999998, y: -25.599998}
   m_SizeDelta: {x: 120, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &897004424
@@ -5865,6 +5897,74 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997511309}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1002189700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1002189701}
+  - component: {fileID: 1002189702}
+  m_Layer: 0
+  m_Name: AlienLeftWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1002189701
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002189700}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 714967710}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 180, y: 180, z: 0}
+--- !u!114 &1002189702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002189700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
+      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>1,0.9724138,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
+      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
+      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.98125,0,8.143004</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.01474,0,13.18124</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>6.900709,0.0225,16.19219</_position><_range>0.5</_range></element9><element10
+      reference="12"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.146623,0,20.03294</_position><_range>0.5</_range></element10><element11
+      reference="13"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element11></_waypoints><_connections></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &1003362784
 GameObject:
   m_ObjectHideFlags: 0
@@ -6201,72 +6301,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015179138}
---- !u!1 &1066598168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1066598169}
-  - component: {fileID: 1066598170}
-  m_Layer: 0
-  m_Name: AlienLeftWP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1066598169
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1066598168}
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
-  m_Father: {fileID: 1513461554}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 180, y: 180, z: 0}
---- !u!114 &1066598170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1066598168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dataSerializer:
-    _preferredSerialization: 2
-    _serializedData: 
-    _serializedMetaData: <meta></meta>
-    _serializedGameObjects: []
-    _serializedCustomData: []
-  _serializer:
-    _preferredSerialization: 1
-    _includeCustomData: 0
-    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
-      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
-      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
-      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>1,0.4758621,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
-      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
-      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
-      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
-      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
-      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
-      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.83081,-2.585851E-17,12.87331</_position><_range>0.5</_range></element7><element8
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.609729,-2.579418E-17,20.03294</_position><_range>0.5</_range></element8><element9
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
-    _serializedMetaDocument: <meta></meta>
-    _serializedObjects: []
-    _serializedCustomData: []
 --- !u!1 &1072661554
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,6 +6531,74 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1093000486}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1106283020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1106283021}
+  - component: {fileID: 1106283022}
+  m_Layer: 0
+  m_Name: HumanRightWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1106283021
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106283020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 1727364780}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106283022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106283020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
+      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>1,0,0.06206894,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
+      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
+      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.98125,0,8.143004</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.01474,0,13.18124</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>6.900709,0.0225,16.19219</_position><_range>0.5</_range></element9><element10
+      reference="12"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.146623,0,20.03294</_position><_range>0.5</_range></element10><element11
+      reference="13"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element11></_waypoints><_connections></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &1106649544
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,72 +8127,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!1 &1414538590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1414538591}
-  - component: {fileID: 1414538592}
-  m_Layer: 0
-  m_Name: AlienRightWP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1414538591
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414538590}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
-  m_Father: {fileID: 1513461554}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1414538592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414538590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dataSerializer:
-    _preferredSerialization: 2
-    _serializedData: 
-    _serializedMetaData: <meta></meta>
-    _serializedGameObjects: []
-    _serializedCustomData: []
-  _serializer:
-    _preferredSerialization: 1
-    _includeCustomData: 0
-    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
-      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
-      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
-      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>0.9448276,1,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
-      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
-      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
-      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
-      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
-      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
-      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.83081,-2.585851E-17,12.87331</_position><_range>0.5</_range></element7><element8
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.609729,-2.579418E-17,20.03294</_position><_range>0.5</_range></element8><element9
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
-    _serializedMetaDocument: <meta></meta>
-    _serializedObjects: []
-    _serializedCustomData: []
 --- !u!1 &1417837920
 GameObject:
   m_ObjectHideFlags: 0
@@ -8517,71 +8553,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1438935058}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1455958287
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1455958288}
-  - component: {fileID: 1455958289}
-  m_Layer: 0
-  m_Name: AlienMidWP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1455958288
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1455958287}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
-  m_Father: {fileID: 1513461554}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1455958289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1455958287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dataSerializer:
-    _preferredSerialization: 2
-    _serializedData: 
-    _serializedMetaData: <meta></meta>
-    _serializedGameObjects: []
-    _serializedCustomData: []
-  _serializer:
-    _preferredSerialization: 1
-    _includeCustomData: 0
-    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
-      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
-      reference="1"><_mountPoint sceneobject="9ae74b6b-ea73-43cc-bdfb-3c44ab8a4afe"
-      component="0"></_mountPoint><_setName>HumanMidWP</_setName><_setType>Route</_setType><_networkColor>1,0,0.9310346,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
-      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0259399,0.0025,-19.62254</_position><_range>0.5</_range></element0><element1
-      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.8787699,0.0025,-15.5437</_position><_range>0.5</_range></element1><element2
-      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.05513668,0.0025,-10.91156</_position><_range>0.5</_range></element2><element3
-      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.6544154,3.118273E-18,-5.542161</_position><_range>0.5</_range></element3><element4
-      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.1608682,0.0025,-2.662736</_position><_range>0.5</_range></element4><element5
-      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07505298,0.0025,0.2469882</_position><_range>0.5</_range></element5><element6
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>-0.03452808,0.0025,8.075233</_position><_range>0.5</_range></element6><element7
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.0729348,0.0025,17.18614</_position><_range>0.5</_range></element7><element8
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.07500362,0.0025,23.6978</_position><_range>0.5</_range></element8></_waypoints><_connections></_connections></_waypointSet></component>
-    _serializedMetaDocument: <meta></meta>
-    _serializedObjects: []
-    _serializedCustomData: []
 --- !u!1 &1475072795
 GameObject:
   m_ObjectHideFlags: 0
@@ -8666,37 +8637,6 @@ Transform:
   m_Father: {fileID: 456836434}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1513461553
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1513461554}
-  m_Layer: 0
-  m_Name: AlienWP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &1513461554
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1513461553}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1414538591}
-  - {fileID: 1455958288}
-  - {fileID: 1066598169}
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1525045003
 GameObject:
   m_ObjectHideFlags: 0
@@ -8996,6 +8936,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1578260554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1578260555}
+  - component: {fileID: 1578260556}
+  m_Layer: 0
+  m_Name: AlienRightWP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1578260555
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578260554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 714967710}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578260556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578260554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.Waypoints.WaypointRig"
+      reference="0" includecustomdata="False"><_visualMode>AlwaysOn</_visualMode><_waypointSet
+      reference="1"><_mountPoint sceneobject="8e99f93c-40ab-4e51-a623-1fe06435a0c8"
+      component="0"></_mountPoint><_setName>HumanLeftWP</_setName><_setType>Route</_setType><_networkColor>1,0.7241379,0,1</_networkColor><_outlineColorOffset>-0.5</_outlineColorOffset><_selectionColorOffset>0.4</_selectionColorOffset><_showOctTree>False</_showOctTree><_waypoints><element0
+      reference="2"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.468601,1.624054E-17,-19.98413</_position><_range>0.5</_range></element0><element1
+      reference="3"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>7.33538,-1.116492E-17,-15.8461</_position><_range>0.5</_range></element1><element2
+      reference="4"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>12.60839,-0.9132657,-11.42108</_position><_range>0.5</_range></element2><element3
+      reference="5"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.56254,-0.0025,-8.536015</_position><_range>0.5</_range></element3><element4
+      reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
+      reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
+      reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.98125,0,8.143004</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.01474,0,13.18124</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>6.900709,0.0225,16.19219</_position><_range>0.5</_range></element9><element10
+      reference="12"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.146623,0,20.03294</_position><_range>0.5</_range></element10><element11
+      reference="13"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element11></_waypoints><_connections></_connections></_waypointSet></component>
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!1 &1610343975
 GameObject:
   m_ObjectHideFlags: 0
@@ -9703,7 +9711,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 342980018}
+  - {fileID: 1106283021}
   - {fileID: 34762775}
   - {fileID: 1817877539}
   m_Father: {fileID: 0}
@@ -10645,9 +10653,11 @@ MonoBehaviour:
       reference="6"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>21.1673,-1.864074E-17,-3.358725</_position><_range>0.5</_range></element4><element5
       reference="7"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>22.61222,-2.354834E-17,-0.1151209</_position><_range>0.5</_range></element5><element6
       reference="8"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>20.18307,-2.64326E-17,4.704522</_position><_range>0.5</_range></element6><element7
-      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.83081,-2.585851E-17,12.87331</_position><_range>0.5</_range></element7><element8
-      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.609729,-2.579418E-17,20.03294</_position><_range>0.5</_range></element8><element9
-      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element9></_waypoints><_connections></_connections></_waypointSet></component>
+      reference="9"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>14.98125,0,8.143004</_position><_range>0.5</_range></element7><element8
+      reference="10"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>11.01474,0,13.18124</_position><_range>0.5</_range></element8><element9
+      reference="11"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>6.900709,0.0225,16.19219</_position><_range>0.5</_range></element9><element10
+      reference="12"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>4.146623,0,20.03294</_position><_range>0.5</_range></element10><element11
+      reference="13"><_waypointSet reference="1"></_waypointSet><_waypointName></_waypointName><_position>0.5591373,0.025,23.41901</_position><_range>0.5</_range></element11></_waypoints><_connections></_connections></_waypointSet></component>
     _serializedMetaDocument: <meta></meta>
     _serializedObjects: []
     _serializedCustomData: []
