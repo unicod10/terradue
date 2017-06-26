@@ -77,7 +77,6 @@
      <None Include="Assets\AI\BehaviorTrees\TestPatrol.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanLeadMinionsRight.txt" />
      <None Include="Assets\AI\BehaviorTrees\AlienTower.txt" />
-     <None Include="Assets\Read Me.txt" />
      <None Include="Assets\AI\BehaviorTrees\HumanMinions.txt" />
      <None Include="Assets\Shaders\Fog of War\CloudShader.shader" />
      <None Include="Assets\Prefabs\AttacksAndAbility\Plugins\Effect\Shader\ParticleAddEffect.shader" />
