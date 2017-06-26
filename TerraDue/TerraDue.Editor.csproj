@@ -180,7 +180,6 @@
     <None Include="Assets\Prefabs\PrimeArenaMonster\Sheder\StandardDoubleSided.shader" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
-    <None Include="Assets\Read Me.txt" />
     <None Include="Assets\Shaders\Fog of War\CloudShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
